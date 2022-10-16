@@ -1,19 +1,30 @@
 # Proper way to use an LED
 
-## A led is short for a Light Emitting ***Diode***
+[What is an led](#A-led-is-short-for-a-Light-Emitting-Diode)
+
+[correct single led wireing](#Correct-wiring)
+
+[Seven segment displays](#Seven-segment-displays)
+
+[What is an led](#A-led-is-short-for-a-Light-Emitting-Diode)
+
+[What is an led](#A-led-is-short-for-a-Light-Emitting-Diode)
+
+## A led is short for a Light Emitting Diode
 
 Diodes are devices that let electricity flow only in one direction. LEDs work the same way as they are a diode also.  
 
 When you connect an led to a circuit you have a direct link from one leg of the diode, to the other.  LEDs can not process large amounts of current, they are limited to 20ma or less. Although they will try and pass the full current, doing so will cause the LED to burn out, or it will shorten the life of the led.  To stop this from happening we use a resistor and this limits the amount of current flowing through the led enough that it lights, but does not burn out.
 
 ---
-# Wireing
-## Correct
 
-It does not matter for a single LED wether you apply the resistor to the GND, or thepower side.  So this is how you would wire a standard LED.
+## Correct wireing
+
+It does not matter for a single LED wether you apply the resistor to the GND, or thepower side.  So this is how you would wire a standard LED
 ![correct LED wiring](images/ledFinal.png "Correct LED wireing")
 ---
-## seven segment displays
+
+## Seven segment displays
 
 Seven segment displays are a specific case. You **should** have your resistors on every segment of the display. You will require 7-8 resistors depending upon if your display uses a decimal or not.
 ![seven Segment Display](images/sevenSegment.png "correct wireing for a display")
@@ -26,7 +37,6 @@ You do not want to use a resistor on the common pin of the display. The reason f
 
 Each led has its own forward voltage. Forward voltage is the required voltage level that the led needs before it starts conducting through it. Below is a chart of the common colors forward voltage requirements. If you can find a data sheet for your led it is best to go by that. If not the chart will assist you in your resistor math.
 
-
 ![led Chart](images/forwardVoltage.png "led color chart")
 
 # resistor math time
@@ -37,9 +47,14 @@ If you have a supply voltage of 5v, and you have a red led, we will say the forw
 
 $$ total = FV-totalVoltage $$
 
-
 $$ 3.2 = 1.8v - 5v $$
 
 Then we will take that new found voltage and find out the resistor we require. We will be calculating for 10ma or less, so the led will not burn out faster then expected, so this is the math for that.
 
-$$ 
+$$ resistanc = totalVoltage / current$$
+
+$$ 320 = 3.2v/0.01ma$$
+
+As you can see the perfect resistor value would be 320 Ohms. If you dont have a resistor fo that value you can use the next size larger then it, OR you can put 2 smaller resistors end to end and use them that way.
+
+**EXAMPLE:** _220 ohm resistor and a 220 ohm resistor can make a 440 ohm resistor._
