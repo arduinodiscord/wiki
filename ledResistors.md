@@ -1,33 +1,33 @@
 # Proper way to use an LED
 
-## contents:
+## Contents:
 
 ---
 
-[What is an led?](#A-led-is-short-for-a-Light-Emitting-Diode)
+[What is an led?](#an-led-is-short-for-a-light-emitting-diode)
 
-[correct single led wireing](#Correct-wiring)
+[Correct Single LED Wiring](#correct-wiring)
 
-[Seven segment displays](#Seven-segment-displays)
+[Seven Segment Displays](#seven-segment-displays)
 
-[led color matters](#led-color-matters)
+[LED Color Matters](#led-color-matters)
 
-[math for a resistor](#resistor-math-time)
-
----
-
-## A led is short for a Light Emitting Diode
-
-### Diodes are devices that let electricity flow only in one direction. LEDs work the same way as they are a diode also.
-
-#### When you connect an led to a circuit you have a direct link from one leg of the diode, to the other.  LEDs can not process large amounts of current, they are limited to 20ma or less. Although they may try and pass the full current, doing so will cause the led aswell as the arduino pin to damage or shorten its performance efficiency. *or dammage/shorten the life of a pin on the arduino*
-
-#### To stop this from happening, we use a resistor. This limits the amount of current flowing through the led so it lights and doesn't burn out.
-
+[Math for a Resistor](#resistor-math-time)
 
 ---
 
-## Correct wiring
+## An LED is short for a Light Emitting Diode
+
+### Diodes are devices that let electricity flow only in one direction. LEDs work the same way as they are also diodes.
+
+#### When you connect an LED to a circuit you have a direct link from one leg of the diode to the other.  LEDs can not process large amounts of current, they are limited to 20ma or less. Although they may try and pass the full current, doing so will cause the LED and arduino pin to damage or shorten its performance efficiency. *or dammage/shorten the life of a pin on the arduino*
+
+#### To stop this from happening, we use a resistor. This limits the amount of current flowing through the LED so it lights and doesn't burn out.
+
+
+---
+
+## Correct Wiring
 
 #### It does not matter for a single LED whether you apply the resistor to the GND or the power side.  So this is how you would wire a standard LED
 
@@ -35,7 +35,7 @@
 
 ---
 
-## Seven segment displays
+## Seven Segment Displays
 
 #### Seven segment displays are a specific case. You **should** have your resistors on every segment of the display. You will require 7-8 resistors depending upon if your display uses decimal or not.
 
@@ -45,13 +45,13 @@
 
 #### You do not want to use a resistor on the common pin of the display. The reason for this is found in math. If you look at the example above you can see that each segment only has 8ma passing through it. No matter if 1 segment is lit up, or if all 7 are, each one is limited and controlled to 8ma. If you place a resistor on the collector, then the ma will change each time a segment is lit. With one segment lit up, there will be 8ma passing through it, when you light 2, then the segments will get dimmer because there is only 4ma passing through each one. if you light all 8 segments then you will only have 1ma passing through each one of them. This is why we do not use a resistor on the single common pin.
 
-# led color matters
+# LED Color Matters
 
 #### Each led has its forward voltage. Forward voltage is the required voltage level that the lead needs before it starts conducting through it. Below is a chart of the common colors forward voltage requirements. If you can find a data sheet for your led it is best to go by that. If not the chart will assist you in your resistor math.
 
 ![led Chart](images/forwardVoltage/forwardVoltage.png "led color chart")
 
-# resistor math time
+# Resistor Math Time
 
 ## _We will use the chart in our examples._
 
