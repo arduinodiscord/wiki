@@ -31,7 +31,7 @@
 
 #### It does not matter for a single LED whether you apply the resistor to the GND or the power side.  So this is how you would wire a standard LED
 
-![correct LED wiring](images/ledFinal.png "Correct LED wiring")
+![correct LED wiring](images/forwardVoltage/ledFinal.png "Correct LED wiring")
 
 ---
 
@@ -39,7 +39,7 @@
 
 #### Seven segment displays are a specific case. You **should** have your resistors on every segment of the display. You will require 7-8 resistors depending upon if your display uses decimal or not.
 
-![seven Segment Display](images/sevenSegment.png "correct wiring for a display")
+![seven Segment Display](images/forwardVoltage/sevenSegment.png "correct wiring for a display")
 
 ---
 
@@ -49,7 +49,7 @@
 
 #### Each led has its forward voltage. Forward voltage is the required voltage level that the lead needs before it starts conducting through it. Below is a chart of the common colors forward voltage requirements. If you can find a data sheet for your led it is best to go by that. If not the chart will assist you in your resistor math.
 
-![led Chart](images/forwardVoltage.png "led color chart")
+![led Chart](images/forwardVoltage/forwardVoltage.png "led color chart")
 
 # resistor math time
 
@@ -57,15 +57,17 @@
 
 #### If you have a supply voltage of 5v, and you have a red led, we will say the forward voltage is 1.8v. So first we subtract the FV \(forward voltage\) from the total voltage. So it would look like this.
 
-$$ total = FV-totalVoltage $$
 
-$$ 3.2 = 1.8v - 5v $$
+![voltage](images/forwardVoltage/workingVoltage.png)
+
+![voltage](images/forwardVoltage/voltageMath.png)
 
 #### Then we will take that newfound voltage and find out the resistor we require. We will be calculating for 10ma or less, so the lead will not burn out faster than expected, so this is the math for that.
 
-$$ resistanc = totalVoltage / current$$
 
-$$ 320 = 3.2v/0.01ma$$
+![Resistance](images/forwardVoltage/resistance.png)
+
+![restanceReal](images/forwardVoltage/restanceReal.png)
 
 #### As you can see the perfect resistor value would be 320 Ohms. If you don't have a resistor for that value you can use the next size larger than it, OR you can put 2 smaller resistors end to end and use them that way.
 
