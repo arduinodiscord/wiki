@@ -1,6 +1,6 @@
 # Proper way to use an LED
 
-## contents:
+## Contents:
 
 ---
 
