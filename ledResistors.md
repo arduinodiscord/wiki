@@ -60,12 +60,8 @@
 
 ![voltage](images/forwardVoltage/workingVoltage.png)
 
-![voltage](images/forwardVoltage/voltageMath.png)
 
 #### Then we will take that newfound voltage and find out the resistor we require. We will be calculating for 10ma or less, so the lead will not burn out faster than expected, so this is the math for that.
-
-
-![Resistance](images/forwardVoltage/resistance.png)
 
 ![restanceReal](images/forwardVoltage/restanceReal.png)
 
