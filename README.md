@@ -5,5 +5,4 @@ Welcome to the open source wiki for the arduino discord server. Here you can fin
 
 [LEDs and Resistors](ledResistors.md)
 
-[all the different arduino](allthearduino.md)
 ...
