@@ -1,6 +1,5 @@
 # Arduino Buyers Guide
 
-
 ### This is a guide on all the different Arduinos
 
 ### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder.
@@ -15,7 +14,7 @@
 
 ### The nano has the same chip as the Uno so can be used in a final product if an Uno worked just in a smaller package.
 
-| Name                        | UNO        | Leonardo   | Mega 2560  | Micro      | Due         | nano      |
+| Name                        | [UNO](https://store.arduino.cc/products/arduino-uno-rev3)        | [Leonardo](https://store.arduino.cc/products/arduino-leonardo-with-headers)   | [Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)  | [Micro](https://store.arduino.cc/products/arduino-micro)      | [Due](https://store.arduino.cc/products/arduino-due)         | nano      |
 | --------------------------- | ---------- | ---------- | ---------- | ---------- | ----------- | --------- |
 | MICROCONTROLLER             | ATmega328P | ATmega32u4 | ATmega2560 | ATmega32U4 | AT91SAM3X8E | ATmega328 |
 | OPERATING VOLTAGE           | 5V         | 5V         | 5V         | 5V         | 3.3V        | 5 V       |
