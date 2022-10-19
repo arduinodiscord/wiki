@@ -1,4 +1,4 @@
-# Proper way to use an LED
+# Proper way to use an LED | [HOME](README.md) |
 
 ## Contents:
 
