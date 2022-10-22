@@ -12,6 +12,4 @@ This is one of the main reasons why you can't use a 9v but not the only one. A n
 
 ![](images/9vwhybadidea/9vdiscargrate.png)
 
-[video of 9v battery issues.](https://odysee.com/@Maderdash:2/9vBattery:0 "video of 9v battery issues")
-
-<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@Maderdash:2/9vBattery:0?r=HnR7Bf8DAfp1r78YU5hFi5EWDUZvrsX6" allowfullscreen></iframe>
+[Click for a video with more information.](https://odysee.com/@Maderdash:2/9vBattery:0 "video of 9v battery issues")
