@@ -33,3 +33,4 @@
 | LENGTH                      | 68.6 mm    | 68.6 mm    | 101.52 mm  | 48 mm      | 101.52 mm   | 18 mm     |
 | WIDTH                       | 53.4 mm    | 53.3 mm    | 53.3 mm    | 18 mm      | 53.3 mm     | 45 mm     |
 | WEIGHT                      | 25 g       | 20 g       | 37 g       | 13 g       | 36 g        | 7 g       |
+
