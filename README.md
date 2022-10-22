@@ -5,6 +5,6 @@ Welcome to the open source wiki for the arduino discord server. Here you can fin
 
 [LEDs and Resistors](ledResistors.md)
 
-[Arduino buyers gide](arduinobuyersgide.md)
+[Arduino buyers guide](arduinobuyersgide.md)
 
 ...
