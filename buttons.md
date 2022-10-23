@@ -59,6 +59,6 @@ void loop(){
 #### If the led's on the Arduino board turns OFF every time you press the button, OR if when you CONNECT the button, you have a short, do not operate the Arduino in this case.  Pull all of the wires from the Arduino so no wires are connected to it other than the USB. If the led lights up again, then you  need to rewire the button over again.
 
 #### If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHMATIC example.
-![Schmatic of a button](images/buttons/buttonSchmatic.png "schmatic of a button")
+![Schematic of a button](images/buttons/buttonSchmatic.png "schematic of a button")
 ---
 ![example of button sides](images/buttons/button-A.png "example of the sides of a button")
