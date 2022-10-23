@@ -23,7 +23,7 @@ Using this wiring, the resistor is said to be a "pull-down" resistor. Tis simply
 
 |                            EXAMPLE A                            |                               EXAMPLE B                                  |                               EXAMPLE C                                 |  EXAMPLE D                                                                |
 | :-------------------------------------------------------------: | :----------------------------------------------------------------------: | :---------------------------------------------------------------------: | ------------------------------------------------------------------------- |
-| ![](images/buttons/button-A3.png "example of wireing side A")   | ![](images/buttons/button-B.png "example of wireing on putton side B")   | ![](images/buttons/button-C.png "Example of wireing resistor side A")   | ![](images/buttons/button-D.png " final wireing of gnd wire to resistor") |
+| ![](images/buttons/button-1B.png "example of wireing side A")   | ![](images/buttons/button-1C.png "example of wireing on putton side B")   | ![](images/buttons/button-1D.png "Example of wireing resistor side A")   | ![](images/buttons/button-1E.png " final wireing of gnd wire to resistor") |
 
 #### When you first start working with buttons, it is best to select 2 pins that are diagonal from each other. Until you understand how a button is orentated, this is the easiest way of making sure you wire the button correctly. There is some test code that will test if you have the button wired correctly, and that it is functioning.
 
@@ -58,4 +58,7 @@ void loop(){
 
 #### If the led's on the Arduino board turns OFF every time you press the button, OR if when you CONNECT the button, you have a short, do not operate the Arduino in this case.  Pull all of the wires from the Arduino so no wires are connected to it other than the USB. If the led lights up again, then you  need to rewire the button over again.
 
-If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHMATIC example.
+#### If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHMATIC example.
+![Schmatic of a button](images/buttons/buttonSchmatic.png "schmatic of a button")
+---
+![example of button sides](images/buttons/button-A.png "example of the sides of a button")
