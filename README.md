@@ -8,5 +8,6 @@ Welcome to the open source wiki for the arduino discord server. Here you can fin
 |  <h4> [Arduino Buyers guide](arduinobuyersgide.md)  </h4> |
 |  <h4> [Nine Volt Battery Basics](nineVolts.md)      </h4> |
 |  <h4> [Button Basics](buttons.md)                   </h4> |
+|  <h4> [Breadboard Basics](breadBoard.md)                   </h4> |
 
 ...
