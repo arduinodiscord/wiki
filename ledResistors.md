@@ -1,19 +1,5 @@
 # Proper way to use an LED | [HOME](README.md) |
 
-## Contents:
-
----
-
-[What is an LED?](#led-is-short-for-light-emitting-diode)
-
-[Correct Single-LED Wiring](#correct-wiring)
-
-[Seven Segment Displays](#seven-segment-displays)
-
-[LED Color Matters](#led-color-matters)
-
-[Math for a Resistor](#resistor-math-time)
-
 ---
 
 ## 'LED' is short for 'Light Emitting Diode'
@@ -23,7 +9,6 @@
 #### When you connect an LED to a circuit, you have a direct link from one leg of the diode to the other.  LEDs can not process large amounts of current; they are limited to 20ma or less. Although they may try and pass the full current, doing so will cause damage to the LED, or shorten its performance efficiency *(or damage/shorten the life of the pin of the Arduino).*
 
 #### To stop this from happening, we use a resistor. This limits the amount of current flowing through the LED, so it lights and doesn't burn out.
-
 
 ---
 
@@ -63,7 +48,7 @@
 ![voltage](images/forwardVoltage/workingVoltage.png)
 
 
-#### Then we will take that newfound voltage and find out the resistor we require. We will be calculating for 10ma or less, so the LED will not burn out faster than expected&hellip; so this is the math for that:
+#### Then we will take that newfound voltage and find out the resistor we require. We will be calculating for 10ma or less, so the LED will not burn out faster than expected. This is the math for that:
 
 ![resistanceReal](images/forwardVoltage/restanceReal.png)
 
