@@ -1,7 +1,7 @@
 # Combining Sketches  | [HOME](README.md) |
 
-When combining two or more sketches, it is VERY important that you understand the various sections of the sketch. 
-The next part of this guide is describing these sections. 
+When combining two or more sketches, it is VERY important that you understand the various sections of the sketch,
+the next part of this guide is describing these sections.
 
 You can skip over this, then come back later and read it when your combined sketches don’t work.
 
@@ -17,17 +17,16 @@ These can appear anywhere in the code but usually appear at the top with the aut
 
 
 
-The block comments start with /* and end with */
+The block comments start with /\*and end with\*/
 
 A single line comment starts with //
 
 When combining sketches, you can ignore the comment lines and comment blocks if you want as Arduino code ignores these.
 
-
 ## Libraries Include Section
 
 This section appears at the very top of the sketch.
-###note: 
+### note: 
 ##### *(there are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen.  It will appear are a #define XXXXXXX before the include library statement)*
 
 The library load/include command is in the form of:
@@ -38,7 +37,7 @@ This will load and include the library if it is in the standard library path. If
 
 In special cases, the library include statement might be in the form of:
 
-```#include "library file name" ```
+```#include "library file name"```
 
 In this case the library file is not in the normal location. 
 If it is in the same directory as the sketch, then it will use this format. 

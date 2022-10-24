@@ -1,6 +1,6 @@
 # Arduino Buyers Guide  | [HOME](README.md) |
 
-### This is a guide on all the different Arduinos
+### This is a guide on all the different Arduino's.
 
 ### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder.
 
@@ -12,7 +12,7 @@
 
 ### The Due also has a lot of IO, has more memory than the Mega 2560. This makes it a great starter board also.
 
-### The nano has the same chip as the Uno so can be used in a final product. MAny times its easest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product.
+### The nano has the same chip as the Uno so can be used in a final product. MAny times its easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product.
 
 ---
 # Below is a chart of the more common arduino boards.
