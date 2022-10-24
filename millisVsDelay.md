@@ -2,13 +2,20 @@
 
 ## `millis()` versus `delay()`
 
-millis() is a foo  but delay() is a bar.
+`millis()` is a counter but is not a timer;  `delay()` is a timer but is not a counter.
 
- &bull; delay shuts most things down, that were already running *[EDITOR: true? bs?]*
- &bull; delay 'blocks' progress
+`delay()` wants something from you (instructions on how to do exactly what is requested).
+`millis()` wants nothing from you - it is a provider of information.  `delay()` provides no information.
 
- &bull; millis runs in the background
- &bull; millis does not 'block' progress
+<ul>
+ <li> delay shuts most things down, that were already running [<em>EDITOR: true? bs?</em>]
+ <li> delay 'blocks' progress
+</ul>
+<p>
+<ul>
+ <li> millis runs in the background
+ <li> millis does not 'block' progress
+</ul>
 
 So, by using millis() instead of delay() your program can do
 much more, in the same amount of time.
@@ -18,7 +25,7 @@ much more, in the same amount of time.
 *Whatever it is, it's not millis()*
 
 
-What does millis() provide?
+`What does millis() provide?`
 
 millis() provides a count of the number of milliseconds that have
 passed, since 'time began'.
