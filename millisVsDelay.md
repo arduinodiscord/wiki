@@ -178,7 +178,7 @@ math for you.
 
 Really, the kitchen clock is just a counter that evolves over 'time'.
 It's providing you with the answer to one question: how many seconds
-of time has passed since the clock&hellip; get this&hellip; was set.
+of time have passed since the clock&hellip; get this&hellip; was set.
 
 That's really all it is telling you.  It's <em>giving you an accurate
 count of the number of seconds that have passed since you plugged
@@ -197,27 +197,34 @@ faster than wanted (which they were prone to do, otherwise).
 
 #### Timer vs Counter (yes more rant)
 
-When people had stopwatches working pretty good, now they wanted
-to set a very precise time to 'count down to'.  They wanted
-a timer!
+When people had stopwatches working pretty good, then they wanted
+to set a very precise time to <em>'count down to'</em>.  They
+wanted a timer!
 
-A timer accepts instructions on how long it should run before
-it does something.
+A timer accepts instructions that say how long the timer should
+run, before it does something interesting.
+
+<em>Like telling you that time's up.</em>
 
 The old wind-up kitchen timer was a clock mechanism on a spring;
 you dialed in (by turning a knob) how much time you wanted to let
-pass by, before making the loud dinging sound saying TIME IS UP.
+pass by, before it makes that loud dinging sound, saying TIME IS UP.
 
 When wristwatches got LCD displays, one of the gadgets the
 manufacturers built into the new 'watch' was a stopwatch.
 It counted seconds of time, and usually ran at least 24 hours
 before giving up (or reaching overflow).
 
-Then they said this: hey let's run that backwards; it's almost
-the same as a stopwatch, but has this new feature: you tell it
-'how long' and it runs the time backwards.  It's exactly like
-running a stopwatch in reverse, from the end of the run back to
-the start of the run. ;)
+
+#### Countdown timer on the wristwatch
+
+Then they said this: hey let's run that backwards; the countdown
+timer could be made almost the same way as a stopwatch, but it
+could have this new feature:
+
+you tell it 'how long'&hellip; and it runs the time backwards.
+It's exactly like running a stopwatch in reverse, from the end
+of the run, back to the start of the run. ;)
 
 The MCU chip does have a peripheral inside it called the
 `counter-timer` which may be behind a lot of this.  That's not
