@@ -29,6 +29,13 @@ So, by using millis() instead of delay() your program can do
 much more, in the same amount of time.
 
 
+
+`Blink Without Delay`
+
+  https://github.com/arduino/arduino-examples/blob/main/examples/02.Digital/BlinkWithoutDelay/BlinkWithoutDelay.ino
+
+
+
 *What's stopping you?*
 
 *Whatever it is, it's not millis()*
@@ -210,5 +217,6 @@ the start of the run. ;)
 The MCU chip does have a peripheral inside it called the
 `counter-timer` which may be behind a lot of this.  That's not
 the only way to do things, but is one available mechanism.
+
 
 END.
