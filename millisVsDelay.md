@@ -119,20 +119,27 @@ timer but is not a counter.
 
 Yes, `millis()` is a counter, but we are also aware of what it's
 counting and when it counts it.  `millis()` is a counter that
-'evolves by a clock'.  It's like an odometer in your car.
+'evolves by a clock'.
+
+This situation is a bit like the odometer in your car.
 You could pry it out, put it on a drill, and spin it to
 artificially change that count in a very short while.
 
-`millis()` is like a secure odometer that's tamper-proof; you
-have to wait the required time before `millis()` will rack up
+That'd be cheating.  It would no longer give an accurate reading
+about the miles put on the car.
+
+`millis()` is the Arduino 'odometer of time'. ;)
+
+It is a bit like an (imaginary) secure odometer that's tamper-proof;
+you have to wait the required time before `millis()` will rack up
 those 'miles' (count of milliseconds).
 
 There's no cheating.
 
-So `millis()` isn't a timer; it's a counter, but it counts
-&hellip; milliseconds, which happens to involve 'time'.  Worse, it only
-upgrades the count when some time has passed (otherwise it'd be
-like putting that drill on the odometer to race it forward 30
+So `millis()` isn't a timer&mdash;it's a counter; but it counts
+&hellip; milliseconds, which happens to involve 'time'.  Worse,
+only upgrades the count when some time has passed (otherwise it'd
+be like putting that drill on the odometer, to race it forward 30
 thousand miles in just a few minutes of 'bench' time).
 
 
