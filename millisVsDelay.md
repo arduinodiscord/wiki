@@ -144,47 +144,46 @@ write down the time it shows, and walk out of the kitchen.
 You do not own a stopwatch.  Just that kitchen clock.
 
 You're wondering if 25 minutes have passed or not - you don't
-want to be late on this one; maybe you're drying some glue on
-the bench and you want to wait at least 25 minutes.
+want to be early on this one; maybe you're drying some glued
+parts on the bench, and you want to wait at least 25 minutes.
 
-So you're using your kitchen clock, in the other room, to time
-the glue drying. ;)
+So you're using your kitchen clock, in the other room, to
+keep track of how long the glue has been drying. ;)
 
-You walk back into the kitchen, and it says the current time on
-the clock, of course.
+You walk back into the kitchen, to read the current time on
+the clock.
 
-You write it down, and head back to the .. the makerspace you
-got there. ;)
+You write it down, and head back to the &hellip; the makerspace you
+got there. ;)  <em>Your bench.</em>
 
 Now you have two times written down; one is from the first time
 you went into the kitchen; the second is the time you wrote down
 just a moment ago.
 
-Now you gotta do some math and figure out how much time went by
+Now you gotta do some math, and figure out how much time went by
 since you first glanced at the kitchen clock, to just a moment
-ago when you glanced at it again.
+ago, when you glanced at it again.
 
 Maybe there's 15 minutes difference between those two events.
 
 But you do the math; the clock on the kitchen wall won't do the
 math for you.
 
-Really it's just a counter that evolves over 'time'.  It's
-providing you with the answer to one question: how many seconds
-of time has passed since the clock
- .. get this .. was set.
+Really, the kitchen clock is just a counter that evolves over 'time'.
+It's providing you with the answer to one question: how many seconds
+of time has passed since the clock&hellip; get this&hellip; was set.
 
-That's really all it is telling you.  It's giving you an accurate
+That's really all it is telling you.  It's <em>giving you an accurate
 count of the number of seconds that have passed since you plugged
-it in or installed the battery or turned on its power switch,
+it in</em> or installed the battery or turned on its power switch,
 if it has one.
 
-But you use the information it gives you, and some math, to come
+You use the information it gives you, and some math, to come
 up with a substitute for a timer, or a stopwatch.
 
 But it's only a counter; it is not a timer!
 
-It just happens to be a counter that runs on a timebase; the
+It just happens to be a counter that runs on a <em>timebase</em>; the
 old clocks had an 'escapement' that prevented them from running
 faster than wanted (which they were prone to do, otherwise).
 
