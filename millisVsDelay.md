@@ -59,15 +59,18 @@ after power is applied to the board).
 board.
 
 These 'serial numbers' are simply a count.  They're a count
-of the exact number of *milliseconds* of (real clock time)
+of the exact number of *milliseconds* of (real clock) time
 (approximately) since the Arduino was 'started' (powered on).
 
 
-`delay()`
+#### `delay()`
 
 `delay()` was designed for very quick, demonstration program
 development, for one-off proof-of-concept work that does not need
 to do very much at all, to be considered a successful program.
+
+
+#### Scenario - using `delay()` fast prototyping
 
 <em>The presenter has one hour to put something together, having been
 asked to speak to a classroom about the Arduino, just moments ago.</em>
@@ -88,11 +91,10 @@ it was doing, until some time has passed, then just pick up,
 right where it left off.
 
 
-That may sound identical to `millis()` so let's get down to
-brass tacks.
+#### That may sound identical to `millis()` so let's get down to brass tacks.
 
 `delay()` accepts one parameter, which is an integer that says
-how many millisecond to wait before continuing in the program.
+how many milliseconds to wait before continuing in the program.
 No line of code below it can execute until that time has passed.
 
 `millis()` accepts no parameters.  It provides an 'answer'
@@ -105,11 +107,10 @@ I know what you're thinking; no, it's not accumulative at all.
 Just unplug the USB cable for one second, and plug it back in,
 and see for yourself, when the demonstration code is listed
 (here in this document; it's a work in progress 24 October 2022
-at 17:44 UTC).
+at 20:27 UTC).
 
 
-Revisiting the 'counter' vs 'timer' comparison of the two
-functions
+#### Revisiting the 'counter' vs 'timer' comparison of the two functions
 
 From above:
 
@@ -129,13 +130,13 @@ those 'miles' (count of milliseconds).
 There's no cheating.
 
 So `millis()` isn't a timer; it's a counter, but it counts
-.. milliseconds, which happens to involve 'time'.  Worse, it only
+&hellip; milliseconds, which happens to involve 'time'.  Worse, it only
 upgrades the count when some time has passed (otherwise it'd be
 like putting that drill on the odometer to race it forward 30
 thousand miles in just a few minutes of 'bench' time).
 
 
-How to use it `millis()` - abstract
+#### How to use it `millis()` - abstract
 
 You walk into the kitchen, glance at the clock on the wall,
 write down the time it shows, and walk out of the kitchen.
@@ -188,7 +189,7 @@ old clocks had an 'escapement' that prevented them from running
 faster than wanted (which they were prone to do, otherwise).
 
 
-Timer vs Counter (yes more rant)
+#### Timer vs Counter (yes more rant)
 
 When people had stopwatches working pretty good, now they wanted
 to set a very precise time to 'count down to'.  They wanted
@@ -217,4 +218,4 @@ The MCU chip does have a peripheral inside it called the
 the only way to do things, but is one available mechanism.
 
 
-END.
+#### END.
