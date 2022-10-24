@@ -11,7 +11,9 @@ You can skip over this, then come back later and read it when your combined sket
 
 these can appear anywhere in the code but usually appear at the top with the author, description etc
 
-Example
+**Example**
+
+![image](images/CombiningSketches/comments.png)
 
 
 
@@ -41,9 +43,53 @@ In this case the library file is not in the normal location.
 If it is in the same directory as the sketch, then it will use this format. 
 *It may also have the full path to the file as well, but this is a special case.*
 
-##Definition Section
+## Definition Section
 
-Usually, a sketch will have constants here. These are variable that do not change
+Usually, a sketch will have constants here. These are variables that do not change
 
-examples
+**Example**
+
+![image](images/CombiningSketches/defines.png)
+
+*Note: there are no semi colons after a define.*
+
+##Global Variables
+
+A variable that changes and is used though out the sketch has a global scope. This means the variable can be accessed anywhere in the sketch.
+
+**Example**
+
+![image](images/CombiningSketches/global.png)
+
+
+## Functions
+
+This is a section that may or not be in the sketch. Usual coding practice is to have any functions that are used in the sketch located here
+
+These functions may be simple or complex.
+
+**Example**
+
+
+![image](images/CombiningSketches/functions.png)
+
+in the program, you would call this function with
+
+![image](images/CombiningSketches/functions2.png)
+
+## Setup
+
+this is a special section that runs once when the Arduino starts.
+
+In this there are commands to start devices and or libraries. 
+Setup serial ports basically anything that needs to be done ONCE when the Arduino starts
+
+
+**Example**
+
+![image](images/CombiningSketches/setup.png)
+
+
+
+
 
