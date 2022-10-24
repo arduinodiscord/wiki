@@ -122,7 +122,7 @@ This is the second file Hello World
 These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
 
 
-Here are the two files side by side. With the IDE you can open two files and set them up, side by side.
+Here are the two files side by side. With the IDE you can open two files and set them up, side by side. Basically open the ide twice.
 
 ![image](images/CombiningSketches/sidebyside.png)
 
