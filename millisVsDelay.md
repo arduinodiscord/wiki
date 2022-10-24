@@ -4,6 +4,8 @@
 
 `millis()` is a counter but is not a timer;  `delay()` is a timer but is not a counter.
 
+<em>More on this in a bit.</em>
+
 `delay()` wants something from you (instructions on how to do exactly what is requested).
 `millis()` wants nothing from you - it is a provider of information.  `delay()` provides no information.
 
@@ -86,5 +88,24 @@ the USB cable for one second, and plug it back in, and see for yourself,
 when the demonstration code is listed (here in this document; it's a work
 in progress 24 October 2022 at 17:44 UTC).
 
-bye.
 
+Revisiting the 'counter' vs 'timer' comparison of the two functions
+
+From above:
+
+`millis()` is a counter but is not a timer;  `delay()` is a timer but is not a counter.
+
+Yes, `millis()` is a counter, but we are also aware of what it's counting and
+when it counts it.  `millis()` is a counter that 'evolves by a clock'.  It's
+like an odometer in your car.  You could pry it out, put it on a drill, and
+spin it to artificially change that count in a very short while.
+
+`millis()` is like a secure odometer that's tamper-proof; you have to wait the
+required time before `millis()` will rack up those 'miles' (count of milliseconds).
+
+There's no cheating.
+
+So `millis()` isn't a timer; it's a counter, but it counts .. milliseconds, which
+happens to involve 'time'.  Worse, it only upgrades the count when some time has
+passed (otherwise it'd be like putting that drill on the odometer to race it forward
+30 thousand miles in just a few minutes of 'bench' time).
