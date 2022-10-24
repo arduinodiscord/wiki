@@ -13,7 +13,7 @@ these can appear anywhere in the code but usually appear at the top with the aut
 
 Example
 
-![image](https://user-images.githubusercontent.com/6262140/197425089-426d3cd8-ea04-4d6f-94e6-5078ad8b992e.png)
+
 
 The block comments start with /* and end with */
 
