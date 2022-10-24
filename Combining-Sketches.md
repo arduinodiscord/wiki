@@ -98,3 +98,138 @@ Once setup has run, loop runs continuously. This is where your main code will be
 **Example**
 
 ![image](images/CombiningSketches/loop.png)
+
+In this lesson on combining sketches, we will be using two sketches from the examples for two libraries.
+
+One from LiquidCrytstal Library
+
+![image](images/CombiningSketches/LiquidCrytstalLibrary.png)
+
+The other from Adafruit DHT Sensor Library
+
+![image](images/CombiningSketches/AdafruitDHTSensorLibrary.png)
+
+
+This is the first file   DHT_Unified_Sensor
+
+![image](images/CombiningSketches/DHTSensorLibraryExample.png)
+
+
+This is the second file Hello World
+
+![image](images/CombiningSketches/LiquidCrytstalExample.png)
+
+These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
+
+
+Here are the two files side by side. With the IDE you can open two files and set them up, side by side.
+
+![image](images/CombiningSketches/sidebyside.png)
+
+in each file there is a large comments block. To tidy up, we will remove them. This is optional.
+
+This gives us the two files – in a form that is a little easier to work on
+
+![image](images/CombiningSketches/sidebyside2.png)
+
+First up, we copy the library load section
+
+![image](images/CombiningSketches/sidebyside3.png)
+
+This is the section copied from right file to left file
+
+![image](images/CombiningSketches/sidebyside4.png)
+
+The next section is the Definition Section
+
+In these particular files, there are definitions in one file. We copy from the right side to the left side sketch. 
+Checking that there are no definitions with the same names and or different values.
+
+![image](images/CombiningSketches/sidebyside5.png)
+
+
+This is the section copied from right file to left file
+
+![image](images/CombiningSketches/sidebyside6.png)
+
+
+Next is the Global Variables Section
+
+![image](images/CombiningSketches/sidebyside7.png)
+
+Copy the variables and library initializer values
+Again checking that there are no variables with the same names and or different values.
+
+This is the section copied from right file to left file
+
+![image](images/CombiningSketches/sidebyside8.png)
+
+Next section is the  Setup
+
+![image](images/CombiningSketches/sidebyside9.png)
+
+NOTE:  The contents of the Setup as copied but NOT the 
+
+![image](images/CombiningSketches/nosetup.png)
+
+
+Or the 
+
+![image](images/CombiningSketches/nobracket.png)
+
+at the end.
+
+This is the section copied from right file to left file
+
+![image](images/CombiningSketches/sidebyside10.png)
+
+
+Next is the loop
+
+![image](images/CombiningSketches/sidebyside11.png)
+
+
+NOTE:  The contents of the loop are copied but NOT the 
+
+![image](images/CombiningSketches/notloop.png)
+
+Or the 
+
+![image](images/CombiningSketches/nobracket.png)
+
+at the end.
+
+![image](images/CombiningSketches/sidebyside12.png)
+
+
+The two sketches are combined.
+
+If you now run verify, the sketch on the left should be able to verify
+
+
+![image](images/CombiningSketches/verifycompile.png)
+
+
+![image](images/CombiningSketches/verifycompile2.png)
+
+This combined sketch is complete except for changing the code to use both sketches features
+
+
+![image](images/CombiningSketches/filecombodemo.gif)
+
+
+
+
+In this case, using the LCD to display the temperature and humidity readings
+
+
+
+
+
+
+
+
+
+
+
+
