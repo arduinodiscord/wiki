@@ -16,7 +16,6 @@ These can appear anywhere in the code but usually appear at the top with the aut
 ![image](images/CombiningSketches/comments.png)
 
 
-
 The block comments start with /\*and end with\*/
 
 A single line comment starts with //
@@ -40,7 +39,9 @@ In special cases, the library include statement might be in the form of:
 ```#include "library file name"```
 
 In this case the library file is not in the normal location. 
-If it is in the same directory as the sketch, then it will use this format. 
+
+If it is in the same directory as the sketch, then it will use this format.
+
 *It may also have the full path to the file as well, but this is a special case.*
 
 ## Definition Section
@@ -71,7 +72,6 @@ These functions may be simple or complex.
 
 **Example**
 
-
 ![image](images/CombiningSketches/functions.png)
 
 In the program, you would call this function with
@@ -80,9 +80,11 @@ In the program, you would call this function with
 
 ## Setup
 
-this is a special section that runs once when the Arduino starts.
 
-In this there are commands to start devices and or libraries. 
+This is a special section that runs once when the Arduino starts.
+
+In this there are commands to start devices and or libraries.
+
 Setup serial ports basically anything that needs to be done ONCE when the Arduino starts
 
 
@@ -92,12 +94,15 @@ Setup serial ports basically anything that needs to be done ONCE when the Arduin
 
 ## Loop
 
-this is the section that runs all the time after setup.
+
+This is the section that runs all the time after setup.
+
 Once setup has run, loop runs continuously. This is where your main code will be.
 
 **Example**
 
 ![image](images/CombiningSketches/loop.png)
+
 
 In this lesson on combining sketches, we will be using two sketches from the examples for two libraries.
 
@@ -221,6 +226,7 @@ This combined sketch is complete except for changing the code to use both sketch
 
 
 In this case, using the LCD to display the temperature and humidity readings
+
 
 
 

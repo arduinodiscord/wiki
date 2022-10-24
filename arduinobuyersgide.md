@@ -1,22 +1,23 @@
 # Arduino Buyers Guide  | [HOME](README.md) |
 
-### This is a guide on all the different Arduino's.
 
-### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder.
+### This is a guide on all the different Arduino's
 
-### The Leonardo has the same form-factor as the Uno but can be used as a hid device, like a gamepad or "button-box" and such.
+### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder
 
-### The Mega 2560 is extreamly common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this.
+### The Leonardo has the same form-factor as the Uno but can be used as a hid device, like a gamepad or "button-box" and such
 
-### The Micro is good to use on a breadboard and is compact this has the same chip as the Leonardo.
+### The Mega 2560 is extreamly common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this
 
-### The Due also has a lot of IO, has more memory than the Mega 2560. This makes it a great starter board also.
+### The Micro is good to use on a breadboard and is compact this has the same chip as the Leonardo
 
-### The nano has the same chip as the Uno so can be used in a final product. MAny times its easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product.
+### The Due also has a lot of IO, has more memory than the Mega 2560. This makes it a great starter board also
+
+### The nano has the same chip as the Uno so can be used in a final product. Many times it's easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product
 
 ---
-# Below is a chart of the more common arduino boards.
 
+# Below is a chart of the more common arduino boards
 
 | Name                        | [UNO](https://store.arduino.cc/products/arduino-uno-rev3)        | [Leonardo](https://store.arduino.cc/products/arduino-leonardo-with-headers)   | [Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)  | [Micro](https://store.arduino.cc/products/arduino-micro)      | [Due](https://store.arduino.cc/products/arduino-due)         | nano      |
 | --------------------------- | ---------- | ---------- | ---------- | ---------- | ----------- | --------- |
