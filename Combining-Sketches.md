@@ -77,7 +77,7 @@ In the program, you would call this function with
 
 ## Setup
 
-this is a special section that runs once when the Arduino starts.
+This is a special section that runs once when the Arduino starts.
 
 In this there are commands to start devices and or libraries.
 Setup serial ports basically anything that needs to be done ONCE when the Arduino starts

@@ -12,14 +12,14 @@ Using a button in this manner is called "commly open". This means that when the 
 
 - #### Side-A of the button will be connected to the Arduino pin
   - **EXAMPLE A**
-- #### Side-B of the button will be connected to VCC, or 5v/3.3v {depending on the Arduino you are using.
+- #### Side-B of the button will be connected to VCC, or 5v/3.3v {depending on the Arduino you are using.}
   - **EXAMPLE B**
 - #### Side-A will also be connected to a resistor. The resistor value will be between 1K and 10K. Any value in between will work.
   - **EXAMPLE C**
 - #### The other side of the resistor will then be connected to GND.
   - **EXAMPLE D**
 
-Using this wiring, the resistor is said to be a "pull-down" resistor. Tis simply means that the resistor is pulling the Arduino pin to GND when the button is NOT pressed.
+Using this wiring, the resistor is said to be a "pull-down" resistor. This simply means that the resistor is pulling the Arduino pin to GND when the button is NOT pressed.
 
 |                            EXAMPLE A                            |                               EXAMPLE B                                  |                               EXAMPLE C                                 |  EXAMPLE D                                                                |
 | :-------------------------------------------------------------: | :----------------------------------------------------------------------: | :---------------------------------------------------------------------: | ------------------------------------------------------------------------- |

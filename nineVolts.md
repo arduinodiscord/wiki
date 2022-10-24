@@ -1,6 +1,6 @@
 # Nine Volt Battery Basics  | [HOME](README.md) |
 
-There are multiple reasons why using a 9v battery is not a good idea. To start with, a 9v has 6 individual cells that are a little smaller than an AAA. They produce 1.5v each; you get 1.5v X 6 cells = 9v.  But this increases the resistance of the battery more so than others.  This limits how fast the power can leave the battery, and causes the voltage to "sag" when being used by a high-current device, like a motor.
+There are multiple reasons why using a 9v battery is not a good idea. To start with, a 9v has 6 individual cells that are a little smaller than an AAA. They produce 1.5v each you get 1.5v X 6 cells = 9v.  But this increases the resistance of the battery more so than others.  This limits how fast the power can leave the battery, and causes the voltage to "sag" when being used by a high-current device, like a motor.
 
 ![inside a 9v](images/nineVolts/insidea9v.jpg "inside a 9v")
 

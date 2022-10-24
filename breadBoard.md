@@ -44,7 +44,7 @@ If you are working with a development board such as an Arduino, then you can sim
 
 When the button is pushed, it connects the circuit to ground completing the circuit and turning on the LED.
 
-|  <h1> NOTE </h1> |
+|   NOTE  |
 |  :------------:  |
-|<h6> *Some larger breadboards will often isolate one half of the breadboard’s power rails form the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you’re unaware whether the power rails are or aren’t isolated, it can often lead to issues while building your circuit. It’s always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard’s power rails.* </h6>|
+| *Some larger breadboards will often isolate one half of the breadboard’s power rails form the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you’re unaware whether the power rails are or aren’t isolated, it can often lead to issues while building your circuit. It’s always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard’s power rails.* |
 |  ![A dual sided Bread board.](images/breadboard/breadboard8.jpg "this shows a breadboard that is separated in the middle.")  |
