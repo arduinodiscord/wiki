@@ -87,7 +87,17 @@ Setup serial ports basically anything that needs to be done ONCE when the Arduin
 
 **Example**
 
-![image](images/CombiningSketches/setup.png)
+![image](images/CombiningSketches/Setup.png)
+
+## Loop
+
+this is the section that runs all the time after setup.
+Once setup has run, loop runs continuously. This is where your main code will be.
+
+**Example**
+
+![image](images/CombiningSketches/loop.png)
+
 
 
 
