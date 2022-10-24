@@ -109,3 +109,48 @@ So `millis()` isn't a timer; it's a counter, but it counts .. milliseconds, whic
 happens to involve 'time'.  Worse, it only upgrades the count when some time has
 passed (otherwise it'd be like putting that drill on the odometer to race it forward
 30 thousand miles in just a few minutes of 'bench' time).
+
+How to use it `millis()` - abstract
+
+You walk into the kitchen, glance at the clock on the wall, write down the time it shows,
+and walk out of the kitchen.
+
+You do not own a stopwatch.  Just that kitchen clock.
+
+You're wondering if 25 minutes have passed or not - you don't want to be late on this one;
+maybe you're drying some glue on the bench and you want to wait at least 25 minutes.
+
+So you're using your kitchen clock, in the other room, to time the glue drying. ;)
+
+You walk back into the kitchen, and it says the current time on the clock, of course.
+
+You write it down, and head back to the .. the makerspace you got there. ;)
+
+Now you have two times written down; one is from the first time you went into the
+kitchen; the second is the time you wrote down just a moment ago.
+
+
+Now you gotta do some math and figure out how much time went by since you first
+glanced at the kitchen clock, to just a moment ago when you glanced at it again.
+
+Maybe there's 15 minutes difference between those two events.
+
+But you do the math; the clock on the kitchen wall won't do the math for you.
+
+Really it's just a counter that evolves over 'time'.  It's providing you with
+the answer to one question: how many seconds of time has passed since the clock
+ .. get this .. was set.
+
+That's really all it is telling you.  It's giving you an accurate count of the
+number of seconds that have passed since you plugged it in or installed the
+battery or turned on its power switch, if it has one.
+
+But you use the information it gives you, and some math, to come up with a
+substitute for a timer, or a stopwatch.
+
+But it's only a counter; it is not a timer!
+
+It just happens to be a counter that runs on a timebase; the old clocks had
+an 'escapement' that prevented them from running faster than wanted (which
+they were prone to do, otherwise).
+
