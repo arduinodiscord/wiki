@@ -154,3 +154,26 @@ It just happens to be a counter that runs on a timebase; the old clocks had
 an 'escapement' that prevented them from running faster than wanted (which
 they were prone to do, otherwise).
 
+Timer vs Counter (yes more rant)
+
+When people had stopwatches working pretty good, now they wanted to set a very
+precise time to 'count down to'.  They wanted a timer!
+
+A timer accepts instructions on how long it should run before it does something.
+
+The old wind-up kitchen timer was a clock mechanism on a spring; you dialed in
+(by turning a knob) how much time you wanted to let pass by, before making the
+loud dinging sound saying TIME IS UP.
+
+When wristwatches got LCD displays, one of the gadgets the manufacturers built
+into the new 'watch' was a stopwatch.  It counted seconds of time, and usually
+ran at least 24 hours before giving up (or reaching overflow).
+
+Then they said this: hey let's run that backwards; it's almost the same as a
+stopwatch, but has this new feature: you tell it 'how long' and it runs the
+time backwards.  It's exactly like running a stopwatch in reverse, from the
+end of the run back to the start of the run. ;)
+
+The MCU chip does have a peripheral inside it called the `counter-timer` which
+may be behind a lot of this.  That's not the only way to do things, but is one
+available mechanism.
