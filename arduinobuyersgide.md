@@ -6,13 +6,13 @@
 
 ### The Leonardo has the same form-factor as the Uno but can be used as a hid device, like a gamepad or "button-box" and such
 
-### The Mega 2560 is extreamly common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for thi
+### The Mega 2560 is extreamly common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this
 
 ### The Micro is good to use on a breadboard and is compact this has the same chip as the Leonardo
 
 ### The Due also has a lot of IO, has more memory than the Mega 2560. This makes it a great starter board also
 
-### The nano has the same chip as the Uno so can be used in a final product. MAny times its easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product
+### The nano has the same chip as the Uno so can be used in a final product. Many times it's easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product
 
 ---
 
