@@ -1,7 +1,5 @@
 # millis() versus delay() | [HOME](README.md) |
 
-## `millis()` versus `delay()`
-
 `millis()` is a counter but is not a timer;  `delay()` is a
 timer but is not a counter.
 
