@@ -1,7 +1,7 @@
-# Combining Sketches
+# Combining Sketches  | [HOME](README.md) |
 
-When combining two or more sketches, it is VERY important that you understand the various sections of the sketch, 
-the next part of this guide is describing these sections. 
+When combining two or more sketches, it is VERY important that you understand the various sections of the sketch. 
+The next part of this guide is describing these sections. 
 
 You can skip over this, then come back later and read it when your combined sketches don’t work.
 
@@ -9,7 +9,7 @@ You can skip over this, then come back later and read it when your combined sket
 
 ## Block comments
 
-these can appear anywhere in the code but usually appear at the top with the author, description etc
+These can appear anywhere in the code but usually appear at the top with the author, description etc.
 
 **Example**
 
@@ -19,23 +19,24 @@ these can appear anywhere in the code but usually appear at the top with the aut
 
 The block comments start with /* and end with */
 
-a single line comment starts with //
+A single line comment starts with //
 
 When combining sketches, you can ignore the comment lines and comment blocks if you want as Arduino code ignores these.
 
 
 ## Libraries Include Section
 
-This section appears at the very top of the sketch 
-*(note: there are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen.  It will appear are a #define XXXXXXX before the include library statement)*
+This section appears at the very top of the sketch.
+###note: 
+##### *(there are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen.  It will appear are a #define XXXXXXX before the include library statement)*
 
-The library load/include command is in the form of
+The library load/include command is in the form of:
 
 ```#include <library file name>```
   
 This will load and include the library if it is in the standard library path. If you load a library using the library manager, then the library will be in the correct place to be loaded with this statement.
 
-In special cases, the library include statement might be in the form of
+In special cases, the library include statement might be in the form of:
 
 ```#include "library file name" ```
 
@@ -45,15 +46,16 @@ If it is in the same directory as the sketch, then it will use this format.
 
 ## Definition Section
 
-Usually, a sketch will have constants here. These are variables that do not change
+Usually, a sketch will have constants here. These are variables that do not change.
 
 **Example**
 
 ![image](images/CombiningSketches/defines.png)
 
-*Note: there are no semi colons after a define.*
+### Note: 
+##### *there are no semi colons after a define.*
 
-##Global Variables
+## Global Variables
 
 A variable that changes and is used though out the sketch has a global scope. This means the variable can be accessed anywhere in the sketch.
 
@@ -64,7 +66,7 @@ A variable that changes and is used though out the sketch has a global scope. Th
 
 ## Functions
 
-This is a section that may or not be in the sketch. Usual coding practice is to have any functions that are used in the sketch located here
+This is a section that may or not be in the sketch. Usual coding practice is to have any functions that are used in the sketch located here.
 
 These functions may be simple or complex.
 
@@ -73,7 +75,7 @@ These functions may be simple or complex.
 
 ![image](images/CombiningSketches/functions.png)
 
-in the program, you would call this function with
+In the program, you would call this function with
 
 ![image](images/CombiningSketches/functions2.png)
 
@@ -97,9 +99,3 @@ Once setup has run, loop runs continuously. This is where your main code will be
 **Example**
 
 ![image](images/CombiningSketches/loop.png)
-
-
-
-
-
-
