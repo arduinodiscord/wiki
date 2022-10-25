@@ -9,7 +9,7 @@ Using a button in this manner is called "commonly open". This means that when th
 
 ## When we use a button with a micro-controller, there are a few challenges to deal with. First is wiring
 
-## The wiring for a button will be
+### *The wiring for a button will be:*
 
 - #### Side-A of the button will be connected to the Arduino pin
   - **EXAMPLE A**
