@@ -39,7 +39,7 @@ have passed, since 'time began'.
 That count begins when power is applied to an Arduino board.
 
 ```
-int what_time_is_it_now = millis();
+unsigned long what_time_is_it_now = millis();
 ```
 
 The value stored in 'what_time_is_it_now' reflects how many
