@@ -54,6 +54,6 @@
 
 #### As you can see, the perfect resistor value would be 320 Ohms. If you don't have a resistor for that value, you can use the next size larger than it, OR you can put two smaller resistors end to end and use them that way
 
-> **Note** *A `220-ohm` resistor and a 220-ohm resistor can make a `440-ohm` resistor.*
+> **Note**: *A `220-ohm` resistor and a `220-ohm` resistor can make a `440-ohm` resistor.*
 >
 > **Note**: There is also a [resistor calculator](https://ohmslawcalculator.com/led-resistor-calculator "resistor online calculator") you can use, if you have the data for your LED

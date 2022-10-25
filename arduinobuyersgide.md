@@ -1,13 +1,12 @@
 # Arduino Buyers Guide  | [HOME](README.md) |
 
-
 ### This is a guide on all the different Arduino's
 
-### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder
+### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder.
 
 ### The Leonardo has the same form-factor as the Uno but can be used as a hid device, like a gamepad or "button-box" and such
 
-### The Mega 2560 is extreamly common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this
+### The Mega 2560 is extremely common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this
 
 ### The Micro is good to use on a breadboard and is compact this has the same chip as the Leonardo
 
@@ -38,4 +37,3 @@
 | LENGTH                      | 68.6 mm    | 68.6 mm    | 101.52 mm  | 48 mm      | 101.52 mm   | 18 mm     |
 | WIDTH                       | 53.4 mm    | 53.3 mm    | 53.3 mm    | 18 mm      | 53.3 mm     | 45 mm     |
 | WEIGHT                      | 25 g       | 20 g       | 37 g       | 13 g       | 36 g        | 7 g       |
-

@@ -5,11 +5,11 @@
 
 ### In its basic form, a button is no more than a wire with a break in it.  A standard button will be "open" until you press the button. At that point, the two parts of the button make contact, and the button is said to be "closed"
 
-Using a button in this manner is called "commly open". This means that when the button is NOT pressed, there is no connection from one side to the other.
+Using a button in this manner is called "commonly open". This means that when the button is NOT pressed, there is no connection from one side to the other.
 
-## When we use a button with a microcontroller, there are a few challenges to deal with. First is wireing
+## When we use a button with a micro-controller, there are a few challenges to deal with. First is wiring
 
-## The wiring for a button will be:
+## The wiring for a button will be
 
 - #### Side-A of the button will be connected to the Arduino pin
   - **EXAMPLE A**
@@ -23,9 +23,9 @@ Using a button in this manner is called "commly open". This means that when the 
 Using this wiring, the resistor is said to be a "pull-down" resistor. This simply means that the resistor is pulling the Arduino pin to GND when the button is NOT pressed.
 
 
-|                            EXAMPLE A                            |                               EXAMPLE B                                  |                               EXAMPLE C                                 |  EXAMPLE D                                                                |
-| :-------------------------------------------------------------: | :----------------------------------------------------------------------: | :---------------------------------------------------------------------: | ------------------------------------------------------------------------- |
-| ![](images/buttons/button-1B.png "example of wireing side A")   | ![](images/buttons/button-1C.png "example of wireing on putton side B")   | ![](images/buttons/button-1D.png "Example of wireing resistor side A")   | ![](images/buttons/button-1E.png " final wireing of gnd wire to resistor") |
+|                             EXAMPLE A                              |                                  EXAMPLE B                                   |                                  EXAMPLE C                                  | EXAMPLE D                                                                       |
+| :----------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | ------------------------------------------------------------------------------- |
+| ![button](images/buttons/button-1B.png "example of wiring side A") | ![button](images/buttons/button-1C.png "example of wiring on button side B") | ![button](images/buttons/button-1D.png "Example of wiring resistor side A") | ![button](images/buttons/button-1E.png " final wiring of gnd wire to resistor") |
 
 
 #### When you first start working with buttons, it is best to select 2 pins that are diagonal from each other. Until you understand how a button is orentated, this is the easiest way of making sure you wire the button correctly. There is some test code that will test if you have the button wired correctly, and that it is functioning
@@ -33,8 +33,8 @@ Using this wiring, the resistor is said to be a "pull-down" resistor. This simpl
 ## CODE SNIPIT
 
 
-```
-// the button is conected to pin seven so thats what the below line does.
+```cpp
+// the button is connected to pin seven so thats what the below line does.
 byte buttonPin = 7;
 
 void setup(){
@@ -62,11 +62,12 @@ void loop(){
 
 ## **WARNING**⚠️
 
-
 #### If the led's on the Arduino board turns OFF every time you press the button, OR if when you CONNECT the button, you have a short, do not operate the Arduino in this case.  Pull all of the wires from the Arduino so no wires are connected to it other than the USB. If the led lights up again, then you  need to rewire the button over again
 
+#### If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHEMATIC example
 
-#### If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHMATIC example.
 ![Schematic of a button](images/buttons/buttonSchmatic.png "schematic of a button")
+
 ---
+
 ![example of button sides](images/buttons/button-A.png "example of the sides of a button")
