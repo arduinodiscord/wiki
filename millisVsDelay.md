@@ -20,7 +20,7 @@ So, by using `millis()` instead of `delay()` your program can do
 much more, in the same amount of time.
 
 
-`Blink Without Delay`
+#### Blink Without Delay demonstrates `millis()`
 
 [BlinkWithoutDelay.ino](https://github.com/arduino/arduino-examples/blob/main/examples/02.Digital/BlinkWithoutDelay/BlinkWithoutDelay.ino) *on the Arduino github*
 
@@ -50,6 +50,12 @@ after power is applied to the board).
 `millis()` resets to zero when power is removed from the Arduino
 board.
 
+*The output of `millis()` is a snapshot of its current value,
+'now', expressed as an integer.*
+
+*`millis()` returns a series of numbers, always increasing; one
+for each time it is called.*
+
 These 'serial numbers' are simply a count.  They're a count
 of the exact number of *milliseconds* of (real clock) time
 (approximately) since the Arduino was 'started' (powered on).
@@ -62,7 +68,7 @@ development, for one-off proof-of-concept work that does not need
 to do very much at all, to be considered a successful program.
 
 
-#### Scenario - using `delay()` fast prototyping
+#### Scenario - using `delay()` for fast prototyping
 
 *The presenter has one hour to put something together, having been
 asked to speak to a classroom about the Arduino, just moments ago.*
@@ -136,7 +142,7 @@ be like putting that drill on the odometer, to race it forward 30
 thousand miles in just a few minutes of 'bench' time).
 
 
-#### How to use it `millis()` - abstract
+#### How to use it: `millis()` - *in the abstract*
 
 ***An analogy***
 
@@ -219,9 +225,7 @@ Then they said this: hey let's run that backwards; the countdown
 timer could be made almost the same way as a stopwatch, but it
 could have this new feature:
 
-you tell it 'how long'&hellip; and it runs the time backwards.
-It's exactly like running a stopwatch in reverse, from the end
-of the run, back to the start of the run. ;)
+> you tell it 'how long'&hellip; and it runs the timer backwards.  It's exactly like running a stopwatch in reverse, from the end of the run, back to the start of the run. ;)
 
 The MCU chip does have a peripheral inside it called the
 `counter-timer` which may be behind a lot of this.  That's not
