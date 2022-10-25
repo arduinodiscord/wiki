@@ -44,11 +44,11 @@ unsigned long what_time_is_it_now = millis();
 
 The value stored in 'what_time_is_it_now' reflects how many
 milliseconds of time have passed, since the Arduino board's
-`setup()` program first started to run (which happens immediately
-after power is applied to the board).
+`setup()` function first started to run (which happens
+almost immediately after power is applied to the board).
 
-`millis()` resets to zero when power is first applied to the Arduino
-board.
+`millis()` resets to zero when power is first applied to the
+Arduino board.
 
 *The output of `millis()` is a snapshot of its current value,
 'now', expressed as an integer.*
