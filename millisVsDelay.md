@@ -47,7 +47,7 @@ milliseconds of time have passed, since the Arduino board's
 `setup()` program first started to run (which happens immediately
 after power is applied to the board).
 
-`millis()` resets to zero when power is removed from the Arduino
+`millis()` resets to zero when power is first applied to the Arduino
 board.
 
 *The output of `millis()` is a snapshot of its current value,
