@@ -18,7 +18,7 @@
 # Below is a chart of the more common arduino boards.
 
 
-| Name                        | [UNO](https://store.arduino.cc/products/arduino-uno-rev3)        | [Leonardo](https://store.arduino.cc/products/arduino-leonardo-with-headers)   | [Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)  | [Micro](https://store.arduino.cc/products/arduino-micro)      | [Due](https://store.arduino.cc/products/arduino-due)         | nano      |
+| Name                        | [UNO](https://store.arduino.cc/products/arduino-uno-rev3)        | [Leonardo](https://store.arduino.cc/products/arduino-leonardo-with-headers)   | [Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)  | [Micro](https://store.arduino.cc/products/arduino-micro)      | [Due](https://store.arduino.cc/products/arduino-due)         | [nano](https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us)      |
 | --------------------------- | ---------- | ---------- | ---------- | ---------- | ----------- | --------- |
 | MICROCONTROLLER             | ATmega328P | ATmega32u4 | ATmega2560 | ATmega32U4 | AT91SAM3X8E | ATmega328 |
 | OPERATING VOLTAGE           | 5V         | 5V         | 5V         | 5V         | 3.3V        | 5 V       |
