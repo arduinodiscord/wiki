@@ -67,6 +67,6 @@ void loop(){
 
 
 #### If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHMATIC example.
-![Schmatic of a button](images/buttons/buttonSchmatic.png "schmatic of a button")
+![Schematic of a button](images/buttons/buttonSchmatic.png "schematic of a button")
 ---
 ![example of button sides](images/buttons/button-A.png "example of the sides of a button")
