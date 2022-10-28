@@ -3,7 +3,7 @@
 `millis()` is a counter but is not a timer;  `delay()` is a
 timer but is not a counter.
 
-<em>More on this in a bit.</em>
+*More on this in a bit.*
 
 
 `delay()` wants something from you (instructions on how to do
@@ -11,26 +11,18 @@ exactly what is requested).
 
 `millis()` wants nothing from you - it is a provider of
 information.  `delay()` provides no information.
+- `delay()` shuts most things down, that were already running *[EDITOR: true? bs?]*
+- `delay()` 'blocks' progress
+- `millis()` runs in the background
+- `millis()` does not 'block' progress
 
-
-<ul>
- <li> delay shuts most things down, that were already running [<em>EDITOR: true? bs?</em>]
- <li> delay 'blocks' progress
-</ul>
-<p>
-<ul>
- <li> millis runs in the background
- <li> millis does not 'block' progress
-</ul>
-
-So, by using millis() instead of delay() your program can do
+So, by using `millis()` instead of `delay()` your program can do
 much more, in the same amount of time.
 
 
+#### Blink Without Delay demonstrates `millis()`
 
-`Blink Without Delay`
-
-  https://github.com/arduino/arduino-examples/blob/main/examples/02.Digital/BlinkWithoutDelay/BlinkWithoutDelay.ino
+[BlinkWithoutDelay.ino](https://github.com/arduino/arduino-examples/blob/main/examples/02.Digital/BlinkWithoutDelay/BlinkWithoutDelay.ino) *on the Arduino github*
 
 
 
@@ -39,24 +31,30 @@ much more, in the same amount of time.
 *Whatever it is, it's not millis()*
 
 
-`What does millis() provide?`
+#### What does millis() provide?
 
-millis() provides a count of the number of milliseconds that
+`millis()` provides a count of the number of milliseconds that
 have passed, since 'time began'.
 
 That count begins when power is applied to an Arduino board.
 
 ```
-int what_time_is_it_now = millis();
+unsigned long what_time_is_it_now = millis();
 ```
 
 The value stored in 'what_time_is_it_now' reflects how many
 milliseconds of time have passed, since the Arduino board's
-`setup()` program first started to run (which happens immediately
-after power is applied to the board).
+`setup()` function first started to run (which happens
+almost immediately after power is applied to the board).
 
-`millis()` resets to zero when power is removed from the Arduino
-board.
+`millis()` resets to zero when power is first applied to the
+Arduino board.
+
+*The output of `millis()` is a snapshot of its current value,
+'now', expressed as an integer.*
+
+*`millis()` returns a series of numbers, always increasing; one
+for each time it is called.*
 
 These 'serial numbers' are simply a count.  They're a count
 of the exact number of *milliseconds* of (real clock) time
@@ -70,22 +68,22 @@ development, for one-off proof-of-concept work that does not need
 to do very much at all, to be considered a successful program.
 
 
-#### Scenario - using `delay()` fast prototyping
+#### Scenario - using `delay()` for fast prototyping
 
-<em>The presenter has one hour to put something together, having been
-asked to speak to a classroom about the Arduino, just moments ago.</em>
+*The presenter has one hour to put something together, having been
+asked to speak to a classroom about the Arduino, just moments ago.*
 
-<em>Since the audience is expected to know little or nothing about
+*Since the audience is expected to know little or nothing about
 programming or microcontrollers or LEDs, making an LED blink from
 scratch might be a useful impressive demonstration.  The 'from
 scratch' part is what's going to get a 'wow' from the audience,
-if it's done right.</em>
+if it's done right.*
 
 Anything but `delay()` will be lost on that audience, but a
 blinking light is going to get them going.  They'll be .. okay,
 maybe not.  This is a first draft scenario. ;)
 
-So what delay() provides is a pause in program execution. It
+So what `delay()` provides is a pause in program execution. It
 just tells the Arduino hardware (an MCU chip) to stop whatever
 it was doing, until some time has passed, then just pick up,
 right where it left off.
@@ -103,16 +101,16 @@ to this question:
 How many milliseconds of time have passed, since I first applied
 power?
 
-I know what you're thinking; no, it's not accumulative at all.
+*I know what you're thinking; no, it's not accumulative at all.
 Just unplug the USB cable for one second, and plug it back in,
 and see for yourself, when the demonstration code is listed
 (here in this document; it's a work in progress 24 October 2022
-at 20:27 UTC).
+at 20:27 UTC).*
 
 
 #### Revisiting the 'counter' vs 'timer' comparison of the two functions
 
-From above:
+*From the above:*
 
 `millis()` is a counter but is not a timer;  `delay()` is a
 timer but is not a counter.
@@ -136,6 +134,7 @@ those 'miles' (count of milliseconds).
 
 There's no cheating.
 
+
 So `millis()` isn't a timer&mdash;it's a counter; but it counts
 &hellip; milliseconds, which happens to involve 'time'.  Worse,
 only upgrades the count when some time has passed (otherwise it'd
@@ -143,7 +142,11 @@ be like putting that drill on the odometer, to race it forward 30
 thousand miles in just a few minutes of 'bench' time).
 
 
-#### How to use it `millis()` - abstract
+#### How to use it: `millis()` - *in the abstract*
+
+***An analogy***
+
+##### Timing without a Timer - Kitchen Clock
 
 You walk into the kitchen, glance at the clock on the wall,
 write down the time it shows, and walk out of the kitchen.
@@ -161,7 +164,7 @@ You walk back into the kitchen, to read the current time on
 the clock.
 
 You write it down, and head back to the &hellip; the makerspace you
-got there. ;)  <em>Your bench.</em>
+got there. ;)  *Your bench.*
 
 Now you have two times written down; one is from the first time
 you went into the kitchen; the second is the time you wrote down
@@ -176,13 +179,13 @@ Maybe there's 15 minutes difference between those two events.
 But you do the math; the clock on the kitchen wall won't do the
 math for you.
 
-Really, the kitchen clock is just a counter that evolves over 'time'.
+Really, ***the kitchen clock is just a counter that evolves over 'time'.***
 It's providing you with the answer to one question: how many seconds
 of time have passed since the clock&hellip; get this&hellip; was set.
 
-That's really all it is telling you.  It's <em>giving you an accurate
+That's really all it is telling you.  It's *giving you an accurate
 count of the number of seconds that have passed since you plugged
-it in</em> or installed the battery or turned on its power switch,
+it in* or installed the battery or turned on its power switch,
 if it has one.
 
 You use the information it gives you, and some math, to come
@@ -190,7 +193,7 @@ up with a substitute for a timer, or a stopwatch.
 
 But it's only a counter; it is not a timer!
 
-It just happens to be a counter that runs on a <em>timebase</em>; the
+It just happens to be a counter that runs on a *timebase*; the
 old clocks had an 'escapement' that prevented them from running
 faster than wanted (which they were prone to do, otherwise).
 
@@ -198,13 +201,13 @@ faster than wanted (which they were prone to do, otherwise).
 #### Timer vs Counter (yes more rant)
 
 When people had stopwatches working pretty good, then they wanted
-to set a very precise time to <em>'count down to'</em>.  They
+to set a very precise time to *'count down to'*.  They
 wanted a timer!
 
 A timer accepts instructions that say how long the timer should
 run, before it does something interesting.
 
-<em>Like telling you that time's up.</em>
+*Like telling you that time's up.*
 
 The old wind-up kitchen timer was a clock mechanism on a spring;
 you dialed in (by turning a knob) how much time you wanted to let
@@ -222,9 +225,7 @@ Then they said this: hey let's run that backwards; the countdown
 timer could be made almost the same way as a stopwatch, but it
 could have this new feature:
 
-you tell it 'how long'&hellip; and it runs the time backwards.
-It's exactly like running a stopwatch in reverse, from the end
-of the run, back to the start of the run. ;)
+> you tell it 'how long'&hellip; and it runs the timer backwards.  It's exactly like running a stopwatch in reverse, from the end of the run, back to the start of the run. ;)
 
 The MCU chip does have a peripheral inside it called the
 `counter-timer` which may be behind a lot of this.  That's not

@@ -6,7 +6,7 @@
 
 ### Diodes are devices that let electricity flow only in one direction. LEDs work the same way, as they are also diodes
 
-#### When you connect an LED to a circuit, you have a direct link from one leg of the diode to the other.  LEDs can not process large amounts of current; they are limited to 20ma or less. Although they may try and pass the full current, doing so will cause damage to the LED, or shorten its performance efficiency *(or damage/shorten the life of the pin of the Arduino).*
+#### When you connect an LED to a circuit, you have a direct link from one leg of the diode to the other.  LEDs can not process large amounts of current they are limited to 20ma or less. Although they may try and pass the full current, doing so will cause damage to the LED, or shorten its performance efficiency *(or damage/shorten the life of the pin of the Arduino).*
 
 #### To stop this from happening, we use a resistor. This limits the amount of current flowing through the LED, so it lights and doesn't burn out
 
@@ -54,6 +54,6 @@
 
 #### As you can see, the perfect resistor value would be 320 Ohms. If you don't have a resistor for that value, you can use the next size larger than it, OR you can put two smaller resistors end to end and use them that way
 
-> **Note** *A `220-ohm` resistor and a 220-ohm resistor can make a `440-ohm` resistor.*
+> **Note**: *A `220-ohm` resistor and a `220-ohm` resistor can make a `440-ohm` resistor.*
 >
 > **Note**: There is also a [resistor calculator](https://ohmslawcalculator.com/led-resistor-calculator "resistor online calculator") you can use, if you have the data for your LED
