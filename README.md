@@ -6,7 +6,7 @@ Welcome to the open source wiki for the arduino discord server. Here you can fin
 |   Popular Pages                                    |
 | :------------------------------------------------: |
 |    [LED Basics](ledResistors.md)                   |
-|    [Arduino Buyers guide](arduinobuyersgide.md)    |
+|    [Arduino Buyers guide](arduinobuyersguide.md)    |
 |    [Nine Volt Battery Basics](nineVolts.md)        |
 |    [Button Basics](buttons.md)                     |
 |    [Breadboard Basics](breadBoard.md)              |
