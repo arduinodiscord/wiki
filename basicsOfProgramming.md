@@ -1,7 +1,8 @@
 # Basics of Programming | [HOME](README.md) |
 # What is Programming?
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
+
 
 *Programming* is a means to tell a computer (or, in the case of
 the Arduino, a *microcontroller*) what to do, when to do it and how
@@ -9,7 +10,7 @@ to do it, and if to keep on doing it 'forever' or for an amount of
 time, or (yup, there's more options) &hellip; until some resource
 it needs (to keep running) has been completely used up.
 
-## Scenario: potato-chip counting machine
+#### Scenario: potato-chip counting machine
 
 *You want to build a machine that counts potato chips in your potato
 chip factory.  It's a task well-suited to industrial microcontrollers,
@@ -23,13 +24,14 @@ instructions via wires &hellip; or, in the modern day, via
 wireless links).*
 
 
-## What, then, is Programming?
+# What, then, is Programming?
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
-### Introduction for Beginners: What is a Computer Language?
 
-[Table of Contents](#table-of-contents)
+#### Introduction for Beginners: What is a Computer Language?
+
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 From Leo Brodie:
 
@@ -56,9 +58,9 @@ had to start somewhere*.  There are many *borrow-words* used in
 *programming*, taken from the learner's native (spoken and written;
 human; pre-computer) language.
 
-### Nuts and Bolts of Programs
+## Nuts and Bolts of Programs
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 The microcontroller (`MCU`) chip itself accepts a long series of
 `1's and 0's` (ones and zeros) as its only means of communication
@@ -76,7 +78,7 @@ new 'program'.
 Nothing else!
 
 ![Altair 8800 from the Computer History Museum - Wikipedia](
-https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg/1024px-Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg)
+https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg/1024px-Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg "8800 from the Computer History Museum - Wikipedia")
 
 *Assembler (assembly language)* would require you to use some
 kind of a typewriter&mdash;or other keyboard-like device&mdash;so
@@ -90,7 +92,7 @@ were incorrect*. ;)
 
 ### Grateful program
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 // #include <Arduino.h> // optional
@@ -116,18 +118,18 @@ void loop() {
 ```
 
 
-### Quick wokwi demo
+#### Quick wokwi demo
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents" "Table Of Contents")
 
-[*Now Playing*](https://wokwi.com/projects/346503862192964178)
+[*Now Playing*](https://wokwi.com/projects/346503862192964178 "Now Playing")
 &nbsp;&nbsp;*on*&nbsp;&nbsp;
-[*wokwi.com*](https://wokwi.com/)
+[*wokwi.com*](https://wokwi.com/ "wokwi.com")
 &nbsp;&nbsp;&nbsp;&nbsp;*See it in action, now!*
 
 ### Ok but this got complicated, fast
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 Yeah, it did. ;)
 
@@ -146,7 +148,7 @@ That lets you cheat, quite a bit. ;)
 
 ### Hide those details in a library
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 [*Misuse Morse with Hidden Details*](https://wokwi.com/projects/346589390531723859)
 **morse_beacon_cheaty.ino** *on wokwi*
@@ -167,11 +169,11 @@ zork:  "You see a jelly nailed to a tree, here.  Exits: East, Up, West"
 
 ## Tools, not Rules
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ### Top down, bottom up, middle out
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 So, the above program already *works*.  Here's a way to look at how
 it got made (see just below).
@@ -211,7 +213,7 @@ about in detail, using proper names for everything. ;)
 It's a tool.  You can use it, or fall back on your other skills and
 completely ignore it.  *Everyone develops a style of their own*.
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 #include <Arduino.h>
@@ -230,7 +232,7 @@ to make it a bit easier to take in, while reading it over.*
 
 ### Initialize the Serial stuph
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 #include <Arduino.h>
@@ -249,7 +251,7 @@ void loop() {
 
 &hellip; that will (later on) contain something interesting to do, after starting the Serial going (which lets you print stuph out).
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 #include <Arduino.h>
@@ -269,7 +271,7 @@ void loop() {
 
 ### Make `haha()` do something slightly interesting. Then test it
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 
 ```cpp
@@ -322,14 +324,14 @@ void loop() {
 So the program's 'working'.  People say that a
 lot:&nbsp;&nbsp;&nbsp;*"It's working."* &nbsp;&nbsp;;)
 
-Better: It compiles.  It mostly does what was expected.  Does at
+**Better:** It compiles.  It mostly does what was expected.  Does at
 least something useful.  Doesn't quite do what was in mind when
 it was first *edited as code*.
 
 
 ### Comment out unused code
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 
@@ -363,7 +365,7 @@ void loop() {
 *Shows a method for commenting-out code that does not spoil syntax
 highlighting inside the commented code.*
 
-Note that `Serial.priantln("message")` is deliberately misspelled,
+Note that `Serial.priantln("message");` is deliberately misspelled,
 but still 'compiles clean'.
 
 *That was a test of the `#if 0` &hellip; `#endif`
@@ -372,7 +374,7 @@ construct.* &nbsp;&nbsp;;)
 
 ### Strip out commented code entirely
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 
@@ -403,7 +405,7 @@ easily recalled, as required.*
 
 ### What still remains to be done - snippet
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 // - - -  CODE SNIPPET - - - DOES NOT COMPILE - - -
@@ -426,7 +428,7 @@ program; scroll up to see it.*
 
 ### Add the repeating code to the loop
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 
@@ -459,7 +461,7 @@ And it does it, whatever is in there, repeatedly.*
 
 ### Fixup the `setup()` to separate events
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 
@@ -497,7 +499,7 @@ crudding it up with a `Mr. Obvious` announcement such as
 
 ## Blink with Weight
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 [*Blink With Weight*](https://wokwi.com/projects/346778138320044627)
 **blink_with_weight.ino** *on wokwi*
@@ -576,7 +578,7 @@ void loop() {
 ```
 ### Blink with Weight - first simplification
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *Can you simplify that, slightly?*
 
@@ -638,7 +640,7 @@ void loop() {
 
 ### Blink with Weight - first simplification - discussion
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *You said it was simpler, but there's new stuff now!*
 
@@ -666,7 +668,7 @@ That'll be next:
 
 ### Factor - remove determinant math
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 ```cpp
 void LED_ON() {
@@ -720,14 +722,14 @@ void loop() {
 
 #### What changed: second simplification of Blink with Weight
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
  * The C Preprocessor directives are gone (no more `#define`)
  * The math inside the parentheses was done by hand, and the results were substituted
 
 #### What was lost in the process of simplification
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
  * The individual numbers that make up the math had real value, to change timing of the LED `blink/dark` cycle.
  * Those timings were distinct and could be easiy changed when they were still part of the `#define` statements; that ease of use/change/experimentation is no longer as evident.
@@ -735,7 +737,7 @@ void loop() {
 
 ### Third simplification - Blink with Weight
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 **Compress the code - LED_BLINK() - i**
 
@@ -791,7 +793,7 @@ void loop() {
 
 ### Remove the commented code and comment out the unused functions
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 **Compress the code - LED_BLINK() - ii**
 
@@ -849,7 +851,7 @@ void loop() {
 
 ### Cram it all into setup() where it was split out into functions
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 **Compress the code - setup() - i**
 
@@ -888,7 +890,7 @@ void loop() {
 
 ### Druids, man.
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *Nope. ;)*
 
@@ -927,7 +929,7 @@ void loop() {
 
 ### Last simplification: no printing at all.
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *Maybe you don't have printing working, anyway, and already
 know enough without the printing statements.*
@@ -954,7 +956,7 @@ void loop() {
 
 ### Wait wait can't you just shove it in the loop?
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *You're right!  Missed that simplification. ;*
 
@@ -974,7 +976,7 @@ void loop() {
 
 ### Okay that was a bit too stingy, what about making it look nice, again?
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *Good idea.*
 
@@ -1001,7 +1003,7 @@ Indeed.
 
 ## Discussion - Blink with Weight - LED blinker program
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 *led blinker*
 
@@ -1009,7 +1011,7 @@ Indeed.
 
 ## Pseudocode
 
-[Table of Contents](#table-of-contents)
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 #### What's pseudocode?
 
@@ -1030,42 +1032,47 @@ its *development*.
 # Table of Contents
 =================
 
-* [Basics of Programming | <a href="README.md">HOME</a> |](#basics-of-programming--home-)
-* [What is Programming?](#what-is-programming)
-   * [Scenario: potato-chip counting machine](#scenario-potato-chip-counting-machine)
-   * [What, then, is Programming?](#what-then-is-programming)
-      * [Introduction for Beginners: What is a Computer Language?](#introduction-for-beginners-what-is-a-computer-language)
-      * [Nuts and Bolts of Programs](#nuts-and-bolts-of-programs)
-      * [Grateful program](#grateful-program)
-      * [Quick wokwi demo](#quick-wokwi-demo)
-      * [Ok but this got complicated, fast](#ok-but-this-got-complicated-fast)
-      * [Hide those details in a library](#hide-those-details-in-a-library)
-   * [Tools, not Rules](#tools-not-rules)
-      * [Top down, bottom up, middle out](#top-down-bottom-up-middle-out)
-      * [Initialize the Serial stuph](#initialize-the-serial-stuph)
-      * [Add a placeholder function called haha()](#add-a-placeholder-function-called-haha)
-      * [Make haha() do something slightly interesting. Then test it](#make-haha-do-something-slightly-interesting-then-test-it)
-      * [It's working](#its-working)
-      * [Comment out unused code](#comment-out-unused-code)
-      * [Strip out commented code entirely](#strip-out-commented-code-entirely)
-      * [What still remains to be done - snippet](#what-still-remains-to-be-done---snippet)
-      * [Add the repeating code to the loop](#add-the-repeating-code-to-the-loop)
-      * [Fixup the setup() to separate events](#fixup-the-setup-to-separate-events)
-   * [Blink with Weight](#blink-with-weight)
-      * [Blink with Weight - first simplification](#blink-with-weight---first-simplification)
-      * [Blink with Weight - first simplification - discussion](#blink-with-weight---first-simplification---discussion)
-      * [Factor - remove determinant math](#factor---remove-determinant-math)
-         * [What changed: second simplification of Blink with Weight](#what-changed-second-simplification-of-blink-with-weight)
-         * [What was lost in the process of simplification](#what-was-lost-in-the-process-of-simplification)
-      * [Third simplification - Blink with Weight](#third-simplification---blink-with-weight)
-      * [Remove the commented code and comment out the unused functions](#remove-the-commented-code-and-comment-out-the-unused-functions)
-      * [Cram it all into setup() where it was split out into functions](#cram-it-all-into-setup-where-it-was-split-out-into-functions)
-      * [Druids, man.](#druids-man)
-      * [Last simplification: no printing at all.](#last-simplification-no-printing-at-all)
-      * [Wait wait can't you just shove it in the loop?](#wait-wait-cant-you-just-shove-it-in-the-loop)
-      * [Okay that was a bit too stingy, what about making it look nice, again?](#okay-that-was-a-bit-too-stingy-what-about-making-it-look-nice-again)
-   * [Discussion - Blink with Weight - LED blinker program](#discussion---blink-with-weight---led-blinker-program)
-   * [Pseudocode](#pseudocode)
+- [Basics of Programming | HOME |](#basics-of-programming--home-)
+- [What is Programming?](#what-is-programming)
+      - [Scenario: potato-chip counting machine](#scenario-potato-chip-counting-machine)
+- [What, then, is Programming?](#what-then-is-programming)
+      - [Introduction for Beginners: What is a Computer Language?](#introduction-for-beginners-what-is-a-computer-language)
+  - [Nuts and Bolts of Programs](#nuts-and-bolts-of-programs)
+    - [Grateful program](#grateful-program)
+      - [Quick wokwi demo](#quick-wokwi-demo)
+    - [Ok but this got complicated, fast](#ok-but-this-got-complicated-fast)
+    - [Hide those details in a library](#hide-those-details-in-a-library)
+  - [Tools, not Rules](#tools-not-rules)
+    - [Top down, bottom up, middle out](#top-down-bottom-up-middle-out)
+    - [Initialize the Serial stuph](#initialize-the-serial-stuph)
+    - [Add a placeholder function called `haha()`](#add-a-placeholder-function-called-haha)
+    - [Make `haha()` do something slightly interesting. Then test it](#make-haha-do-something-slightly-interesting-then-test-it)
+    - [It's working](#its-working)
+    - [Comment out unused code](#comment-out-unused-code)
+    - [Strip out commented code entirely](#strip-out-commented-code-entirely)
+    - [What still remains to be done - snippet](#what-still-remains-to-be-done---snippet)
+    - [Add the repeating code to the loop](#add-the-repeating-code-to-the-loop)
+    - [Fixup the `setup()` to separate events](#fixup-the-setup-to-separate-events)
+  - [Blink with Weight](#blink-with-weight)
+    - [Blink with Weight - first simplification](#blink-with-weight---first-simplification)
+    - [Blink with Weight - first simplification - discussion](#blink-with-weight---first-simplification---discussion)
+    - [Factor - remove determinant math](#factor---remove-determinant-math)
+      - [What changed: second simplification of Blink with Weight](#what-changed-second-simplification-of-blink-with-weight)
+      - [What was lost in the process of simplification](#what-was-lost-in-the-process-of-simplification)
+    - [Third simplification - Blink with Weight](#third-simplification---blink-with-weight)
+    - [Remove the commented code and comment out the unused functions](#remove-the-commented-code-and-comment-out-the-unused-functions)
+    - [Cram it all into setup() where it was split out into functions](#cram-it-all-into-setup-where-it-was-split-out-into-functions)
+    - [Druids, man.](#druids-man)
+    - [Last simplification: no printing at all.](#last-simplification-no-printing-at-all)
+    - [Wait wait can't you just shove it in the loop?](#wait-wait-cant-you-just-shove-it-in-the-loop)
+    - [Okay that was a bit too stingy, what about making it look nice, again?](#okay-that-was-a-bit-too-stingy-what-about-making-it-look-nice-again)
+  - [Discussion - Blink with Weight - LED blinker program](#discussion---blink-with-weight---led-blinker-program)
+  - [Pseudocode](#pseudocode)
+      - [What's pseudocode?](#whats-pseudocode)
+- [DRAFT ONLY - INCOMPLETE](#draft-only---incomplete)
+      - [Sat 29 Oct 01:36:56 UTC 2022 - timestamp only occasionally maintained ;)](#sat-29-oct-013656-utc-2022---timestamp-only-occasionally-maintained-)
+- [# Table of Contents](#-table-of-contents)
+      - [END.](#end)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 

@@ -1,5 +1,5 @@
 # Arduino Discord Wiki
-Welcome to the open source wiki for the arduino discord server. Here you can find various resources to learn everything Arduino.
+Welcome to the open source wiki for the Arduino discord server. Here you can find various resources to learn everything Arduino.
 
 
 
@@ -10,7 +10,7 @@ Welcome to the open source wiki for the arduino discord server. Here you can fin
 |    [Nine Volt Battery Basics](nineVolts.md)        |
 |    [Button Basics](buttons.md)                     |
 |    [Breadboard Basics](breadBoard.md)              |
-|    [Combining Sketches](Combining-Sketches.md)     |
+|    [Combining Sketches](combiningSketches.md)      |
 
 
 ...

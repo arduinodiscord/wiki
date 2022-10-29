@@ -26,7 +26,7 @@ When combining sketches, you can ignore the comment lines and comment blocks if 
 
 This section appears at the very top of the sketch.
 ### note: 
-##### *(there are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen.  It will appear are a #define XXXXXXX before the include library statement)*
+##### *(there are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen.  It will appear as a #define XXXXXXX before the include library statement)*
 
 The library load/include command is in the form of:
 
