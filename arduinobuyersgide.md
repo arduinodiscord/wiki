@@ -1,18 +1,18 @@
 # Arduino Buyers Guide  | [HOME](README.md) |
 
- This is a guide on all the different Arduino's.
+ This is a guide on some of the common Arduino's. It should assist you with choosing the right board for you.
 
- The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder.
+ Arduino Uno is one of the most common Arduino because it has a amount of IO pins to handle small projects. Also, there is no need to solder.
 
  The Leonardo has the same form-factor as the Uno but can be used as a hid device, like a gamepad or "button-box" and such.
 
- The Mega 2560 is extremely common. it has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this.
+ The Mega 2560 is extremely common. It has over three times IO then the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this.
 
- The Micro is good to use on a breadboard. It is compact and has the same chip as the Leonardo.
+ The Micro is great to use on a breadboard. It is compact and has the same chip as the Leonardo.
 
-The Due also has a lot of IO, has more memory than the Mega 2560. This makes it a great starter board also.
+The Due also has a lot of IO like the Mega, but has more memory than the Mega 2560. This makes it a great starter board if you want a little bit more then the Mega offers.
 
-The nano has the same chip as the Uno so can be used in a final product. Many times it's easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product.
+The Nano has the same chip as the Uno so it can be used in a final product. Many times it's easiest to prototype on a UNO, then when all the debugging is done, use the NANO for the final product.
 
 ---
 

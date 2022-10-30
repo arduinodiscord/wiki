@@ -42,7 +42,7 @@ If you are working with a development board such as an Arduino, then you can sim
 
 Here is a small circuit on a breadboard. The red board you see is the Breadboard Power Supply Stick with headers soldered to the PCB. The breadboard power supply stick regulates voltage from a 9V wall wart to either 5V or 3.3V to the power rails.
 
-![breadboardbreadboard](images/breadboard/breadboard5.jpg "Bread board photo")
+![breadboard ](images/breadboard/breadboard5.jpg "Bread board photo")
 
 ## The circuit goes as follows:
 
