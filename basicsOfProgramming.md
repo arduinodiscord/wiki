@@ -3,25 +3,44 @@
 
 [Table of Contents](#table-of-contents "Table Of Contents")
 
-
 *Programming* is a means to tell a computer (or, in the case of
 the Arduino, a *microcontroller*) what to do, when to do it and how
 to do it, and if to keep on doing it 'forever' or for an amount of
 time, or (yup, there's more options) &hellip; until some resource
 it needs (to keep running) has been completely used up.
 
-#### Scenario: potato-chip counting machine
-
-*You want to build a machine that counts potato chips in your potato
+> #### Scenario: potato-chip counting machine
+> 
+> *You want to build a machine that counts potato chips in your potato
 chip factory.  It's a task well-suited to industrial microcontrollers,
 which are smallish devices that often fit in the palm of your hand,
-for just the microcontroller 'chip' itself.*
+> for just the microcontroller 'chip' itself.*
 
-*A microcontroller is just another type of computer chip, but its
+A microcontroller is just another type of computer chip, but its
 specialty is dealing with the real world, through 'mechatronics'
 (electro-mechanical devices and other machinery that can accept
 instructions via wires &hellip; or, in the modern day, via
-wireless links).*
+wireless links).
+
+> *So you wire it all up&hellip; your potato-chip counting
+> machine&hellip; and start 'programming it'.*
+> 
+> *Programming&hellip; the microcontroller chip found soldered to the
+target board (Arduino Uno, Leonardo, Mega2560&hellip; or
+> other board).*
+
+It'll be a chip with a part number, such as `32u4` or `328p` and
+usually has branding included (`ATMega 328p`, `ATMega 32u4`) depending
+on if it needs to be clarified, or if it's clear what chip is being
+discussed.
+
+> #### When you ask for help, include the model and part number
+> 
+> [Table of Contents](#table-of-contents "Table Of Contents")
+> 
+> *"I have an Uno R3 (328p) and I can compile a simple program for it,
+upload the program to the Uno, and it seems to run (prints messages
+> to the Serial Terminal, as expected).  But there's a problem&hellip;"*
 
 
 # What, then, is Programming?
@@ -94,6 +113,8 @@ were incorrect*. ;)
 
 [Table of Contents](#table-of-contents "Table Of Contents")
 
+**This is what a simple program might look like, in the** ***Arduino IDE*** **:**
+
 ```cpp
 // #include <Arduino.h> // optional
 
@@ -135,26 +156,33 @@ Yeah, it did. ;)
 
 Here's a wokwi 'answer' to some of that:
 
-[*Misuse of C Preprocessor to simplify code*](https://wokwi.com/projects/346588077549945428)
+[*Misuse of C Preprocessor to simplify code*](
+https://wokwi.com/projects/346588077549945428)
 **morse_beacon.ino** *on wokwi*
 
 That lets you cheat, quite a bit. ;)
 
 
-> *Disclaimer: the above cheat comes directly from experience in 'Forth' programming (it's another programming language).  Forth programmers often resort to the C Preprocessor to coerce C++ program syntax&hellip; really, quite a bit. ;)*
+> *Disclaimer: the above cheat comes directly from experience in
+'Forth' programming (it's another programming language).  Forth
+programmers often resort to the C Preprocessor to coerce C++ program
+syntax&hellip; really, quite a bit. ;)*
 
-> *You're not 'supposed to' do this&mdash;there's a strong feeling about this, about.  Just be aware of it; it's a large detour from C++ itself, which is the 'Language of Arduino' so to speak.*
-
+> *You're not 'supposed to' do this&mdash;there's a strong feeling
+about this, about.  Just be aware of it; it's a large detour from
+C++ itself, which is the 'Language of Arduino' so to speak.*
 
 ### Hide those details in a library
 
 [Table of Contents](#table-of-contents "Table Of Contents")
 
-[*Misuse Morse with Hidden Details*](https://wokwi.com/projects/346589390531723859)
+[*Misuse Morse with Hidden Details*](
+https://wokwi.com/projects/346589390531723859)
 **morse_beacon_cheaty.ino** *on wokwi*
 
 
-[*Misuse Morse with Beeps*](https://wokwi.com/projects/346608451675226708)
+[*Misuse Morse with Beeps*](
+https://wokwi.com/projects/346608451675226708)
 **morse_beacon_beeps.ino** *on wokwi*
 
 
@@ -166,14 +194,30 @@ zork:  "You see a jelly nailed to a tree, here.  Exits: East, Up, West"
 
 ```
 
+## The C++ Language is the language used in the Arduino IDE
+
+[Table of Contents](#table-of-contents "Table Of Contents")
+
+There's a 'computer language' called `C++` that is used in the
+Arduino IDE, similarly to how `C++` is used on your desktop PC.
+
+Most of what's in this document (the one you're reading right
+now) uses `code examples` written for the Arduino IDE, using
+specifics of the 'Arduino Language' as it were.
+
+You can take a look here, for some of the basics of that language:
+
+[Arduino IDE Language Reference](
+https://www.arduino.cc/reference/en/)
+
 
 ## Tools, not Rules
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ### Top down, bottom up, middle out
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 So, the above program already *works*.  Here's a way to look at how
 it got made (see just below).
@@ -213,7 +257,7 @@ about in detail, using proper names for everything. ;)
 It's a tool.  You can use it, or fall back on your other skills and
 completely ignore it.  *Everyone develops a style of their own*.
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 #include <Arduino.h>
@@ -232,7 +276,7 @@ to make it a bit easier to take in, while reading it over.*
 
 ### Initialize the Serial stuph
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 #include <Arduino.h>
@@ -249,9 +293,10 @@ void loop() {
 
 ### Add a placeholder function called `haha()`
 
-&hellip; that will (later on) contain something interesting to do, after starting the Serial going (which lets you print stuph out).
+&hellip; that will (later on) contain something interesting to do,
+after starting the Serial going (which lets you print stuph out).
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 #include <Arduino.h>
@@ -271,7 +316,7 @@ void loop() {
 
 ### Make `haha()` do something slightly interesting. Then test it
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 
 ```cpp
@@ -293,6 +338,8 @@ void loop() {
 ```
 
 ### It's working
+
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 
@@ -331,7 +378,7 @@ it was first *edited as code*.
 
 ### Comment out unused code
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 
@@ -374,7 +421,7 @@ construct.* &nbsp;&nbsp;;)
 
 ### Strip out commented code entirely
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 
@@ -405,7 +452,7 @@ easily recalled, as required.*
 
 ### What still remains to be done - snippet
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 // - - -  CODE SNIPPET - - - DOES NOT COMPILE - - -
@@ -428,7 +475,7 @@ program; scroll up to see it.*
 
 ### Add the repeating code to the loop
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 
@@ -461,7 +508,7 @@ And it does it, whatever is in there, repeatedly.*
 
 ### Fixup the `setup()` to separate events
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-tools-not-rules "Table Of Contents")
 
 ```cpp
 
@@ -499,9 +546,10 @@ crudding it up with a `Mr. Obvious` announcement such as
 
 ## Blink with Weight
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
-[*Blink With Weight*](https://wokwi.com/projects/346778138320044627)
+[*Blink With Weight*](
+https://wokwi.com/projects/346778138320044627)
 **blink_with_weight.ino** *on wokwi*
 
 (Scroll for discussion)
@@ -578,7 +626,7 @@ void loop() {
 ```
 ### Blink with Weight - first simplification
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
 *Can you simplify that, slightly?*
 
@@ -640,7 +688,7 @@ void loop() {
 
 ### Blink with Weight - first simplification - discussion
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
 *You said it was simpler, but there's new stuff now!*
 
@@ -668,7 +716,7 @@ That'll be next:
 
 ### Factor - remove determinant math
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
 ```cpp
 void LED_ON() {
@@ -722,22 +770,25 @@ void loop() {
 
 #### What changed: second simplification of Blink with Weight
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
  * The C Preprocessor directives are gone (no more `#define`)
- * The math inside the parentheses was done by hand, and the results were substituted
+ * The math inside the parentheses was done by hand, and the results
+   were substituted
 
 #### What was lost in the process of simplification
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
- * The individual numbers that make up the math had real value, to change timing of the LED `blink/dark` cycle.
- * Those timings were distinct and could be easiy changed when they were still part of the `#define` statements; that ease of use/change/experimentation is no longer as evident.
-
+ * The individual numbers that make up the math had real value, to
+   change timing of the LED `blink/dark` cycle.
+ * Those timings were distinct and could be easiy changed when they
+   were still part of the `#define` statements; that ease of
+   use/change/experimentation is no longer as evident.
 
 ### Third simplification - Blink with Weight
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
 **Compress the code - LED_BLINK() - i**
 
@@ -793,7 +844,7 @@ void loop() {
 
 ### Remove the commented code and comment out the unused functions
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
 **Compress the code - LED_BLINK() - ii**
 
@@ -851,7 +902,7 @@ void loop() {
 
 ### Cram it all into setup() where it was split out into functions
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-blink-with-weight "Table Of Contents")
 
 **Compress the code - setup() - i**
 
@@ -890,7 +941,7 @@ void loop() {
 
 ### Druids, man.
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 *Nope. ;)*
 
@@ -916,20 +967,22 @@ void loop() {
 // END.
 ```
 
-*Made things a bit more compact; the essential LED blink rate and duty cycle are unchanged.*
+*Made things a bit more compact; the essential LED blink rate and
+duty cycle are unchanged.*
 
-`report()` remnants greatly reduced or compressed to simpler information printed.
+`report()` remnants greatly reduced or compressed to simpler
+information printed.
 
-*Note that the `delay()` statements were brought up to the
- same lines as the digitalWrite() statements, saving on
- some vertical space.  There was a lot of unused empty
- space, there, and the clarity of the code doesn't suffer
- much (if at all) to do it that way.*
+*Note that the `delay()` statements were brought up to the same
+lines as the `digitalWrite()` statements, saving on some vertical
+space.  There was a lot of unused empty space, there, and the
+clarity of the code doesn't suffer much (if at all) to do it
+that way.*
 
 
 ### Last simplification: no printing at all.
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 *Maybe you don't have printing working, anyway, and already
 know enough without the printing statements.*
@@ -951,12 +1004,13 @@ void loop() {
 }
 ```
 
-*Also renamed the LED_BLINK() function to get rid of the excess upper-case lettering.*
+*Also renamed the LED_BLINK() function to get rid of the excess
+upper-case lettering.*
 
 
 ### Wait wait can't you just shove it in the loop?
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 *You're right!  Missed that simplification. ;*
 
@@ -976,11 +1030,12 @@ void loop() {
 
 ### Okay that was a bit too stingy, what about making it look nice, again?
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 *Good idea.*
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Compress the code - reformat for clarity and simplicity**
+&nbsp;&nbsp;&nbsp;&nbsp;**Compress the code - reformat for clarity
+and simplicity**
 
 ```cpp
 void setup() {
@@ -1003,7 +1058,7 @@ Indeed.
 
 ## Discussion - Blink with Weight - LED blinker program
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 *led blinker*
 
@@ -1011,7 +1066,7 @@ Indeed.
 
 ## Pseudocode
 
-[Table of Contents](#table-of-contents "Table Of Contents")
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 #### What's pseudocode?
 
@@ -1026,15 +1081,21 @@ think should be *going on* in your *program* when it's either
 its *development*.
 
 
-# DRAFT ONLY - INCOMPLETE
-#### Sat 29 Oct 01:36:56 UTC 2022 - timestamp only occasionally maintained ;)
+<!--
+`1234567890123456789012345678901234567890123456789012345678901234567..]..345`
+-->
 
-# Table of Contents
+# DRAFT ONLY - INCOMPLETE
+#### Sun 30 Oct 20:19:24 UTC 2022 - timestamp only occasionally maintained ;)
+
+Table of Contents
 =================
 
 - [Basics of Programming | HOME |](#basics-of-programming--home-)
 - [What is Programming?](#what-is-programming)
-      - [Scenario: potato-chip counting machine](#scenario-potato-chip-counting-machine)
+  - [Scenario: potato-chip counting machine](#scenario-potato-chip-counting-machine)
+  - [When you ask for help, include the model and part number](#when-you-ask-for-help-include-the-model-and-part-number)
+
 - [What, then, is Programming?](#what-then-is-programming)
       - [Introduction for Beginners: What is a Computer Language?](#introduction-for-beginners-what-is-a-computer-language)
   - [Nuts and Bolts of Programs](#nuts-and-bolts-of-programs)
@@ -1042,6 +1103,11 @@ its *development*.
       - [Quick wokwi demo](#quick-wokwi-demo)
     - [Ok but this got complicated, fast](#ok-but-this-got-complicated-fast)
     - [Hide those details in a library](#hide-those-details-in-a-library)
+
+  - [The C++ Language is the language used in the Arduino IDE](
+    #the-c-language-is-the-language-used-in-the-arduino-ide)
+
+    <a name="toc-tools-not-rules"></a>
   - [Tools, not Rules](#tools-not-rules)
     - [Top down, bottom up, middle out](#top-down-bottom-up-middle-out)
     - [Initialize the Serial stuph](#initialize-the-serial-stuph)
@@ -1053,6 +1119,7 @@ its *development*.
     - [What still remains to be done - snippet](#what-still-remains-to-be-done---snippet)
     - [Add the repeating code to the loop](#add-the-repeating-code-to-the-loop)
     - [Fixup the `setup()` to separate events](#fixup-the-setup-to-separate-events)
+    <a name="toc-blink-with-weight"></a>
   - [Blink with Weight](#blink-with-weight)
     - [Blink with Weight - first simplification](#blink-with-weight---first-simplification)
     - [Blink with Weight - first simplification - discussion](#blink-with-weight---first-simplification---discussion)
@@ -1062,17 +1129,13 @@ its *development*.
     - [Third simplification - Blink with Weight](#third-simplification---blink-with-weight)
     - [Remove the commented code and comment out the unused functions](#remove-the-commented-code-and-comment-out-the-unused-functions)
     - [Cram it all into setup() where it was split out into functions](#cram-it-all-into-setup-where-it-was-split-out-into-functions)
+      <a name="toc-adruids-man"></a>
     - [Druids, man.](#druids-man)
     - [Last simplification: no printing at all.](#last-simplification-no-printing-at-all)
     - [Wait wait can't you just shove it in the loop?](#wait-wait-cant-you-just-shove-it-in-the-loop)
     - [Okay that was a bit too stingy, what about making it look nice, again?](#okay-that-was-a-bit-too-stingy-what-about-making-it-look-nice-again)
   - [Discussion - Blink with Weight - LED blinker program](#discussion---blink-with-weight---led-blinker-program)
   - [Pseudocode](#pseudocode)
-      - [What's pseudocode?](#whats-pseudocode)
-- [DRAFT ONLY - INCOMPLETE](#draft-only---incomplete)
-      - [Sat 29 Oct 01:36:56 UTC 2022 - timestamp only occasionally maintained ;)](#sat-29-oct-013656-utc-2022---timestamp-only-occasionally-maintained-)
-- [# Table of Contents](#-table-of-contents)
-      - [END.](#end)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 
