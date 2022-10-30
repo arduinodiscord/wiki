@@ -4,13 +4,22 @@ Welcome to the open source wiki for the Arduino discord server. Here you can fin
 
 
 |   Popular Pages                                    |
-| :------------------------------------------------: |
-|    [LED Basics](ledResistors.md)                   |
+| :------------------------------------------------  |
 |    [Arduino Buyers guide](arduinobuyersgide.md)    |
-|    [Nine Volt Battery Basics](nineVolts.md)        |
-|    [Button Basics](buttons.md)                     |
+|    [Basics of programing](basicsOfProgramming.md)  |
 |    [Breadboard Basics](breadBoard.md)              |
+|    [Button Basics](buttons.md)                     |
 |    [Combining Sketches](combiningSketches.md)      |
+|    [LED Basics](ledResistors.md)                   |
+|    [Millis and delay](millisVsDelay.md)            |
+|    [Nine Volt Battery Basics](nineVolts.md)        |
+
+
+
+
+
 
 
 ...
+
+<sub>v2.44.0</sub> 
