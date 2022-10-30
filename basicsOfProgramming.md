@@ -141,7 +141,7 @@ void loop() {
 
 #### Quick wokwi demo
 
-[Table of Contents](#table-of-contents "Table Of Contents" "Table Of Contents")
+[Table of Contents](#table-of-contents "Table Of Contents")
 
 [*Now Playing*](https://wokwi.com/projects/346503862192964178 "Now Playing")
 &nbsp;&nbsp;*on*&nbsp;&nbsp;
