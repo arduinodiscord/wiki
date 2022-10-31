@@ -5,7 +5,7 @@ Welcome to the open source wiki for the Arduino discord server. Here you can fin
 
 |   Popular Pages                                    |
 | :------------------------------------------------  |
-|    [Arduino Buyers guide](arduinobuyersgide.md)    |
+|    [Arduino Buyers guide](arduinobuyersguide.md)    |
 |    [Basics of programing](basicsOfProgramming.md)  |
 |    [Breadboard Basics](breadBoard.md)              |
 |    [Button Basics](buttons.md)                     |
