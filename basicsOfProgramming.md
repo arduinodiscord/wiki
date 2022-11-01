@@ -1083,12 +1083,16 @@ its *development*.
 
 ## Arduino IDE
 
+[Table of Contents](#toc-adruids-man "Table Of Contents")
+
 The **Arduino IDE** looks like this, when you are about to compile
 a program:
 
 ![image](images/basicsOfProgramming/arduino_IDE-b.jpg)
 
 ### Program Listing - sketch_oct31a.ino
+
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 ```cpp
 void setup() {
@@ -1147,6 +1151,8 @@ old school LED, with a series resistor (about 1k Ohms) to one of the
 
 ### Firmware upload
 
+[Table of Contents](#toc-adruids-man "Table Of Contents")
+
 Use **Control + U** to `Upload` the compiled `sketch` (program) to
 your target board (Uno, or other board).
 
@@ -1186,6 +1192,8 @@ most **ARM Cortex** and other 32-bit boards that have Arduino IDE
 support (sometimes called *board support packages*).
 
 ### Board Support Packages
+
+[Table of Contents](#toc-adruids-man "Table Of Contents")
 
 Boards don't necessarily have support from the Arduino IDE, as you
 first install it.  There are several boards that are included; the
