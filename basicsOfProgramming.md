@@ -113,7 +113,8 @@ were incorrect*. ;)
 
 [Table of Contents](#table-of-contents "Table Of Contents")
 
-**This is what a simple program might look like, in the** ***Arduino IDE*** **:**
+**This is what a simple program might look like, in the**
+***Arduino IDE*** **:**
 
 ```cpp
 // #include <Arduino.h> // optional
@@ -782,7 +783,7 @@ void loop() {
 
  * The individual numbers that make up the math had real value, to
    change timing of the LED `blink/dark` cycle.
- * Those timings were distinct and could be easiy changed when they
+ * Those timings were distinct and could be easily changed when they
    were still part of the `#define` statements; that ease of
    use/change/experimentation is no longer as evident.
 
@@ -1080,13 +1081,120 @@ think should be *going on* in your *program* when it's either
 *finished* or at least *completed, up to a certain point* in
 its *development*.
 
+## Arduino IDE
 
-<!--
-`1234567890123456789012345678901234567890123456789012345678901234567..]..345`
--->
+The **Arduino IDE** looks like this, when you are about to compile
+a program:
 
-# DRAFT ONLY - INCOMPLETE
-#### Sun 30 Oct 20:19:24 UTC 2022 - timestamp only occasionally maintained ;)
+![image](images/basicsOfProgramming/arduino_IDE-b.jpg)
+
+### Program Listing - sketch_oct31a.ino
+
+```cpp
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(LED_BUILTIN, 1);
+  delay(200);
+
+  digitalWrite(LED_BUILTIN, 0);
+  delay(1000);
+}
+// END.
+```
+
+You can use **Control + R** to `Verify/Compile` your program.
+
+This simply means you'll be invoking the `compiler`, which will take
+the code you have in the upper Arduino IDE window, and try to turn
+what you've written into the `1's and 0's` that the Arduino Uno (or
+other target board) can use as its 'program'.
+
+This program is often called the `firmware` which resides in the
+`flashROM` of the `target MCU` *(microcontroller)* once it has been
+`uploaded` to your Uno (or other board).
+
+**You must pick a board and compile just for that board** to
+succeed, here.
+
+Now it is true that many small programs that you'll write will
+compile, unmodified, for quite a few different Arduino boards,
+as well as for (almost) countless `third-party vendor` boards.
+
+*The above code 'worked' on **wokwi.com** for their Uno, ATMEGA 2560
+and at least one other board listed there.  Unmodified.  Most boards
+that have an LED on the board itself (for a 
+[**blinkenlight**](https://en.wikipedia.org/wiki/Blinkenlights))
+will have a definition for LED_BUILTIN that will operate that LED
+without knowing its 'proper' port pin number (it's usually
+on `D13`).*
+
+Some boards only have an `RGB` LED, which needs a completely different
+approach to get it to work (at all).
+
+Old school LEDs just need power (and a series, current-limiting
+resistor) to operate, so those are great for simple testing.  The
+above program uses one of those (as the Uno has one soldered onto
+it, permanently).
+
+*If your board only has an `RGB` LED, you'll need to connect a single,
+old school LED, with a series resistor (about 1k Ohms) to one of the
+`port pins` of your board, to blink it.*
+
+### Firmware upload
+
+Use **Control + U** to `Upload` the compiled `sketch` (program) to
+your target board (Uno, or other board).
+
+> *That stays the same no matter how different your board is
+> from the more usual ones - `Control R` and `Control U` work
+> with any board supported.*
+
+Many boards use **`avrdude`** or **`bossac`** to **upload**
+the 'compiled' program&hellip; the `1's and 0's` mentioned
+in this document.
+
+**`avrdude`** is used for the Uno and for most (or all)
+**AVR** boards.
+
+*AVR boards are `8-bit` boards, which (among other things) means the
+native storage system they use is eight bits wide.  Just about all
+8-bit boards have a relatively small working memory complement (512
+bytes to about 3072 bytes).  Their `mass storage` complement is
+around 4 kilobytes to about 64 kilobytes.*
+
+`16-bit boards` are rare.
+
+**`32-bit boards`** (`Due`, `mkr series`, `M0 Pro` and many others)
+**are not AVR boards** and usually use **`bossac`** to do the
+**uploading**.  They have a lot more working memory than the AVRs,
+and their programs can be correspondingly larger.
+
+For example, SAMD21E18A is a low-end SAMD21 variant (G18A is standard).
+It has 256k flash (mass storage) and 32k RAM (working memory) on the
+chip itself.
+
+Many (most) 32-bit MCU boards use the **`ARM Cortex`** series of
+MCU chips.
+
+`bossac` is the usual tool, to send firmware (usually via USB) to
+most **ARM Cortex** and other 32-bit boards that have Arduino IDE
+support (sometimes called *board support packages*).
+
+### Board Support Packages
+
+Boards don't necessarily have support from the Arduino IDE, as you
+first install it.  There are several boards that are included; the
+Uno is the factory default.
+
+*You could buy an Uno R3, download the Arduino IDE, write a very
+simple program, compile it and upload it to the Uno, all without
+changing much of anything in the Arduino IDE's menu system.*
+
 
 Table of Contents
 =================
@@ -1136,7 +1244,19 @@ Table of Contents
     - [Okay that was a bit too stingy, what about making it look nice, again?](#okay-that-was-a-bit-too-stingy-what-about-making-it-look-nice-again)
   - [Discussion - Blink with Weight - LED blinker program](#discussion---blink-with-weight---led-blinker-program)
   - [Pseudocode](#pseudocode)
+  - [Arduino IDE](#arduino-ide)
+    - [Program Listing - sketch_oct31a.ino](#program-listing---sketch_oct31aino)
+    - [Firmware upload](#firmware-upload)
+    - [Board Support Packages](#board-support-packages)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+
+<!--
+`1234567890123456789012345678901234567890123456789012345678901234567..]..345`
+-->
+
+**DRAFT ONLY - INCOMPLETE**
+
+**Tue  1 Nov 15:50:07 UTC 2022** - *timestamp only occasionally maintained ;)*
 
 #### END.
