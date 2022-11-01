@@ -10,8 +10,6 @@ An electronics breadboard (as opposed to the type on which sandwiches are made) 
 
 Prototyping is the process of testing out an idea by creating a preliminary model from which other forms are developed or copied, and it is one of the most common uses for breadboards. If you aren’t sure how a circuit will react under a given set of parameters, it’s best to build a prototype and test it out.
 
-Prototyping is the process of testing out an idea by creating a preliminary model from which other forms are developed or copied, and it is one of the most common uses for breadboards. If you aren’t sure how a circuit will react under a given set of parameters, it’s best to build a prototype and test it out.
-
 For those new to electronics and circuits, breadboards are often the best place to start. That is the real beauty of breadboards they can house both the simplest circuit as well as very complex circuits.
 
 Another common use of breadboards is testing out new parts, such as Integrated circuits (ICs). When you are trying to figure out how a part works and constantly rewiring things, you don’t want to have to solder your connections each time.
