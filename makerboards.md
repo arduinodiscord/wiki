@@ -1,4 +1,4 @@
-# This is all the Maker boards Arduino makes
+# These are all the Maker boards Arduino makes
 
 
 
