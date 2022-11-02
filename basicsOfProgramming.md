@@ -1203,6 +1203,43 @@ Uno is the factory default.
 simple program, compile it and upload it to the Uno, all without
 changing much of anything in the Arduino IDE's menu system.*
 
+### Sketchbook
+
+The Arduino IDE calls the directory where your programs are stored
+the `Sketchbook`.  It is found in the menu system, following a
+**File > Sketchbook** menu sequence.
+
+### Themes
+
+*Sample theme: sequoia color scheme*
+
+[sequoia.zip](images/basicsOfProgramming/sequoia.zip)
+
+You can have a single theme for the Arduino IDE in a directory
+named 'theme' in your 'sketchbook'.
+
+> OS-dependent: The sketchbook is usually/always named
+> `'~/Arduino'` in Linux; the theme directory for Linux is named
+> `'~/Arduino/theme'` and does not exist after installation of
+> the Arduino IDE, as it is optional.
+
+If you have multiple themes, zip each one up without including
+creation of a directory (when it is unzipped, it will not create a
+new directory to hold the newly-unzipped .ZIP archive; instead,
+it unzips in whatever is the current directory - at least, under
+Linux, that's true).
+
+Then drop all the .ZIP files into the `'~/Arduino/theme'` directory.
+From there, **File > Preferences** will offer a means to choose one
+of them over the others.
+
+**As is usual** for the Arduino IDE, always restart it (exit it
+entirely, then start it afresh) after changing a Preference.
+
+***For a single theme:***  Just unzip it in your theme directory
+in the sketchbook.  The .ZIP creates one directory (`'syntax/'`),
+but most of the theme's files are in the base ('theme') directory,
+for a single theme installation.
 
 Table of Contents
 =================
@@ -1256,6 +1293,8 @@ Table of Contents
     - [Program Listing - sketch_oct31a.ino](#program-listing---sketch_oct31aino)
     - [Firmware upload](#firmware-upload)
     - [Board Support Packages](#board-support-packages)
+    - [Sketchbook](#sketchbook)
+    - [Themes](#themes)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 
@@ -1265,6 +1304,6 @@ Table of Contents
 
 **DRAFT ONLY - INCOMPLETE**
 
-**Tue  1 Nov 15:50:07 UTC 2022** - *timestamp only occasionally maintained ;)*
+**Wed  2 Nov 14:19:53 UTC 2022** - *timestamp only occasionally maintained ;)*
 
 #### END.
