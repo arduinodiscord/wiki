@@ -18,6 +18,6 @@ A normal Alkaline 9v only has a theoretical 550 mAh worth of power. As you can s
 
 A Arduino Uno itself, with nothing connected to it, draws 50 mA. This means you would only get a maximum of 7 hours out of it (a Uno needs a minimum of 7v). If you add just 3 LEDs you are now drawing over 100 mA. So that would lower your time down to 2.5 hours.
 
-![9vdiscargrate9vdiscargrate](images/nineVolts/9vdiscargrate.png)
+![9v discargrate](images/nineVolts/9vdiscargrate.png)
 
 [Click for a video with more information.](https://odysee.com/@Maderdash:2/9vBattery:0 "video of 9v battery issues")
