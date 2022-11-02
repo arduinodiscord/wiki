@@ -1,0 +1,119 @@
+# Mon 22 Aug 13:30:27 UTC 2022
+
+#FUNCTIONS COLOR 			#D35400 - ORANGE			KEYWORD1
+#FUNCTIONS COLOR			#D35400 - ORANGE			KEYWORD2
+#STRUCTURE COLORS 			#728E00 - GREEN			KEYWORD3
+#CONSTANTS COLOR 				#00979C - BLUE				LITERAL1
+#VARIABLES COLOR 				#00979C - BLUE				LITERAL2
+
+#ERROR COLOR					#A61717 - RED
+#COMMENTS // COLOR			#95A5A6 - LIGHT GREY
+#COMMENTS /**/ COLOR		#434F54	- DARK GREY
+
+# GUI - STATUS
+status.notice.fgcolor = #002325
+status.notice.bgcolor = #17A1A5
+status.error.fgcolor = #FFFFFF
+status.error.bgcolor = #E34C00
+status.edit.fgcolor = #000000
+status.edit.bgcolor = #F1B500
+status.font = SansSerif,plain,12
+
+# GUI - TABS
+header.bgcolor = #17A1A5
+header.text.selected.color = #005B5B
+header.text.unselected.color = #007e82
+header.text.font = SansSerif,plain,12
+
+# GUI - CONSOLE
+console.font = Monospaced,plain,11
+console.font.macosx = Monaco,plain,10
+console.color = #000000
+console.output.color = #eeeeee
+console.error.color = #E34C00
+
+# GUI - BUTTONS
+buttons.bgcolor = #006468
+buttons.status.font = SansSerif,plain,12
+buttons.status.color = #ffffff
+
+# GUI - PLOTTING
+plotting.bgcolor = #ffffff
+plotting.color = #ffffff
+plotting.gridcolor = #f0f0f0
+plotting.boundscolor = #000000
+plotting.graphcolor.size = 8
+plotting.graphcolor.00 = #0000FF
+plotting.graphcolor.01 = #FF0000
+plotting.graphcolor.02 = #009900
+plotting.graphcolor.03 = #FF9900
+plotting.graphcolor.04 = #CC00CC
+plotting.graphcolor.05 = #666666
+plotting.graphcolor.06 = #00CCFF
+plotting.graphcolor.07 = #000000
+
+# GUI - LINESTATUS   
+linestatus.color = #E0E022
+linestatus.bgcolor = #006468
+
+# EDITOR - DETAILS
+
+editor.fgcolor = #009B9B
+editor.bgcolor = #000000
+editor.linehighlight.color=#e2e2e2
+editor.linehighlight=false
+editor.caret.color = #22CDCD
+editor.external.bgcolor = #c8d2dc
+editor.selection.color = #3F0000
+editor.invalid.style = #7e7e7e,bold
+editor.eolmarkers = false
+editor.eolmarkers.color = #999999
+editor.brackethighlight = true
+editor.brackethighlight.color = #006699
+
+
+# TEXT - KEYWORDS
+
+# FUNCTIONS
+editor.keyword1.style = #d35400,bold
+editor.data_type.style = #d35400,bold
+
+# METHODS
+editor.keyword2.style = #D35400,plain
+editor.function.style = #00CDCD,plain
+
+# STRUCTURES
+editor.keyword3.style = #5E6D03,plain
+editor.reserved_word.style = #E0E022,plain
+
+
+# TEXT - LITERALS
+
+editor.literal1.style = #00E000,plain
+editor.literal2.style = #00979C,plain
+editor.variable.style = #00979C,plain
+editor.reserved_word_2.style = #00FF00,plain
+editor.literal_boolean.style = #00B2B2,plain
+editor.literal_char.style = #00B2B2,plain
+editor.literal_string_double_quote.style = #00B2B2,plain
+editor.preprocessor.style = #5F5FDD,plain
+editor.url.style = #0000ff,underlined
+editor.operator.style = #00777C,plain
+editor.label.style = #7e7e7e,bold
+
+# TEXT - COMMENTS
+
+editor.comment1.style = #FFB222,plain
+editor.comment2.style = #95a5a6,plain
+
+# LINE STATUS - editor line number status bar at the bottom of the screen
+linestatus.font	   = SansSerif,plain,16
+linestatus.height  = 20
+
+editor.keyword1.style = #ffffff,bold
+editor.keyword2.style = #ffffff,plain
+editor.keyword3.style = #ffffff,plain
+editor.literal1.style = #ffffff,plain
+editor.literal2.style = #ffffff,plain
+
+# END.
