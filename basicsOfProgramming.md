@@ -1211,17 +1211,22 @@ the `Sketchbook`.  It is found in the menu system, following a
 
 ### Themes
 
-*Sample theme: sequoia color scheme*
-
-[sequoia.zip](images/basicsOfProgramming/sequoia.zip)
-
 You can have a single theme for the Arduino IDE in a directory
-named 'theme' in your 'sketchbook'.
+named 'theme' in your `Sketchbook`.
 
-> OS-dependent: The sketchbook is usually/always named
+> OS-dependent: The `Sketchbook` is usually/always named
 > `'~/Arduino'` in Linux; the theme directory for Linux is named
 > `'~/Arduino/theme'` and does not exist after installation of
 > the Arduino IDE, as it is optional.
+
+Copy all the files from:
+
+[theme](https://github.com/arduino/Arduino/tree/master/build/shared/lib/theme)
+
+to a directory named `theme` in your `Sketchbook` folder, and modify to suit.
+
+[theme.txt](images/basicsOfProgramming/sequoia/theme.txt)
+has been modified to show possible changes, as a quick example.
 
 If you have multiple themes, zip each one up without including
 creation of a directory (when it is unzipped, it will not create a
@@ -1236,8 +1241,8 @@ of them over the others.
 **As is usual** for the Arduino IDE, always restart it (exit it
 entirely, then start it afresh) after changing a Preference.
 
-***For a single theme:***  Just unzip it in your theme directory
-in the sketchbook.  The .ZIP creates one directory (`'syntax/'`),
+***For a single .ZIP theme:***  Just unzip it in your theme directory
+in the `Sketchbook`.  The .ZIP creates one directory (`'syntax/'`),
 but most of the theme's files are in the base ('theme') directory,
 for a single theme installation.
 
@@ -1304,6 +1309,6 @@ Table of Contents
 
 **DRAFT ONLY - INCOMPLETE**
 
-**Wed  2 Nov 14:19:53 UTC 2022** - *timestamp only occasionally maintained ;)*
+**Thu  3 Nov 19:32:35 UTC 2022** - *timestamp only occasionally maintained ;)*
 
 #### END.
