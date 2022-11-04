@@ -1149,6 +1149,84 @@ it, permanently).
 old school LED, with a series resistor (about 1k Ohms) to one of the
 `port pins` of your board, to blink it.*
 
+#### void setup()
+
+This declares there's a `function` named `setup()` to be `compiled`
+into the program.
+
+It `returns` nothing when called, and so gets a `type` of `void`.
+
+Other functions may also be declared `void`&mdash;they return
+nothing, but simply `execute` (or 'run') if `called` (almost
+always, from inside another `function`).
+
+#### void loop()
+
+Same idea as `void setup()`&hellip; only this time, the function
+automatically repeats ('forever') when called.
+
+***Any function can behave as a `loop`*** if constructed properly.
+This is quite common.
+
+`loop()` is the only function in the Arduino IDE that loops without
+explicit 'looping' code structure.
+
+*`setup()` and `loop()` are usually required by the Arduino IDE.*
+
+
+#### int main(void)
+
+In the Arduino IDE, a specially-named function, `int main(void)`
+gets called automatically, to start the program.
+
+You do not usually call `main()` in your code; it's specified
+(already) in a file named `main.cpp` in the Arduino IDE.
+
+See [main.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp) *(also shown below)*.
+
+Traditional programs use `main()` to start things; the Arduino IDE
+also (optionally) allows you to do so, but encourages you (instead)
+to use `setup()` and `loop()`.
+
+*If you don't already know `C/C++` and are learning on the Arduino
+IDE, this brief introduction to `main()` isn't likely to be important
+to you&mdash; it's here mostly to help `C/C++` programmers new to the
+Arduino IDE to understand what's happening with the requirements of
+`setup()` and `loop()`.*
+
+Here it is:
+
+```
+int main(void)
+{
+    init();
+
+    initVariant();
+
+#if defined(USBCON)
+    USBDevice.attach();
+#endif
+
+    setup();
+
+    for (;;) {
+        loop();
+        if (serialEventRun) serialEventRun();
+    }
+
+    return 0;
+}
+```
+
+***This is where `setup()` and `loop()` and their mandatory natures
+are apparent.***
+
+The `for (;;)` construct is a simple counted loop mechanism, with no
+counting.  The syntax used specifies *yes, loop in a counting way,
+but do not count&mdash;treat as if the count were somehow 'infinite'
+and behave similarly to a proper, counted loop.*
+
+
 ### Firmware upload
 
 [Table of Contents](#toc-adruids-man "Table Of Contents")
@@ -1223,7 +1301,8 @@ Copy all the files from:
 
 [theme](https://github.com/arduino/Arduino/tree/master/build/shared/lib/theme)
 
-to a directory named `theme` in your `Sketchbook` folder, and modify to suit.
+to a directory named `theme` in your `Sketchbook` folder, and
+modify to suit.
 
 [theme.txt](images/basicsOfProgramming/sequoia/theme.txt)
 has been modified to show possible changes, as a quick example.
@@ -1296,6 +1375,9 @@ Table of Contents
   - [Pseudocode](#pseudocode)
   - [Arduino IDE](#arduino-ide)
     - [Program Listing - sketch_oct31a.ino](#program-listing---sketch_oct31aino)
+    - [void setup()](#void-setup)
+    - [void loop()](#void-loop)
+    - [int main(void)](#int-mainvoid)
     - [Firmware upload](#firmware-upload)
     - [Board Support Packages](#board-support-packages)
     - [Sketchbook](#sketchbook)
@@ -1309,6 +1391,6 @@ Table of Contents
 
 **DRAFT ONLY - INCOMPLETE**
 
-**Thu  3 Nov 19:32:35 UTC 2022** - *timestamp only occasionally maintained ;)*
+**Fri  4 Nov 11:53:39 UTC 2022** - *timestamp only occasionally maintained ;)*
 
 #### END.
