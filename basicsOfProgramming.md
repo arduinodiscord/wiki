@@ -1083,7 +1083,7 @@ its *development*.
 
 ## Arduino IDE
 
-[Table of Contents](#toc-adruids-man "Table Of Contents")
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
 
 The **Arduino IDE** looks like this, when you are about to compile
 a program:
@@ -1092,7 +1092,7 @@ a program:
 
 ### Program Listing - sketch_oct31a.ino
 
-[Table of Contents](#toc-adruids-man "Table Of Contents")
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
 
 ```cpp
 void setup() {
@@ -1149,9 +1149,103 @@ it, permanently).
 old school LED, with a series resistor (about 1k Ohms) to one of the
 `port pins` of your board, to blink it.*
 
+#### void setup()
+
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
+
+This declares there's a `function` named `setup()` to be `compiled`
+into the program.
+
+It `returns` nothing when called, and so gets a `type` of `void`.
+
+Other functions may also be declared `void`&mdash;they return
+nothing, but simply `execute` (or 'run') if `called` (almost
+always, from inside another `function`).
+
+*`setup()` does just what it sounds like&mdash;it sets up your
+program's starting conditions.*
+
+Pragmatically, `setup()` executes only once during the entire
+time your program is running&mdash;pretty much 'just after'
+power was applied to your board.
+
+*See the discussion on `int main(void)` for a bit more context.*
+
+
+#### void loop()
+
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
+
+Same idea as `void setup()`&hellip; only this time, the function
+automatically repeats ('forever') when called.
+
+***Any function can behave as a `loop`*** if constructed properly.
+This is quite common.
+
+`loop()` is the only function in the Arduino IDE that loops without
+explicit 'looping' code structure.
+
+*`setup()` and `loop()` are usually required by the Arduino IDE.*
+
+
+#### int main(void)
+
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
+
+In the Arduino IDE, a specially-named function, `int main(void)`
+gets called automatically, to start the program.
+
+You do not usually call `main()` in your code; it's specified
+(already) in a file named `main.cpp` in the Arduino IDE.
+
+See [main.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp) *(also shown below)*.
+
+Traditional programs use `main()` to start things; the Arduino IDE
+also (optionally) allows you to do so, but encourages you (instead)
+to use `setup()` and `loop()`.
+
+*If you don't already know `C/C++` and are learning on the Arduino
+IDE, this brief introduction to `main()` isn't likely to be important
+to you&mdash; it's here mostly to help `C/C++` programmers new to the
+Arduino IDE to understand what's happening with the requirements of
+`setup()` and `loop()`.*
+
+Here it is:
+
+```
+int main(void)
+{
+    init();
+
+    initVariant();
+
+#if defined(USBCON)
+    USBDevice.attach();
+#endif
+
+    setup();
+
+    for (;;) {
+        loop();
+        if (serialEventRun) serialEventRun();
+    }
+
+    return 0;
+}
+```
+
+***This is where `setup()` and `loop()` and their mandatory natures
+are apparent.***
+
+The `for (;;)` construct is a simple counted loop mechanism, with no
+counting.  The syntax used specifies *'Yes, loop in a counting way,
+but do not count&mdash;treat as if the count were somehow 'infinite'
+and behave similarly to a proper, counted loop.'*
+
+
 ### Firmware upload
 
-[Table of Contents](#toc-adruids-man "Table Of Contents")
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
 
 Use **Control + U** to `Upload` the compiled `sketch` (program) to
 your target board (Uno, or other board).
@@ -1193,7 +1287,7 @@ support (sometimes called *board support packages*).
 
 ### Board Support Packages
 
-[Table of Contents](#toc-adruids-man "Table Of Contents")
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
 
 Boards don't necessarily have support from the Arduino IDE, as you
 first install it.  There are several boards that are included; the
@@ -1205,23 +1299,33 @@ changing much of anything in the Arduino IDE's menu system.*
 
 ### Sketchbook
 
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
+
 The Arduino IDE calls the directory where your programs are stored
 the `Sketchbook`.  It is found in the menu system, following a
 **File > Sketchbook** menu sequence.
 
 ### Themes
 
-*Sample theme: sequoia color scheme*
-
-[sequoia.zip](images/basicsOfProgramming/sequoia.zip)
+[Table of Contents](#toc-arduino-ide "Table Of Contents")
 
 You can have a single theme for the Arduino IDE in a directory
-named 'theme' in your 'sketchbook'.
+named 'theme' in your `Sketchbook`.
 
-> OS-dependent: The sketchbook is usually/always named
+> OS-dependent: The `Sketchbook` is usually/always named
 > `'~/Arduino'` in Linux; the theme directory for Linux is named
 > `'~/Arduino/theme'` and does not exist after installation of
 > the Arduino IDE, as it is optional.
+
+Copy all the files from:
+
+[theme](https://github.com/arduino/Arduino/tree/master/build/shared/lib/theme)
+
+to a directory named `theme` in your `Sketchbook` folder, and
+modify to suit.
+
+[theme.txt](images/basicsOfProgramming/sequoia/theme.txt)
+has been modified to show possible changes, as a quick example.
 
 If you have multiple themes, zip each one up without including
 creation of a directory (when it is unzipped, it will not create a
@@ -1236,8 +1340,8 @@ of them over the others.
 **As is usual** for the Arduino IDE, always restart it (exit it
 entirely, then start it afresh) after changing a Preference.
 
-***For a single theme:***  Just unzip it in your theme directory
-in the sketchbook.  The .ZIP creates one directory (`'syntax/'`),
+***For a single .ZIP theme:***  Just unzip it in your theme directory
+in the `Sketchbook`.  The .ZIP creates one directory (`'syntax/'`),
 but most of the theme's files are in the base ('theme') directory,
 for a single theme installation.
 
@@ -1289,8 +1393,12 @@ Table of Contents
     - [Okay that was a bit too stingy, what about making it look nice, again?](#okay-that-was-a-bit-too-stingy-what-about-making-it-look-nice-again)
   - [Discussion - Blink with Weight - LED blinker program](#discussion---blink-with-weight---led-blinker-program)
   - [Pseudocode](#pseudocode)
+    <a name="toc-arduino-ide"></a>
   - [Arduino IDE](#arduino-ide)
     - [Program Listing - sketch_oct31a.ino](#program-listing---sketch_oct31aino)
+    - [void setup()](#void-setup)
+    - [void loop()](#void-loop)
+    - [int main(void)](#int-mainvoid)
     - [Firmware upload](#firmware-upload)
     - [Board Support Packages](#board-support-packages)
     - [Sketchbook](#sketchbook)
@@ -1304,6 +1412,6 @@ Table of Contents
 
 **DRAFT ONLY - INCOMPLETE**
 
-**Wed  2 Nov 14:19:53 UTC 2022** - *timestamp only occasionally maintained ;)*
+**Fri  4 Nov 11:53:39 UTC 2022** - *timestamp only occasionally maintained ;)*
 
 #### END.
