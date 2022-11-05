@@ -5,7 +5,6 @@ Welcome to the open source wiki for the Arduino discord server. Here you can fin
 
 |   Popular Pages                                    |
 | :------------------------------------------------  |
-|    [Arduino Buyers guide](arduinobuyersguide.md)    |
 |    [Basics of programing](basicsOfProgramming.md)  |
 |    [Breadboard Basics](breadBoard.md)              |
 |    [Button Basics](buttons.md)                     |
@@ -13,7 +12,6 @@ Welcome to the open source wiki for the Arduino discord server. Here you can fin
 |    [LED Basics](ledResistors.md)                   |
 |    [Millis and delays](millisVsDelay.md)           |
 |    [Nine Volt Battery Basics](nineVolts.md)        |
-|    [Arduino Maker Boards](makerboards.md)    |
 ...
 
-<sub>v2.44.0</sub> 
+<sub>v2.45.0</sub> 
