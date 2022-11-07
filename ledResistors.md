@@ -62,12 +62,12 @@ If you have a supply voltage of 5v, and you have a red LED, we will say the forw
 > * **Rv** is the voltage you use to calculate the resistor you need.
 > * So in our example the math would be: 
 > * # 5v-2v=3v. 
-> * So the final vaue is **3v/0.02A=150**
+> * So the final value is **3v/0.02A=150**
 > * 150Ohm resistor is needed.
 
 This is **REQUIRED** so the **LED will not burn out faster than expected.** 
 
-And so we **do not dammage the arduino/componunts in the circut.**
+And so we **do not damage the arduino/components in the circuit.**
 
 ![](images/forwardVoltage/ledResistorCircut.png)
 
