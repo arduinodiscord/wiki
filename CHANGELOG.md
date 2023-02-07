@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.1.1](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.1.0...v1.1.1) (2023-02-07)
+
+
+### 🐛 Bug Fixes
+
+* logo ([e509625](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/e5096252dd75126cac500c382d87f56e1bea9b71))
+
 ## [1.1.0](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.0.1...v1.1.0) (2023-02-07)
 
 
