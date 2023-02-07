@@ -932,7 +932,7 @@ its *development*.
 The **Arduino IDE** looks like this, when you are about to compile
 a program:
 
-![image](images/basicsOfProgramming/arduino_IDE-b.jpg)
+![image](../assets/images/basicsOfProgramming/arduino_IDE-b.jpg)
 
 ### Program Listing - sketch_oct31a.ino
 
@@ -1145,7 +1145,7 @@ Copy all the files from:
 to a directory named `theme` in your `Sketchbook` folder, and
 modify to suit.
 
-[theme.txt](images/basicsOfProgramming/sequoia/theme.txt)
+[theme.txt](../assets/images/basicsOfProgramming/sequoia/theme.txt)
 has been modified to show possible changes, as a quick example.
 
 If you have multiple themes, zip each one up without including
