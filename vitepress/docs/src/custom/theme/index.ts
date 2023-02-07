@@ -36,7 +36,7 @@ const theme = {
             collapsible: true,
             items: [
                 { text: "Combining Sketches", link: "/combiningSketches" },
-                { text: "Combining Sketches", link: "/millisVsDelay" },
+                { text: "Millis vs Delay", link: "/millisVsDelay" },
             ],
         },
         {

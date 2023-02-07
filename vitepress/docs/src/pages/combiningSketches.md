@@ -1,49 +1,96 @@
-# Combining Sketches  | [HOME](README.md) |
+# Combining Sketches { .text-[#e67e22] }
 
-When combining two or more sketches, it is VERY important that you understand the various sections of the sketch,
+When combining two or more sketches, it is **VERY** important that you understand the various sections of the sketch,
 the next part of this guide is describing these sections.
 
 You can skip over this, then come back later and read it when your combined sketches don’t work.
 
-# Arduino basic sketches have sections
+::: tip Sketch Sections
+Arduino basic sketches have sections
+
+* Block comments
+* Single line comments
+* Libraries Include Section
+* Definition Section
+* Global Variables
+* Functions
+* Setup
+* Loop
+
+Let's look at each of these sections in more detail
+:::
 
 ## Block comments
 
-These can appear anywhere in the code but usually appear at the top with the author, description etc.
+These can appear anywhere in the code. You will see them appear the most at the top with the author, description etc.
+
+Comments are ignored by the Arduino compiler. They are there to help you understand the code.
+
+They can be used to temporarily disable code. This is useful when you are testing a section of code and you want to disable the rest of the code.
 
 **Example**
 
-![image](../assets/images/CombiningSketches/comments.png)
+```cpp
+/* 
+ * This is a block comment
+ */
+```
 
-The block comments start with /\*and end with\*/
+The block comments start with `/*` and end with `*/`
 
-A single line comment starts with //
+## Single line comments
 
-When combining sketches, you can ignore the comment lines and comment blocks if you want as Arduino code ignores these.
+A single line comment starts with `//` and ends at the end of the line.
+
+**Example**
+
+```cpp
+// This is a single line comment
+```
+
+When combining sketches, you can ignore the comment lines and comment blocks, if you want, as Arduino code ignores these.
 
 ## Libraries Include Section
 
 This section appears at the very top of the sketch.
 
-### note
+::: info Special Cases
 
-##### *(there are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen.  It will appear as a #define XXXXXXX before the include library statement)*
+There are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen. It will appear as a line of code that looks like this:
+
+```cpp
+#define SOME_PIN 20
+```
+
+or
+
+```cpp
+#define SOME_VALUE
+```
+
+before the include library statement
+
+:::
 
 The library load/include command is in the form of:
 
-```#include <library file name>```
-  
+```cpp
+#include <library file name>
+```
+
 This will load and include the library if it is in the standard library path. If you load a library using the library manager, then the library will be in the correct place to be loaded with this statement.
 
-In special cases, the library include statement might be in the form of:
+In some cases, the library file name may be in quotes, but this is a special case.
 
-```#include "library file name"```
+```cpp
+#include "library file name"
+```
 
-In this case the library file is not in the normal location.
+In the case the library file is not in the normal location, then if it is in the same directory as the sketch it will use the quote format.
 
-If it is in the same directory as the sketch, then it will use this format.
-
-*It may also have the full path to the file as well, but this is a special case.*
+::: info Special Case
+It may also have the full path to the file as well, but this is a special case.
+:::
 
 ## Definition Section
 
@@ -51,11 +98,14 @@ Usually, a sketch will have constants here. These are variables that do not chan
 
 **Example**
 
-![image](../assets/images/CombiningSketches/defines.png)
+```cpp
+#define led_pin 13
+#define num_leds 20
+```
 
-### Note
-
-##### *there are no semi colons after a define.*
+::: warning Pay Attention
+There are no semi colons after a define.
+:::
 
 ## Global Variables
 
@@ -63,7 +113,11 @@ A variable that changes and is used though out the sketch has a global scope. Th
 
 **Example**
 
-![image](../assets/images/CombiningSketches/global.png)
+```cpp
+int led_counter = 10; // this is a global variable
+int led_counter; // with no initial value
+Servo myservo(servo_pin); // this is a global object
+```
 
 ## Functions
 

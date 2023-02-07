@@ -1,4 +1,4 @@
-# Basics of Programming
+# Basics of Programming { .text-[#e67e22] }
 
 ## What is Programming?
 
