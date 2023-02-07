@@ -1,5 +1,5 @@
 
-<img src="./vitepress/docs/src/assets/images/logo/arduino_logo.gif" alt="Logo" align="right" height="76"/>
+<img src="./vitepress/docs/src/pages/public/logo/arduino_logo.gif" alt="Logo" align="right" height="76"/>
 
 # Arduino Discord Wiki
 

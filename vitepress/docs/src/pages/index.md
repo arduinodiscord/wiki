@@ -5,7 +5,7 @@ hero:
   name: Arduino Discord Wiki
   text: open source wiki for the arduino discord server
   image:
-    src: /../assets/images/logo/arduino_logo.gif
+    src: logo/arduino_logo.gif
     alt: Arduino logo
   tagline: here you can learn everything Arduino
   actions:

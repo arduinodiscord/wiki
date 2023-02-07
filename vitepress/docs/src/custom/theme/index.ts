@@ -5,7 +5,7 @@
 
 const theme = {
     logo: {
-        light: '/images/logo/arduino_logo.gif', dark: '/images/logo/arduino_logo.gif', alt: 'Arduino Logo'
+        light: '/logo/arduino_logo.gif', dark: '/logo/arduino_logo.gif', alt: 'Arduino Logo'
     },
     siteTitle: 'Arduino Discord Wiki ',
     /* Note the footer will not show when sidebar is active */
