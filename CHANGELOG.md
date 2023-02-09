@@ -3,6 +3,14 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.0.1](https://github.com/arduinodiscord/wiki/compare/v1.0.0...v1.0.1) (2023-02-09)
+
+
+### 🐛 Bug Fixes
+
+* fix dev roadmap md ([4edc40f](https://github.com/arduinodiscord/wiki/commit/4edc40feff98c02aa567e957b4758117736300c9))
+* fix old links and add left over MD files ([2806adc](https://github.com/arduinodiscord/wiki/commit/2806adcaa4fc205ae7149bb35f218a856f8613d3))
+
 ## [1.2.3](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.2.2...v1.2.3) (2023-02-09)
 
 ### 🐛 Bug Fixes
