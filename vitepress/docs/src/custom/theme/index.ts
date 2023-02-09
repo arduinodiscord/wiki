@@ -28,25 +28,25 @@ const theme = {
             text: "Getting Started",
             collapsible: true,
             items: [
-                { text: "Introduction", link: "/basicsOfProgramming" },
+                { text: "Introduction", link: "/gettingStarted/basicsOfProgramming" },
             ],
         },
         {
             text: "Code Guides",
             collapsible: true,
             items: [
-                { text: "Combining Sketches", link: "/combiningSketches" },
-                { text: "Millis vs Delay", link: "/millisVsDelay" },
+                { text: "Combining Sketches", link: "/codeGuides/combiningSketches" },
+                { text: "Millis vs Delay", link: "/codeGuides/millisVsDelay" },
             ],
         },
         {
             text: "Hardware Guides",
             collapsible: true,
             items: [
-                { text: "BreadBoards", link: "/breadboard" },
-                { text: "Buttons", link: "/buttons" },
-                { text: "Resistors", link: "/ledResistors" },
-                { text: "Nine Volts", link: "/nineVolts" },
+                { text: "BreadBoards", link: "/hardwareGuides/breadBoard" },
+                { text: "Buttons", link: "/hardwareGuides/buttons" },
+                { text: "Resistors", link: "/hardwareGuides/ledResistors" },
+                { text: "Nine Volts", link: "/hardwareGuides/nineVolts" },
 
             ],
         }

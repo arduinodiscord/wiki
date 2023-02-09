@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /basicsOfProgramming
+      link: /gettingStarted/basicsOfProgramming
     - theme: alt
       text: View on GitHub
       link: https://github.com/max-bromberg/arduino-discord-wiki

@@ -177,11 +177,11 @@ Once setup has run, loop runs continuously. This is where your main code will be
 
 ```cpp
 void loop() {
-    switchstate = digitalRead(2); // read switch state
+    bool switchstate = digitalRead(2); // read switch state
     if (switchstate == HIGH) {
-        digitalWrite(3, HIGH);   // turn on LED
-        digitalWrite(4, LOW);    // turn off LED
-        digitalWrite(5, LOW);    // turn off LED
+        digitalWrite(3, HIGH);         // turn on LED
+        digitalWrite(4, LOW);          // turn off LED
+        digitalWrite(5, LOW);          // turn off LED
     }
 }
 ```
