@@ -22,7 +22,7 @@ As mentioned, you don’t always want the circuit you build to be permanent.
 
 Here we have a breadboard where the adhesive backing has been removed. You can see lots of horizontal rows of metal strips on the bottom of the breadboard.
 
-![breadboard](../assets/images/breadboard/breadboard6.jpg)
+![breadboard](../../assets/images/breadboard/breadboard6.jpg)
 
 ---
 
@@ -30,7 +30,7 @@ Here we have a breadboard where the adhesive backing has been removed. You can s
 
 Now that we’ve seen how the connections in a breadboard are made, let’s look at a larger, more typical breadboard. Aside from horizontal rows, breadboards usually have what are called power rails that run vertically along the sides. These power rails are metal strips that are identical to the ones that run horizontally, except they are, typically*, all connected. When building a circuit, you tend to need power in lots of different places. The power rails give you lots of easy access to power wherever you need it in your circuit. Usually they will be labeled with a ‘+’ and a ‘-’ and have a red and blue or black stripe, to indicate the positive and negative side.*It is important to be aware that the power rails on either side are not connected, so if you want the same power source on both sides, you will need to connect the two sides with some jumper wires.* Keep in mind that the markings are there just as a reference. There is no rule that says you have to plug power into the '+' rail and ground into the '-'rail, though it's good practice to keep everything in order.
 
-![breadboard](../assets/images/breadboard/breadboard3.jpg)
+![breadboard](../../assets/images/breadboard/breadboard3.jpg)
 
 ---
 
@@ -44,7 +44,7 @@ If you are working with a development board such as an Arduino, then you can sim
 
 Here is a small circuit on a breadboard. The red board you see is the Breadboard Power Supply Stick with headers soldered to the PCB. The breadboard power supply stick regulates voltage from a 9V wall wart to either 5V or 3.3V to the power rails.
 
-![breadboard ](../assets/images/breadboard/breadboard5.jpg "Bread board photo")
+![breadboard ](../../assets/images/breadboard/breadboard5.jpg "Bread board photo")
 
 ## The circuit goes as follows
 
@@ -59,5 +59,5 @@ When the button is pushed, it connects the circuit to ground completing the circ
 ::: info NOTE
 Some larger breadboards will often isolate one half of the breadboard’s power rails from the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you’re unaware whether the power rails are or aren’t isolated, it can often lead to issues while building your circuit. It’s always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard’s power rails.
 
-![A dual sided Bread board.](../assets/images/breadboard/breadboard8.jpg "this shows a breadboard that is separated in the middle.")
+![A dual sided Bread board.](../../assets/images/breadboard/breadboard8.jpg "this shows a breadboard that is separated in the middle.")
 :::

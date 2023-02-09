@@ -190,83 +190,83 @@ In this lesson on combining sketches, we will be using two sketches from the exa
 
 One from LiquidCrytstal Library
 
-![image](../assets/images/CombiningSketches/LiquidCrytstalLibrary.png)
+![image](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png)
 
 The other from Adafruit DHT Sensor Library
 
-![image](../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png)
+![image](../../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png)
 
 This is the first file DHT_Unified_Sensor
 
-![image](../assets/images/CombiningSketches/DHTSensorLibraryExample.png)
+![image](../../assets/images/CombiningSketches/DHTSensorLibraryExample.png)
 
 This is the second file Hello World
 
-![image](../assets/images/CombiningSketches/LiquidCrytstalExample.png)
+![image](../../assets/images/CombiningSketches/LiquidCrytstalExample.png)
 
 These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
 
 Here are the two files side by side. With the IDE you can open two files and set them up, side by side. Basically open the IDE twice.
 
-![image](../assets/images/CombiningSketches/sidebyside.png)
+![image](../../assets/images/CombiningSketches/sidebyside.png)
 
 in each file there is a large comments block. To tidy up, we will remove them. This is optional.
 
 This gives us the two files – in a form that is a little easier to work on
 
-![image](../assets/images/CombiningSketches/sidebyside2.png)
+![image](../../assets/images/CombiningSketches/sidebyside2.png)
 
 First up, we copy the library load section
 
-![image](../assets/images/CombiningSketches/sidebyside3.png)
+![image](../../assets/images/CombiningSketches/sidebyside3.png)
 
 This is the section copied from right file to left file
 
-![image](../assets/images/CombiningSketches/sidebyside4.png)
+![image](../../assets/images/CombiningSketches/sidebyside4.png)
 
 The next section is the Definition Section
 
 In these particular files, there are definitions in one file. We copy from the right side to the left side sketch.
 Checking that there are no definitions with the same names and or different values.
 
-![image](../assets/images/CombiningSketches/sidebyside5.png)
+![image](../../assets/images/CombiningSketches/sidebyside5.png)
 
 This is the section copied from right file to left file
 
-![image](../assets/images/CombiningSketches/sidebyside6.png)
+![image](../../assets/images/CombiningSketches/sidebyside6.png)
 
 Next is the Global Variables Section
 
-![image](../assets/images/CombiningSketches/sidebyside7.png)
+![image](../../assets/images/CombiningSketches/sidebyside7.png)
 
 Copy the variables and library initializer values
 Again checking that there are no variables with the same names and or different values.
 
 This is the section copied from right file to left file
 
-![image](../assets/images/CombiningSketches/sidebyside8.png)
+![image](../../assets/images/CombiningSketches/sidebyside8.png)
 
 Next section is the  Setup
 
-![image](../assets/images/CombiningSketches/sidebyside9.png)
+![image](../../assets/images/CombiningSketches/sidebyside9.png)
 
 NOTE:  The contents of the Setup as copied but NOT the
 
-![image](../assets/images/CombiningSketches/nosetup.png)
+![image](../../assets/images/CombiningSketches/nosetup.png)
 
 Or the
 
-![image](../assets/images/CombiningSketches/nobracket.png)
+![image](../../assets/images/CombiningSketches/nobracket.png)
 
 at the end.
 
 This is the section copied from right file to left file
 
-![image](../assets/images/CombiningSketches/sidebyside10.png)
+![image](../../assets/images/CombiningSketches/sidebyside10.png)
 
 Next is the loop
 
-![image](../assets/images/CombiningSketches/sidebyside11.png)
+![image](../../assets/images/CombiningSketches/sidebyside11.png)
 
 ::: warning Pay Attention
 The contents of the loop are copied but **NOT** the `void loop()`
@@ -282,18 +282,18 @@ Or the ending bracket
 }
 ```
 
-![image](../assets/images/CombiningSketches/sidebyside12.png)
+![image](../../assets/images/CombiningSketches/sidebyside12.png)
 
 The two sketches are combined.
 
 If you now run verify, the sketch on the left should be able to verify
 
-![image](../assets/images/CombiningSketches/verifycompile.png)
+![image](../../assets/images/CombiningSketches/verifycompile.png)
 
-![image](../assets/images/CombiningSketches/verifycompile2.png)
+![image](../../assets/images/CombiningSketches/verifycompile2.png)
 
 This combined sketch is complete except for changing the code to use both sketches features
 
-![image](../assets/images/CombiningSketches/filecombodemo.gif)
+![image](../../assets/images/CombiningSketches/filecombodemo.gif)
 
 In this case, using the LCD to display the temperature and humidity readings

@@ -23,7 +23,7 @@ Using this wiring, the resistor is said to be a "pull-down" resistor. This simpl
 
 |                             EXAMPLE A                              |                                  EXAMPLE B                                   |                                  EXAMPLE C                                  | EXAMPLE D                                                                       |
 | :----------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | ------------------------------------------------------------------------------- |
-| ![button](../assets/images/buttons/button-1B.png "example of wiring side A") | ![button](../assets/images/buttons/button-1C.png "example of wiring on button side B") | ![button](../assets/images/buttons/button-1D.png "Example of wiring resistor side A") | ![button](../assets/images/buttons/button-1E.png " final wiring of gnd wire to resistor") |
+| ![button](../../assets/images/buttons/button-1B.png "example of wiring side A") | ![button](../../assets/images/buttons/button-1C.png "example of wiring on button side B") | ![button](../../assets/images/buttons/button-1D.png "Example of wiring resistor side A") | ![button](../../assets/images/buttons/button-1E.png " final wiring of gnd wire to resistor") |
 
 When you first start working with buttons, it is best to select 2 pins that are diagonal from each other. Until you understand how a button is orientated, this is the easiest way of making sure you wire the button correctly. There is some test code that will test if you have the button wired correctly, and that it is functioning.
 
@@ -60,8 +60,8 @@ If the led's on the Arduino board turns OFF every time you press the button, OR 
 
 If you look at a diagram, a button is shown by a broken line. If you look at the image below, you can see what the same wiring diagram looks like in a SCHEMATIC example.
 
-![Schematic of a button](../assets/images/buttons/buttonSchmatic.png "schematic of a button")
+![Schematic of a button](../../assets/images/buttons/buttonSchmatic.png "schematic of a button")
 
 ---
 
-![example of button sides](../assets/images/buttons/button-A.png "example of the sides of a button")
+![example of button sides](../../assets/images/buttons/button-A.png "example of the sides of a button")
