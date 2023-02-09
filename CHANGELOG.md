@@ -3,6 +3,16 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.2.1](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.2.0...v1.2.1) (2023-02-09)
+
+
+### 🐛 Bug Fixes
+
+* cleanup about us page ([840d9a0](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/840d9a09c763474c897ecb30813368637674bd60))
+* finish major formatting issues ([750aea3](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/750aea3df593aa40b8d2d95772dcc283bedf61e7))
+* fix build error due to image paths ([4011ae9](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/4011ae9d0aaa088d1eda61231f037131cebe5fcd))
+* oragnize pages according to sidebar grouping ([626fb48](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/626fb483ea2dbd7ade829d6bc5c687170ad64d50))
+
 ## [1.2.0](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.1.2...v1.2.0) (2023-02-09)
 
 
