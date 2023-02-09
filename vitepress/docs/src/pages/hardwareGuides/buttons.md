@@ -1,4 +1,4 @@
-# Basic Guide To Buttons
+# Basic Guide To Buttons { .text-[#e67e22] }
 
 ## Button Basics 🔲
 

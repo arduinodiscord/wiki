@@ -1,4 +1,4 @@
-# Proper way to use an LED | [HOME](README.md) |
+# Proper way to use an LED { .text-[#e67e22] }
 
 ---
 
@@ -40,7 +40,7 @@ When you light two, then the segments will get dimmer, because there is only 4ma
 
 If you light all eight segments, then you will only have 1ma passing through each one. This is why we do not use a resistor on the single common pin.
 
-# LED Color Matters
+## LED Color Matters
 
  Each LED has a *forward voltage.* *Forward voltage* is the required voltage level that the LED needs before it starts conducting current through it.
 
@@ -49,9 +49,9 @@ If you light all eight segments, then you will only have 1ma passing through eac
 
 ![led Chart](../assets/images/forwardVoltage/forwardVoltage.png "led color chart")
 
-# Resistor Math Time
+## Resistor Math Time
 
-## *We will see an example of voltage drop*
+### *We will see an example of voltage drop*
 
 If you have a supply voltage of 5v, and you have a red LED, we will say the forward voltage is 2.0v. First we subtract the \(forward voltage\) from the total voltage. So it would look like this.
 
@@ -62,7 +62,7 @@ If you have a supply voltage of 5v, and you have a red LED, we will say the forw
 > * **Rv** is the voltage you use to calculate the resistor you need.
 > * So in our example the math would be:
 >
-> * # 5v-2v=3v
+> * ### 5v-2v=3v
 >
 > * So the final value is **3v/0.02A=150**
 > * 150Ohm resistor is needed.
@@ -71,9 +71,9 @@ This is **REQUIRED** so the **LED will not burn out faster than expected.**
 
 And so we **do not damage the arduino/components in the circuit.**
 
-![](../assets/images/forwardVoltage/ledResistorCircut.png)
+![resistor_circuit](../assets/images/forwardVoltage/ledResistorCircut.png)
 
-![](../assets/images/forwardVoltage/resistance.png)
+![resistance](../assets/images/forwardVoltage/resistance.png)
 
 As you can see, the perfect resistor value would be 150 Ohms. If you don't have a resistor of the calculated value, you can use the next size larger than it.
 Another option is to use two smaller resistors end to end \(in series\) and use them in place of the single resistor.

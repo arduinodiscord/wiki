@@ -1,4 +1,4 @@
-# How to Use a Breadboard |[HOME](README.md) |
+# How to Use a Breadboard { .text-[#e67e22] }
 
 ## Introduction
 
@@ -56,7 +56,8 @@ Here is a small circuit on a breadboard. The red board you see is the Breadboard
 
 When the button is pushed, it connects the circuit to ground completing the circuit and turning on the LED.
 
-|        NOTE      |
-|  :------------:  |
-| *Some larger breadboards will often isolate one half of the breadboard’s power rails from the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you’re unaware whether the power rails are or aren’t isolated, it can often lead to issues while building your circuit. It’s always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard’s power rails.* |
-|  ![A dual sided Bread board.](../assets/images/breadboard/breadboard8.jpg "this shows a breadboard that is separated in the middle.")  |
+::: info NOTE
+Some larger breadboards will often isolate one half of the breadboard’s power rails from the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you’re unaware whether the power rails are or aren’t isolated, it can often lead to issues while building your circuit. It’s always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard’s power rails.
+
+![A dual sided Bread board.](../assets/images/breadboard/breadboard8.jpg "this shows a breadboard that is separated in the middle.")
+:::
