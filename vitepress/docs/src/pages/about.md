@@ -15,7 +15,7 @@ import { contributors } from '../static/contributors'
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      <div class="text-[#008184]">
+      <div class="text-[#e67e22]">
         The Contributors
       </div>
     </template>
