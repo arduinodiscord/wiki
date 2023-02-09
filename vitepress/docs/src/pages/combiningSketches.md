@@ -22,7 +22,7 @@ Let's look at each of these sections in more detail
 
 ## Block comments
 
-These can appear anywhere in the code. You will see them appear the most at the top with the author, description etc.
+These can appear anywhere in the code. You will see them appear the most at the top with the author, description, etc.
 
 Comments are ignored by the Arduino compiler. They are there to help you understand the code.
 
@@ -109,13 +109,13 @@ There are no semi colons after a define.
 
 ## Global Variables
 
-A variable that changes and is used though out the sketch has a global scope. This means the variable can be accessed anywhere in the sketch.
+A variable that is declared above the `setup()`, may or may not change value over time, and is used throughout the sketch - has a global scope. This means the variable can be accessed anywhere in the sketch.
 
 **Example**
 
 ```cpp
-int led_counter = 10; // this is a global variable
-int led_counter; // with no initial value
+int led_counter = 10;     // this is a global variable
+int led_counter;          // with no initial value
 Servo myservo(servo_pin); // this is a global object
 ```
 
@@ -127,23 +127,45 @@ These functions may be simple or complex.
 
 **Example**
 
-![image](../assets/images/CombiningSketches/functions.png)
+```cpp
+void blickLED() {
+    digitalWrite(led_pin, HIGH);
+    delay(1000);
+    digitalWrite(led_pin, LOW);
+    delay(1000);
+}
+```
 
 In the program, you would call this function with
 
-![image](../assets/images/CombiningSketches/functions2.png)
+```cpp
+blinkLED();
+```
 
 ## Setup
 
-This is a special section that runs once when the Arduino starts.
+```cpp
+void setup() {
+    Serial.begin(9600);
+}
+```
 
-In this there are commands to start devices and or libraries.
+This is a special function that runs once when the Arduino starts.
+
+Here, we place commands to start devices and or libraries.
 
 Setup serial ports basically anything that needs to be done ONCE when the Arduino starts
 
 **Example**
 
-![image](../assets/images/CombiningSketches/Setup.png)
+```cpp
+void setup() {
+    Serial.begin(9600);       // start serial port
+    pinMode(led_pin, OUTPUT); // set led pin to output
+    pinMode(2, INPUT);        // set switch pin to input
+    servo.attach(servo_pin);  // attach servo to servo pin
+}
+```
 
 ## Loop
 
@@ -153,7 +175,16 @@ Once setup has run, loop runs continuously. This is where your main code will be
 
 **Example**
 
-![image](../assets/images/CombiningSketches/loop.png)
+```cpp
+void loop() {
+    switchstate = digitalRead(2); // read switch state
+    if (switchstate == HIGH) {
+        digitalWrite(3, HIGH);   // turn on LED
+        digitalWrite(4, LOW);    // turn off LED
+        digitalWrite(5, LOW);    // turn off LED
+    }
+}
+```
 
 In this lesson on combining sketches, we will be using two sketches from the examples for two libraries.
 
@@ -165,7 +196,7 @@ The other from Adafruit DHT Sensor Library
 
 ![image](../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png)
 
-This is the first file   DHT_Unified_Sensor
+This is the first file DHT_Unified_Sensor
 
 ![image](../assets/images/CombiningSketches/DHTSensorLibraryExample.png)
 
@@ -237,15 +268,19 @@ Next is the loop
 
 ![image](../assets/images/CombiningSketches/sidebyside11.png)
 
-NOTE:  The contents of the loop are copied but NOT the
+::: warning Pay Attention
+The contents of the loop are copied but **NOT** the `void loop()`
+:::
 
-![image](../assets/images/CombiningSketches/notloop.png)
+```cpp
+void loop() {
+```
 
-Or the
+Or the ending bracket
 
-![image](../assets/images/CombiningSketches/nobracket.png)
-
-at the end.
+```cpp
+}
+```
 
 ![image](../assets/images/CombiningSketches/sidebyside12.png)
 
