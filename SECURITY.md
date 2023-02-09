@@ -12,4 +12,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Please report security issues to <https://docs.eyetrackvr.dev/contact/>
+Please report security issues to <https://wiki.arduinodiscord.cc/contact>

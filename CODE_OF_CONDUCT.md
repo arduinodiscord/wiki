@@ -1,4 +1,4 @@
-<img src="./img/logo.png" alt="Logo" align="right" height="76"/>
+<img src="./vitepress/docs/src/pages/public/logo/arduino_logo.gif" alt="Logo" align="right" height="76"/>
 
 # Contributor Covenant Code of Conduct
 
