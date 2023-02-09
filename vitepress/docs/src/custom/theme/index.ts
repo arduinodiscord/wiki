@@ -29,6 +29,7 @@ const theme = {
             collapsible: true,
             items: [
                 { text: "Introduction", link: "/gettingStarted/basicsOfProgramming" },
+                { text: "Buyers Guide", link: "/gettingStarted/arduinobuyersguide" },
             ],
         },
         {
@@ -47,7 +48,7 @@ const theme = {
                 { text: "Buttons", link: "/hardwareGuides/buttons" },
                 { text: "Resistors", link: "/hardwareGuides/ledResistors" },
                 { text: "Nine Volts", link: "/hardwareGuides/nineVolts" },
-
+                { text: "Maker Boards", link: "/hardwareGuides/makerboards" },
             ],
         }
     ],
