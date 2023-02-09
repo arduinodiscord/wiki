@@ -3,6 +3,15 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.2.3](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.2.2...v1.2.3) (2023-02-09)
+
+### 🐛 Bug Fixes
+
+* fix old links and add left over MD files ([2806adc](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/2806adcaa4fc205ae7149bb35f218a856f8613d3))
+
+## [1.2.2](https://github.com/ZanzyTHEbar/arduino-discord-wiki/compare/v1.2.1...v1.2.2) (2023-02-09)
+
+
 ## 1.0.0 (2023-02-09)
 
 
@@ -16,9 +25,9 @@
 * import favicon and site manifest ([a54aa16](https://github.com/arduinodiscord/wiki/commit/a54aa16d9162a2904c8ef4bef19a8e5e1e7e60d3))
 * initial commit ([d5ae123](https://github.com/arduinodiscord/wiki/commit/d5ae1233e8338dffc838220177e88d66a6e678df))
 
-
 ### 🐛 Bug Fixes
 
+* fix dev roadmap md ([4edc40f](https://github.com/ZanzyTHEbar/arduino-discord-wiki/commit/4edc40feff98c02aa567e957b4758117736300c9))
 * begin fixing md formatting ([ca7f8f7](https://github.com/arduinodiscord/wiki/commit/ca7f8f7e0627533130f8010af174d22191611c8a))
 * cleanup about us page ([840d9a0](https://github.com/arduinodiscord/wiki/commit/840d9a09c763474c897ecb30813368637674bd60))
 * finish major formatting issues ([750aea3](https://github.com/arduinodiscord/wiki/commit/750aea3df593aa40b8d2d95772dcc283bedf61e7))
