@@ -18,7 +18,7 @@ const theme = {
             text: 'About',
             items: [
                 { text: 'About Us', link: '/about' },
-                { text: 'Development Road Map', link: '/dev_roadmap' },
+                //{ text: 'Development Road Map', link: '/dev_roadmap' },
             ]
         },
         { text: "Contact", link: "/contact" },
@@ -49,6 +49,14 @@ const theme = {
                 { text: "Resistors", link: "/hardwareGuides/ledResistors" },
                 { text: "Nine Volts", link: "/hardwareGuides/nineVolts" },
                 { text: "Maker Boards", link: "/hardwareGuides/makerboards" },
+            ],
+        },
+        {
+            text: "Contributing",
+            collapsible: false,
+            items: [
+                { text: "Contributing", link: "/contributing/dev_docs" },
+                { text: "Pages", link: "/contributing/pages" },
             ],
         }
     ],
