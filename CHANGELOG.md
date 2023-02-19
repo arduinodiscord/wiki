@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.1.1](https://github.com/arduinodiscord/wiki/compare/v1.1.0...v1.1.1) (2023-02-19)
+
+
+### 🐛 Bug Fixes
+
+* Updated misplaced nano values ([09da835](https://github.com/arduinodiscord/wiki/commit/09da835044d4cb4c4e8cf290bd4dd4be2fa82609))
+
 ## [1.1.0](https://github.com/arduinodiscord/wiki/compare/v1.0.1...v1.1.0) (2023-02-12)
 
 
