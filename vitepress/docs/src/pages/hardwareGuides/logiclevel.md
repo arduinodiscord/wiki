@@ -31,4 +31,3 @@ If the voltage is Less than 1.8V, the Arduino will interpret the signal as a LOW
 
 ::: info NOTE
 If the voltage is between 1.8 and 3.3V, the Arduino will fluctiate between HIGH and LOW.
-:::
