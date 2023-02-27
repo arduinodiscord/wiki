@@ -49,6 +49,7 @@ const theme = {
                 { text: "Resistors", link: "/hardwareGuides/ledResistors" },
                 { text: "Nine Volts", link: "/hardwareGuides/nineVolts" },
                 { text: "Maker Boards", link: "/hardwareGuides/makerboards" },
+                { text: "Logic Level", link: "/hardwareGuides/logiclevel" },
             ],
         },
         {
