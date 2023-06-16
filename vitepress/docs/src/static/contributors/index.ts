@@ -35,6 +35,17 @@ export const contributors: IContributors[] = [
         ]
     },
     {
+        name: 'DaOfficialWizard',
+        avatar: 'https://avatars.githubusercontent.com/u/45744329?v=4',
+        title: 'Moderator',
+        links: [
+            {
+                icon: 'github',
+                link: 'https://github.com/ZanzyTHEbar'
+            },
+        ]
+    },
+    {
         name: 'DarwinWasWrong',
         avatar: 'https://avatars.githubusercontent.com/u/6262140?v=4',
         title: 'Helper',
@@ -42,17 +53,6 @@ export const contributors: IContributors[] = [
             {
                 icon: 'github',
                 link: 'https://github.com/DarwinWasWrong'
-            },
-        ]
-    },
-    {
-        name: 'DaOfficialWizard',
-        avatar: 'https://avatars.githubusercontent.com/u/45744329?v=4',
-        title: 'Helper',
-        links: [
-            {
-                icon: 'github',
-                link: 'https://github.com/ZanzyTHEbar'
             },
         ]
     },
