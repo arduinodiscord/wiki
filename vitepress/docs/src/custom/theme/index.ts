@@ -11,7 +11,7 @@ const theme = {
     /* Note the footer will not show when sidebar is active */
     footer: {
         message: "Released under the MIT License.",
-        copyright: "Copyright © 2022-present Arduino",
+        copyright: "Copyright © 2022-present Arduino Discord Community",
     },
     nav: [
         {
