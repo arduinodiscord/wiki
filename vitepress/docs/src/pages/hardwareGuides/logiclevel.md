@@ -1,4 +1,5 @@
 # What are Logic Levels { .text-[#e67e22] }
+# What are Logic Levels { .text-[#e67e22] }
 
 ## Introduction
 
@@ -24,7 +25,9 @@ The use of either the higher or the lower voltage level to represent a logic sta
 | 1 | 5V | 0V |
 
 ![level](../../assets/images/logiclevel/logic.png)
+![level](../../assets/images/logiclevel/logic.png)
 
+### Arduino Logic Levels for a 5V MCU
 ### Arduino Logic Levels for a 5V MCU
 
 If the voltage is less than 1.2V, the Arduino will interpret the signal as LOW. If the voltage is greater than 3.8V, the Arduino will interpret the signal as HIGH. If the voltage is between 1.2V and 3.8V, the Arduino will act unpredictably and can read as ether HIGH or LOW.
