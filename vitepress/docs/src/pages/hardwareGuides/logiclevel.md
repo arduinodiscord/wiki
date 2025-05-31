@@ -6,11 +6,11 @@ In digital circuits, a logic level is one of a finite number of states that a di
 
 ## Logic Levels
 
-### 2-Logic Levels
+### 2-State Logic Levels
 
 ![logic](../../assets/images/logiclevel/logic.png)
 
-The two levels are also used in digital communication to represent the two possible states of a bit. In binary logic, the two levels are logical high and logical low, which generally correspond to binary numbers 1 and 0, respectively, or truth values true and false. Signals with one of these two levels can be used in Boolean algebra for digital circuit design or analysis.
+The two levels are also used in digital communication to represent the two possible states of a bit. In binary logic, the two levels are logical high and logical low, which generally correspond to binary numbers 1 and 0, respectively, or truth values true and false. Signals with one of these two levels can be used in Boolean Algebra for digital circuit design or analysis.
 
 ### Active States
 
@@ -27,12 +27,12 @@ The use of either the higher or the lower voltage level to represent a logic sta
 
 ### Arduino Logic Levels for a 5V MCU
 
-If the voltage is less than 1.2V, the Arduino will interpret the signal as LOW. If the voltage is greater than 3.8V, the Arduino will interpret the signal as HIGH. If the voltage is between 1.3V and 3.7V, the Arduino may interpret the signal as either HIGH or LOW, so there is no way to define the behavior of the Arduino in this range.
+If the voltage is less than 1.2V, the Arduino will interpret the signal as LOW. If the voltage is greater than 3.8V, the Arduino will interpret the signal as HIGH. If the voltage is between 1.2V and 3.V, the Arduino will behave unpredictably, and can randomly read as eather high or low.
 
 ![logiclvl](../../assets/images/logiclevel/circuitjslogic.jpg)
 
 ::: info NOTE
-If the voltage is between 1.3V and 3.7V, the Arduino may fluctuate between HIGH and LOW.
+If the voltage is between 1.2V and 3.8V, the Arduino may fluctuate between HIGH and LOW.
 :::
 
 ---
@@ -92,7 +92,7 @@ A frequent mistake is thinking that a simple resistor voltage divider or a unidi
 - Communicating with ESP8266/ESP32 modules from a 5V Arduino
 - Connecting 5V logic outputs to 3.3V microcontrollers or Raspberry Pi
 - Shifting SPI, UART, or other digital signals between voltage domains
-- Seeing someone do it on YouTube or other sites without a level shifter does not mean it is safe. Often, this is a misunderstanding, and there is no proof the project worked for an extended period, was stable, or even worked at all—sometimes videos are edited.
+- **__Seeing someone do it on YouTube or other sites without a level shifter does not mean it is safe__**. Often, this is a misunderstanding, and there is no proof the project only worked poorly, was unstable, or never even worked at all—sometimes videos are edited.
 
 ---
 
