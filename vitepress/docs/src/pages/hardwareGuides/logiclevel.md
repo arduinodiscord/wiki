@@ -1,5 +1,4 @@
 # What are Logic Levels { .text-[#e67e22] }
-# What are Logic Levels { .text-[#e67e22] }
 
 ## Introduction
 
@@ -25,17 +24,17 @@ The use of either the higher or the lower voltage level to represent a logic sta
 | 1 | 5V | 0V |
 
 ![level](../../assets/images/logiclevel/logic.png)
-![level](../../assets/images/logiclevel/logic.png)
+
 
 ### Arduino Logic Levels for a 5V MCU
-### Arduino Logic Levels for a 5V MCU
 
-If the voltage is less than 1.2V, the Arduino will interpret the signal as LOW. If the voltage is greater than 3.8V, the Arduino will interpret the signal as HIGH. If the voltage is between 1.2V and 3.8V, the Arduino will act unpredictably and can read as ether HIGH or LOW.
+If the voltage is less than 1.2V, the Arduino will interpret the signal as LOW. If the voltage is greater than 3.8V, the Arduino will interpret the signal as HIGH. If the voltage is between 1.2V and 3.V, the Arduino will behave unpredictably, and can randomly read as eather high or low.
 
 ![logiclvl](../../assets/images/logiclevel/circuitjslogic.jpg)
 
 ::: info NOTE
-If the voltage is between 1.3V and 3.7V, the Arduino may fluctuate between HIGH and LOW.
+
+If the voltage is between 1.2V and 3.8V, the Arduino may fluctuate between HIGH and LOW.
 :::
 
 ---
@@ -95,7 +94,8 @@ A frequent mistake is thinking that a simple resistor voltage divider or a unidi
 - Communicating with ESP8266/ESP32 modules from a 5V Arduino
 - Connecting 5V logic outputs to 3.3V microcontrollers or Raspberry Pi
 - Shifting SPI, UART, or other digital signals between voltage domains
-- **__Seeing someone do it on YouTube or other sites without a level shifter does not mean it is safe__**. Often, this is a misunderstanding, and there is no proof there project only worked poorly, for a short period of time, was unstable, or never even worked at all—sometimes videos are edited.
+- **__Seeing someone do it on YouTube or other sites without a level shifter does not mean it is safe__**. Often, this is a misunderstanding, and there is no proof the project only worked poorly, was unstable, or never even worked at all—sometimes videos are edited.
+
 
 ---
 
