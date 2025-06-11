@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: 22
           cache: npm # or pnpm / yarn
-          cache-dependency-path: vitepress/yarn.lock
+          cache-dependency-path: vitepress/package-lock.json
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
