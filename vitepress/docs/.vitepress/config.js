@@ -22,4 +22,7 @@ export default defineConfig({
     title: 'Arduino Discord Wiki',
     description: 'The open source wiki for the Arduino discord server',
     themeConfig: theme,
+    sitemap: {
+        hostname: 'https://wiki.arduinodiscord.cc'
+    },
 })
