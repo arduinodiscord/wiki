@@ -1,4 +1,4 @@
-# Proper way to use an LED { .text-[#e67e22] }
+# Resistors { .text-[#e67e22] }
 
 ---
 
@@ -16,7 +16,7 @@ To stop this from happening, we use a resistor. This limits the amount of curren
 
 It does not matter, for a single LED, whether you apply the resistor to the GND or the power side.  So this is how you would wire a standard LED *(both are correct)*.
 
-![correct LED wiring](../../assets/images/forwardVoltage/ledFinal.png "Correct LED wiring")
+![correct LED wiring](/assets/images/forwardVoltage/ledFinal.png "Correct LED wiring")
 
 ---
 
@@ -24,7 +24,7 @@ It does not matter, for a single LED, whether you apply the resistor to the GND 
 
 Seven segment displays are a specific case. You **are required** to have your resistors on every segment of the display. This means it requires 7-8 resistors. *(depending upon if your display uses decimal or not).*
 
-![seven Segment Display](../../assets/images/forwardVoltage/sevenSegment.png "correct wiring for a display")
+![seven Segment Display](/assets/images/forwardVoltage/sevenSegment.png "correct wiring for a display")
 
 ---
 
@@ -47,7 +47,7 @@ Each LED has a *forward voltage.* *Forward voltage* is the required voltage leve
 Below is a chart of the common colors, with their forward voltage requirements. If you can find a data sheet for your LED, it is best to go by that.
 If not, the chart will assist you in your resistor math.
 
-![led Chart](../../assets/images/forwardVoltage/forwardVoltage.png "led color chart")
+![led Chart](/assets/images/forwardVoltage/forwardVoltage.png "led color chart")
 
 ## Resistor Math Time
 
@@ -71,9 +71,9 @@ This is **REQUIRED** so the **LED will not burn out faster than expected.**
 
 And so we **do not damage the arduino/components in the circuit.**
 
-![resistor_circuit](../../assets/images/forwardVoltage/ledResistorCircut.png)
+![resistor_circuit](/assets/images/forwardVoltage/ledResistorCircut.png)
 
-![resistance](../../assets/images/forwardVoltage/resistance.png)
+![resistance](/assets/images/forwardVoltage/resistance.png)
 
 As you can see, the perfect resistor value would be 150 Ohms. If you don't have a resistor of the calculated value, you can use the next size larger than it.
 Another option is to use two smaller resistors end to end \(in series\) and use them in place of the single resistor.
