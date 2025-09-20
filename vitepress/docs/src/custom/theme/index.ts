@@ -49,6 +49,7 @@ const theme = {
                 { text: "BreadBoards", link: "/hardwareGuides/breadBoard" },
                 { text: "Buttons", link: "/hardwareGuides/buttons" },
                 { text: "Resistors", link: "/hardwareGuides/ledResistors" },
+                { text: "Multimeter", link: "/hardwareGuides/multimeter" },
                 { text: "Nine Volts", link: "/hardwareGuides/nineVolts" },
                 { text: "Maker Boards", link: "/hardwareGuides/makerboards" },
                 { text: "Logic Level", link: "/hardwareGuides/logiclevel" },
