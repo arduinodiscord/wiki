@@ -10,7 +10,7 @@ hero:
   tagline: here you can learn everything Arduino
   actions:
     - theme: brand
-  text: Enter
+      text: Get Started
       link: /gettingStarted/basicsOfProgramming
     - theme: alt
       text: View on GitHub
