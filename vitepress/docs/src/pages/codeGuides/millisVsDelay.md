@@ -75,7 +75,7 @@ scratch' part is what's going to get a 'wow' from the audience,
 if it's done right.*
 
 Anything but `delay()` will be lost on that audience, but a
-blinking light is going to get them going.  They'll be .. okay,
+blinking light is going to get them going.  They'll be—okay,
 maybe not.  This is a first draft scenario. 😉
 
 So what `delay()` provides is a pause in program execution. It
@@ -127,8 +127,8 @@ those 'miles' (count of milliseconds).
 
 There's no cheating.
 
-So `millis()` isn't a timer - it's a counter; but it counts
-... milliseconds, which happens to involve 'time'.  Worse,
+So `millis()` isn't a timer—it's a counter; but it counts
+…milliseconds, which happens to involve 'time'. Worse,
 only upgrades the count when some time has passed (otherwise it'd
 be like putting that drill on the odometer, to race it forward 30
 thousand miles in just a few minutes of 'bench' time).
@@ -154,7 +154,7 @@ keep track of how long the glue has been drying. 😉
 You walk back into the kitchen, to read the current time on
 the clock.
 
-You write it down, and head back to the ... the makerspace you
+You write it down, and head back to the…the makerspace you
 got there. 😉  *Your bench.*
 
 Now you have two times written down; one is from the first time
