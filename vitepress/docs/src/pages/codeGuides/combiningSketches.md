@@ -3,7 +3,7 @@
 When combining two or more sketches, it is **VERY** important that you understand the various sections of the sketch,
 the next part of this guide is describing these sections.
 
-You can skip over this, then come back later and read it when your combined sketches don’t work.
+You can skip over this, then come back later and read it when your combined sketches don't work.
 
 ::: tip Sketch Sections
 Arduino basic sketches have sections
@@ -121,14 +121,14 @@ Servo myservo(servo_pin); // this is a global object
 
 ## Functions
 
-This is a section that may or not be in the sketch. Usual coding practice is to have any functions that are used in the sketch located here.
+This is a section that may or may not be in the sketch. Usual coding practice is to have any functions that are used in the sketch located here.
 
 These functions may be simple or complex.
 
 **Example**
 
 ```cpp
-void blickLED() {
+void blinkLED() {
     digitalWrite(led_pin, HIGH);
     delay(1000);
     digitalWrite(led_pin, LOW);
@@ -154,7 +154,7 @@ This is a special function that runs once when the Arduino starts.
 
 Here, we place commands to start devices and or libraries.
 
-Setup serial ports basically anything that needs to be done ONCE when the Arduino starts
+setup serial ports basically anything that needs to be done ONCE when the Arduino starts
 
 **Example**
 
@@ -188,9 +188,9 @@ void loop() {
 
 In this lesson on combining sketches, we will be using two sketches from the examples for two libraries.
 
-One from LiquidCrytstal Library
+One from LiquidCrystal Library
 
-![image](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png)
+![image](../../assets/images/CombiningSketches/LiquidCrystalLibrary.png)
 
 The other from Adafruit DHT Sensor Library
 
@@ -202,7 +202,7 @@ This is the first file DHT_Unified_Sensor
 
 This is the second file Hello World
 
-![image](../../assets/images/CombiningSketches/LiquidCrytstalExample.png)
+![image](../../assets/images/CombiningSketches/LiquidCrystalExample.png)
 
 These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
 
@@ -227,7 +227,7 @@ This is the section copied from right file to left file
 The next section is the Definition Section
 
 In these particular files, there are definitions in one file. We copy from the right side to the left side sketch.
-Checking that there are no definitions with the same names and or different values.
+Check that there are no definitions with the same names and or different values.
 
 ![image](../../assets/images/CombiningSketches/sidebyside5.png)
 
@@ -240,7 +240,7 @@ Next is the Global Variables Section
 ![image](../../assets/images/CombiningSketches/sidebyside7.png)
 
 Copy the variables and library initializer values
-Again checking that there are no variables with the same names and or different values.
+Again check that there are no variables with the same names and or different values.
 
 This is the section copied from right file to left file
 
