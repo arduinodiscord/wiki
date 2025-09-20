@@ -21,6 +21,7 @@ const theme = {
                 //{ text: 'Development Road Map', link: '/dev_roadmap' },
             ]
         },
+        { text: 'FAQ', link: '/gettingStarted/faq' },
         { text: "Contact", link: "/contact" },
     ],
     sidebar: [
@@ -30,6 +31,7 @@ const theme = {
             items: [
                 { text: "Introduction", link: "/gettingStarted/basicsOfProgramming" },
                 { text: "Buyers Guide", link: "/gettingStarted/arduinobuyersguide" },
+                { text: "FAQ", link: "/gettingStarted/faq" },
             ],
         },
         {
