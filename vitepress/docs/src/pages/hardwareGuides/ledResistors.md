@@ -2,11 +2,11 @@
 
 ---
 
-## LED is short for Light Emitting Diode
+## An LED is short for Light Emitting Diode
 
 Diodes are devices that let electricity flow only in one direction. LEDs work the same way, as they are also diodes.
 
-When you connect an LED to a circuit, you have a direct link from one leg of the diode to the other.  LEDs cannot process large amounts of current they are limited to 20 mA or less. Although they may try and pass the full current, doing so will cause damage to the LED, or shorten its performance efficiency (or damage/shorten the life of the Arduino pin).
+20 mA or less. Although they may try and pass the full current, doing so will cause damage to the LED, or shorten its performance efficiency (or damage/shorten the life of the Arduino pin).
 
 To stop this from happening, we use a resistor. This limits the amount of current flowing through the LED, so it lights and doesn't burn out.
 
@@ -14,21 +14,21 @@ To stop this from happening, we use a resistor. This limits the amount of curren
 
 ## Correct Wiring
 
-It does not matter, for a single LED, whether you apply the resistor to the GND or the power side.  So this is how you would wire a standard LED *(both are correct)*.
+It does not matter, for a single LED, whether you apply the resistor to the GND or the power side. So this is how you would wire a standard LED *(both are correct)*.
 
-![correct LED wiring](/assets/images/forwardVoltage/ledFinal.png "Correct LED wiring")
+![correct LED wiring](../../assets/images/forwardVoltage/ledFinal.png "Correct LED wiring")
 
 ---
 
 ## Seven Segment Displays
 
-Seven segment displays are a specific case. You **are required** to have your resistors on every segment of the display. This means it requires 7-8 resistors (depending upon whether your display uses a decimal point or not).
+Seven segment displays are a specific case. You are required to have your resistors on every segment of the display. This means it requires 7-8 resistors (depending upon whether your display uses a decimal point or not).
 
-![seven Segment Display](/assets/images/forwardVoltage/sevenSegment.png "correct wiring for a display")
+![seven Segment Display](../../assets/images/forwardVoltage/sevenSegment.png "correct wiring for a display")
 
 ---
 
-You **do not** want to use a resistor on the common pin of the display.
+You do not want to use a resistor on the common pin of the display.
 
 The reason for this is found in the math.
 If you look at the example above, you can see that each segment only has 8 mA passing through it. It does not matter if one segment is lit, or if all seven are. Each one is limited and controlled to 8 mA.
@@ -47,7 +47,7 @@ Each LED has a *forward voltage.* *Forward voltage* is the required voltage leve
 Below is a chart of the common colors, with their forward voltage requirements. If you can find a data sheet for your LED, it is best to go by that.
 If not, the chart will assist you in your resistor math.
 
-![led Chart](/assets/images/forwardVoltage/forwardVoltage.png "led color chart")
+![led Chart](../../assets/images/forwardVoltage/forwardVoltage.png "led color chart")
 
 ## Resistor Math Time
 
@@ -67,13 +67,13 @@ If you have a supply voltage of 5 V, and you have a red LED, we will say the for
 > * So the final value is **3 V / 0.02 A = 150**
 > * 150 ohm resistor is needed.
 
-This is **REQUIRED** so the **LED will not burn out faster than expected.**
+This is required so the LED will not burn out faster than expected.
 
-And so we **do not damage the arduino/components in the circuit.**
+And so we do not damage the Arduino/components in the circuit.
 
-![resistor_circuit](/assets/images/forwardVoltage/ledResistorCircut.png)
+![resistor_circuit](../../assets/images/forwardVoltage/ledResistorCircut.png)
 
-![resistance](/assets/images/forwardVoltage/resistance.png)
+![resistance](../../assets/images/forwardVoltage/resistance.png)
 
 As you can see, the perfect resistor value would be 150 Ohms. If you don't have a resistor of the calculated value, you can use the next size larger than it.
 Another option is to use two smaller resistors end to end \(in series\) and use them in place of the single resistor.
