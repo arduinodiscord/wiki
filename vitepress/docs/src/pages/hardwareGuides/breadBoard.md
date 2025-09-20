@@ -6,11 +6,11 @@ Breadboards are one of the most fundamental pieces when learning how to build ci
 
 ## Why Use Breadboards?
 
-An electronics breadboard (as opposed to the type on which sandwiches are made) is actually referring to a solder-less breadboard. These are great units for making temporary circuits and prototyping, and they require absolutely no soldering.
+An electronics breadboard (as opposed to the type on which sandwiches are made) is actually referring to a solderless breadboard. These are great units for making temporary circuits and prototyping, and they require absolutely no soldering.
 
 Prototyping is the process of testing out an idea by creating a preliminary model from which other forms are developed or copied, and it is one of the most common uses for breadboards. If you aren’t sure how a circuit will react under a given set of parameters, it’s best to build a prototype and test it out.
 
-For those new to electronics and circuits, breadboards are often the best place to start. That is the real beauty of breadboards they can house both the simplest circuit as well as very complex circuits.
+For those new to electronics and circuits, breadboards are often the best place to start. That is the real beauty of breadboards: they can house both the simplest circuit as well as very complex circuits.
 
 Another common use of breadboards is testing out new parts, such as Integrated circuits (ICs). When you are trying to figure out how a part works and constantly rewiring things, you don’t want to have to solder your connections each time.
 
@@ -44,7 +44,7 @@ If you are working with a development board such as an Arduino, then you can sim
 
 Here is a small circuit on a breadboard. The red board you see is the Breadboard Power Supply Stick with headers soldered to the PCB. The breadboard power supply stick regulates voltage from a 9V wall wart to either 5V or 3.3V to the power rails.
 
-![breadboard](/assets/images/breadboard/breadboard5.jpg "Bread board photo")
+![breadboard](/assets/images/breadboard/breadboard5.jpg "Breadboard photo")
 
 ## The circuit goes as follows
 
@@ -59,5 +59,5 @@ When the button is pushed, it connects the circuit to ground completing the circ
 ::: info NOTE
 Some larger breadboards will often isolate one half of the breadboard’s power rails from the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you’re unaware whether the power rails are or aren’t isolated, it can often lead to issues while building your circuit. It’s always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard’s power rails.
 
-![A dual sided Bread board.](/assets/images/breadboard/breadboard8.jpg "this shows a breadboard that is separated in the middle.")
+![A dual sided Bread board.](/assets/images/breadboard/breadboard8.jpg "This shows a breadboard that is separated in the middle.")
 :::

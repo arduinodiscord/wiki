@@ -14,6 +14,7 @@ Welcome to the open source wiki for the Arduino Discord server. Here you can fin
 | [Combining Sketches](./vitepress/docs/src/pages/codeGuides/combiningSketches.md)          |
 | [LED Basics](./vitepress/docs/src/pages/hardwareGuides/ledResistors.md)                   |
 | [Millis and Delays](./vitepress/docs/src/pages/codeGuides/millisVsDelay.md)               |
+| [Multimeter Basics](./vitepress/docs/src/pages/hardwareGuides/multimeter.md)              |
 | [Nine Volt Battery Basics](./vitepress/docs/src/pages/hardwareGuides/nineVolts.md)        |
 | [Logic Levels & Level Shifters](./vitepress/docs/src/pages/hardwareGuides/logiclevel.md)  |
 

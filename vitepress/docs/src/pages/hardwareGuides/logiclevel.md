@@ -23,12 +23,9 @@ The use of either the higher or the lower voltage level to represent a logic sta
 | 0 | 0V | 5V |
 | 1 | 5V | 0V |
 
-![level](../../assets/images/logiclevel/logic.png)
-
-
 ### Arduino Logic Levels for a 5V MCU
 
-If the voltage is less than 1.2V, the Arduino will interpret the signal as LOW. If the voltage is greater than 3.8V, the Arduino will interpret the signal as HIGH. If the voltage is between 1.2V and 3.V, the Arduino will behave unpredictably, and can randomly read as eather high or low.
+If the voltage is between 1.2 V and 3.8 V, the Arduino will behave unpredictably, and can randomly read as either high or low.
 
 ![logiclvl](../../assets/images/logiclevel/circuitjslogic.jpg)
 
