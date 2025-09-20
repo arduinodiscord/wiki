@@ -36,7 +36,7 @@ discussed.
 upload the program to the Uno, and it seems to run (prints messages
 > to the Serial Terminal, as expected).  But there's a problem..."*
 
-### What, then, is Programming? { .h2 }
+### What, then, is Programming?
 
 #### Introduction for Beginners: What is a Computer Language?
 
@@ -121,21 +121,21 @@ void loop() {
 }
 ```
 
-#### Quick wokwi demo
+#### Quick Wokwi demo
 
 [*Now Playing*](https://wokwi.com/projects/346503862192964178 "Now Playing")
 &nbsp;&nbsp;*on*&nbsp;&nbsp;
-[*wokwi.com*](https://wokwi.com/ "wokwi.com")
+[*Wokwi.com*](https://wokwi.com/ "Wokwi.com")
 &nbsp;&nbsp;&nbsp;&nbsp;*See it in action, now!*
 
 ### Ok but this got complicated, fast
 
-Yeah, it did. 😉
+Yes, it did. 😉
 
-Here's a wokwi 'answer' to some of that:
+Here's a Wokwi 'answer' to some of that:
 
 [*Misuse of C Preprocessor to simplify code*](https://wokwi.com/projects/346588077549945428)
-**morse_beacon.ino** *on wokwi*
+**morse_beacon.ino** *on Wokwi*
 
 That lets you cheat, quite a bit. 😉
 
@@ -151,16 +151,16 @@ C++ itself, which is the 'Language of Arduino' so to speak.*
 ### Hide those details in a library
 
 [*Misuse Morse with Hidden Details*](https://wokwi.com/projects/346589390531723859)
-**morse_beacon_cheaty.ino** *on wokwi*
+ **morse_beacon_cheaty.ino** *on Wokwi*
 
 [*Misuse Morse with Beeps*](https://wokwi.com/projects/346608451675226708)
-**morse_beacon_beeps.ino** *on wokwi*
+ **morse_beacon_beeps.ino** *on Wokwi*
 
 ```txt
 zork:  "You see a jelly nailed to a tree, here.  Exits: East, Up, West"
 ```
 
-## The C++ Language is the language used in the Arduino ID
+## The C++ Language is the language used in the Arduino IDE
 
 There's a 'computer language' called `C++` that is used in the
 Arduino IDE, similarly to how `C++` is used on your desktop PC.
@@ -185,7 +185,7 @@ it got made (see just below).
 void setup() { } void loop() {} // END.
 ```
 
-This program compiles and 'runs' just fine, on wokwi.  Doesn't do
+This program compiles and 'runs' just fine, on Wokwi.  Doesn't do
 much; isn't meant to.
 
 In a sense, it has several *placeholders* for *future ideas* that
@@ -411,7 +411,7 @@ void loop() {
 }
 ```
 
-*Now the loop is 'playing'.  It's got stuph inside of it. And it does it, whatever is in there, repeatedly.*
+*Now the loop is 'playing'.  It's got stuff inside of it. And it does it, whatever is in there, repeatedly.*
 
 ### Fixup the `setup()` to separate events
 
@@ -439,12 +439,12 @@ void loop() {
 }
 ```
 
-*A slight refinement: there's a decently long delay after the `haha()` message plays, marking distinctly where the setup() ends and where the loop() begins, without crudding it up with a `Mr. Obvious` announcement such as `You are entering the loop!`*
+*A slight refinement: there's a decently long delay after the `haha()` message plays, marking distinctly where the setup() ends and where the loop() begins, without cluttering it up with an obvious announcement such as `You are entering the loop!`*
 
 ## Blink with Weight
 
 [*Blink With Weight*](https://wokwi.com/projects/346778138320044627)
-**blink_with_weight.ino** *on wokwi*
+ **blink_with_weight.ino** *on Wokwi*
 
 (Scroll for discussion)
 
@@ -579,7 +579,7 @@ void loop() {
 
 *You said it was simpler, but there's new stuff now!*
 
-Yeah.
+Yes.
 
 The **C Preprocessor** was used to 'process' all the `#define` stuff.
 
@@ -682,7 +682,7 @@ void report() {
   Serial.print(200);    // 4 * 50 = 200
   Serial.print("    Your OFF_TIME: ");
   Serial.println(1000); // 4 * 50 * 5 = 1000
-  Serial.println("");
+  Serial.println("");`1111111111111111111111111111111111111111111111111111111111111111111111111111111
 }
 
 void LED_BLINK () {
@@ -806,7 +806,7 @@ void loop() {
 
 ### Druids, man
 
-*Nope.*
+*No.*
 
 **Compress the code - setup() - ii**
 
@@ -861,7 +861,7 @@ void loop() {
 
 ### Wait wait can't you just shove it in the loop?
 
-*You're right! Missed that simplification. ;)*
+*You are right. I missed that simplification.*
 
 **Compress the code - everything inside the loop()**
 
@@ -878,7 +878,7 @@ void loop() {
 
 ### Okay that was a bit too stingy, what about making it look nice, again?
 
-*Good idea.*
+*That is a good idea.*
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Compress the code - reformat for clarity and simplicity**
 
@@ -963,10 +963,10 @@ Now it is true that many small programs that you'll write will
 compile, unmodified, for quite a few different Arduino boards,
 as well as for (almost) countless `third-party vendor` boards.
 
-*The above code 'worked' on **wokwi.com** for their Uno, ATMEGA 2560
+*The above code 'worked' on **Wokwi.com** for their Uno, ATMEGA 2560
 and at least one other board listed there.  Unmodified.  Most boards
 that have an LED on the board itself (for a
-[**blinkenlight**](https://en.wikipedia.org/wiki/Blinkenlights))
+[**blinkenlight**](https://en.wikipedia.org/wiki/Blinkenlights)) 
 will have a definition for LED_BUILTIN that will operate that LED
 without knowing its 'proper' port pin number (it's usually
 on `D13`).*
@@ -1024,7 +1024,7 @@ gets called automatically, to start the program.
 You do not usually call `main()` in your code; it's specified
 (already) in a file named `main.cpp` in the Arduino IDE.
 
-See [main.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp) *(also shown below)*.
+See [main.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp)  *(also shown below)*.
 
 Traditional programs use `main()` to start things; the Arduino IDE
 also (optionally) allows you to do so, but encourages you (instead)
@@ -1135,11 +1135,11 @@ Copy all the files from:
 
 [theme](https://github.com/arduino/Arduino/tree/master/build/shared/lib/theme)
 
-to a directory named `theme` in your `Sketchbook` folder, and
+ to a directory named `theme` in your `Sketchbook` folder, and
 modify to suit.
 
 [theme.txt](../../assets/images/basicsOfProgramming/sequoia/theme.txt)
-has been modified to show possible changes as a quick example.
+ has been modified to show possible changes as a quick example.
 
 If you have multiple themes, zip each one up without including
 creation of a directory (when it is unzipped, it will not create a
