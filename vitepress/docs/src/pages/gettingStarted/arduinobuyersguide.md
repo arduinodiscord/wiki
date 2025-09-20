@@ -3,22 +3,24 @@
 
 ### This is a guide on all the different Arduino's
 
-### The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder
+The Arduino Uno is the most common Arduino because it has a normal amount of IO. Also, there is no need to solder
 
-### The Leonardo has the same form-factor as the Uno but can be used as an HID device, like a game-pad or "button-box" and such
+The Leonardo has the same form-factor as the Uno but can be used as an HID device, like a game-pad or "button-box" and such
 
-### The Mega 2560 is extremely common. It has over three times IO than the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this
+The Mega 2560 is extremely common. It has over three times IO than the UNO. If you need a lot of LEDs, or pins to use, the MEGA is a good choice for this
 
-### The Micro is good to use on a breadboard. Also compact this has the same chip as the Leonardo
+The Micro is good to use on a breadboard. Also compact this has the same chip as the Leonardo
 
-### The Due also has a lot of IO, has more memory than the Mega 2560 which also makes it a great starter board
+The Due also has a lot of IO, has more memory than the Mega 2560 which also makes it a great starter board
 
-### The nano has the same chip as the Uno so can be used in a final product. Many times it's easiest to prototype on an UNO, then when all the debugging is done, use the NANO for the final product
+The nano has the same chip as the Uno so can be used in a final product. Many times it's easiest to prototype on an UNO, then when all the debugging is done, use the NANO for the final product
 
-### The Zero uses 3.3v instead of the normal 5v. Also is a 32-bit board so it can process a lot faster. 
+The Zero uses 3.3v instead of the normal 5v. Also is a 32-bit board so it can process a lot faster.
 ---
 
 # Below is a chart of the more common Arduino boards
+
+<div style="overflow-x: auto;">
 
 | Name                        | [UNO](https://store.arduino.cc/products/arduino-uno-rev3)        | [Leonardo](https://store.arduino.cc/products/arduino-leonardo-with-headers)   | [Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)  | [Micro](https://store.arduino.cc/products/arduino-micro)      | [Due](https://store.arduino.cc/products/arduino-due)         | [nano](https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us)      | [Zero](https://store-usa.arduino.cc/products/arduino-zero?selectedStore=us)
 | --------------------------- | ---------- | ---------- | ---------- | ---------- | ----------- | --------- | ----------- |
@@ -40,3 +42,5 @@
 | WIDTH                       | 53.4 mm    | 53.3 mm    | 53.3 mm    | 18 mm      | 53.3 mm     | 45 mm     | 53 mm       |
 | WEIGHT                      | 25 g       | 20 g       | 37 g       | 13 g       | 36 g        | 7 g       | 12 gr.      |
 |                             |            |            |            |            |             |           |
+
+</div>
