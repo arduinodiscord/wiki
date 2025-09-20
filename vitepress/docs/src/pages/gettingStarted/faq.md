@@ -74,7 +74,7 @@ Try another cable/port, update drivers, and check Device Manager (Windows) or dm
 
 ### 5. What's the difference between 5V and 3.3V boards? {#5-whats-the-difference-between-5v-and-33v-boards}
 
-5V boards (Arduino Uno, Mega) use 5V logic. Many modern boards (ESP32, some SAMD) use 3.3V logic. Never connect a 5V output directly to a 3.3V input — use a [level shifter](vitepress\docs\src\pages\hardwareGuides\logiclevel.md) or voltage divider to avoid damaging components.
+5V boards (Arduino Uno, Mega) use 5V logic. Many modern boards (ESP32, some SAMD) use 3.3V logic. Never connect a 5V output directly to a 3.3V input — use a [level shifter](../hardwareGuides/logiclevel) or voltage divider to avoid damaging components.
 
 ---
 
@@ -133,9 +133,8 @@ Determine whether the sensor outputs analog or digital. Use `analogRead()` for a
 Mechanical switches produce noisy transitions when toggled. Debouncing (software delay, state filtering, or hardware RC filtering) prevents multiple triggers from a single press. See the Arduino debounce example for patterns.
 
 Debounce example: https://www.arduino.cc/en/Tutorial/BuiltInExamples/Debounce
-![Button bouncing image](vitepress\docs\src\assets\images\faq\buttonBounce.png)
-[Go to this page for more into on buttons.](vitepress\docs\src\pages\hardwareGuides\buttons.md)
-
+![Button bouncing image](../../assets/images/faq/buttonBounce.png)
+[Go to this page for more info on buttons.](../hardwareGuides/buttons)
 
 ---
 
@@ -148,14 +147,13 @@ Motors draw high current and can generate electrical noise. Use a separate motor
 ### 15. Can I connect multiple Arduinos together? {#15-can-i-connect-multiple-arduinos-together}
 
 Yes. You can use serial (UART), I2C, or SPI to communicate between microcontrollers. Decide on a master/slave or peer architecture and handle addressing and clocking carefully. Ensure voltage levels match between boards.
-![Arduino wired for serial data](vitepress\docs\src\assets\images\faq\arduinosSerial.jpg)
-
+![Arduino wired for serial data](../../assets/images/faq/arduinosSerial.jpg)
 
 ---
 
 ### 16. Why does my analogRead return noisy values? {#16-why-does-my-analogread-return-noisy-values}
 
-Analog values can fluctuate due to electrical noise, poor grounding, or high source impedance. Use averaging (multiple samples), smoothing filters, proper grounding, and keep analog wiring away from high-current traces.![floatingPin image](vitepress\docs\src\assets\images\faq\floatingpin.png)
+Analog values can fluctuate due to electrical noise, poor grounding, or high source impedance. Use averaging (multiple samples), smoothing filters, proper grounding, and keep analog wiring away from high-current traces.![floatingPin image](../../assets/images/faq/floatingpin.png)
 
 ---
 
@@ -172,7 +170,7 @@ Prototype on a breadboard or solderless perfboard. When moving to production:
 - Move to soldered connections or a PCB
 - Use reliable power supplies and connectors
 - Add protection components (fuses, TVS diodes) where appropriate
-- Consider enclosures and thermal management ![electro cookie boards](vitepress\docs\src\assets\images\faq\eCookie.jpg) [find them here](https://www.amazon.com/stores/ElectroCookieInc/page/B11DB0B2-E282-43CA-AC4D-2D1349C983E7?)
+- Consider enclosures and thermal management ![electro cookie boards](../../assets/images/faq/eCookie.jpg) [find them here](https://www.amazon.com/stores/ElectroCookieInc/page/B11DB0B2-E282-43CA-AC4D-2D1349C983E7?)
 
 ---
 
@@ -185,4 +183,3 @@ Use `Serial.print()` to trace program flow and variable values, isolate hardware
 ### 20. Can I use Arduino with Python or other languages? {#20-can-i-use-arduino-with-python-or-other-languages}
 
 Yes. Standard Arduinos can communicate over serial with Python (using `pyserial`). Some boards (ESP32, some microcontrollers) can run MicroPython or CircuitPython directly. Use the toolchain that best fits your workflow. **NOTE that all of thease option are NOT industry standard, they are limiting, they only work on some MCU's, and genarly not supported.**
-
