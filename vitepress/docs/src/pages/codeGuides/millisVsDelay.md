@@ -1,4 +1,4 @@
-# Timers and Counters { .text-[#e67e22] }
+# Millis vs Delay { .text-[#e67e22] }
 
 ## `millis()` versus `delay()`
 
