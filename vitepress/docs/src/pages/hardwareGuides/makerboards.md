@@ -1,5 +1,7 @@
 # These are all the Maker boards Arduino makes
 
+<div style="overflow-x: auto;">
+
 | Board Name                           | Arduino MKR NB 1500                 | Arduino MKR GSM 1400    | Arduino MKR1000 WIFI  | Arduino MKR ZERO      | Arduino MKR Vidor 4000 | Arduino MKR WAN 1310     | Arduino MKR WAN 1300(LoRa) | Arduino MKR Vidor 4000 | Arduino MKR WiFi 1010  |
 | ------------------------------------ | ----------------------------------- | ----------------------- | --------------------- | --------------------- | ---------------------- | ------------------------ | -------------------------- | ---------------------- | ---------------------- |
 | MICROCONTROLLER                      | SAMD21 Cortex                       | SAMD21 Cortex           | SAMD21 Cortex         | SAMD21 Cortex         | SAMD21 Cortex          | SAMD21 Cortex            | SAMD21 Cortex              | SAMD21 Cortex          | SAMD21 Cortex          |
@@ -37,3 +39,5 @@
 | DEVICE LOCATION                      | GNSS via modem                      |                         |                       |                       |                        |                          |                            |                        |                        |
 | POWER CONSUMPTION (LTE M1)           | min 100 mA / max 190 mA             |                         |                       |                       |                        |                          |                            |                        |                        |
 | POWER CONSUMPTION (LTE NB1)          | min 60 mA / max 140 mA              |                         |                       |                       |                        |                          |                            |                        |
+
+</div>
