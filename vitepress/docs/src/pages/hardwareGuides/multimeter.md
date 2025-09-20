@@ -1,8 +1,8 @@
 # Multimeter Guide { .text-[#e67e22] }
 
-## Multimeter is a tool that can measure voltage, current, and resistance.
+## What is a Multimeter?
 
-A multimeter is an essential tool for anyone working with electronics. It allows you to measure:
+A **multimeter** is an essential tool for anyone working with electronics. It allows you to measure:
 
 - **Voltage** (V) - electrical potential difference
 - **Current** (A) - flow of electrical charge
@@ -44,3 +44,6 @@ Use the continuity mode (usually indicated by a sound wave symbol) to test if a 
 - Ω = Resistance
 - ~ = AC (alternating current)
 - — = DC (direct current)
+
+## More indepth info into Multimeters:
+-  [Multi meter user guide](https://www.electronicshub.org/how-to-use-a-multimeter/)
