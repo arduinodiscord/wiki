@@ -1,7 +1,7 @@
 # Combining Sketches { .text-[#e67e22] }
 
-When combining two or more sketches, it is **VERY** important that you understand the various sections of the sketch,
-the next part of this guide is describing these sections.
+When combining two or more sketches, it is **VERY** important that you understand the various sections of the sketch.
+The next part of this guide describes these sections.
 
 You can skip over this, then come back later and read it when your combined sketches don't work.
 
@@ -10,14 +10,14 @@ Arduino basic sketches have sections
 
 * Block comments
 * Single line comments
-* Libraries Include Section
+* Library Include Section
 * Definition Section
 * Global Variables
 * Functions
 * Setup
 * Loop
 
-Let's look at each of these sections in more detail
+Let's look at each of these sections in more detail.
 :::
 
 ## Block comments
@@ -31,7 +31,7 @@ They can be used to temporarily disable code. This is useful when you are testin
 **Example**
 
 ```cpp
-/* 
+/*
  * This is a block comment
  */
 ```
@@ -152,9 +152,9 @@ void setup() {
 
 This is a special function that runs once when the Arduino starts.
 
-Here, we place commands to start devices and or libraries.
+Here, we place commands to start devices and/or libraries.
 
-setup serial ports basically anything that needs to be done ONCE when the Arduino starts
+Set up serial ports, basically anything that needs to be done ONCE when the Arduino starts
 
 **Example**
 
@@ -190,7 +190,7 @@ In this lesson on combining sketches, we will be using two sketches from the exa
 
 One from LiquidCrystal Library
 
-![image](../../assets/images/CombiningSketches/LiquidCrystalLibrary.png)
+![image](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png)
 
 The other from Adafruit DHT Sensor Library
 
@@ -202,7 +202,7 @@ This is the first file DHT_Unified_Sensor
 
 This is the second file Hello World
 
-![image](../../assets/images/CombiningSketches/LiquidCrystalExample.png)
+![image](../../assets/images/CombiningSketches/LiquidCrytstalExample.png)
 
 These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
 
@@ -227,7 +227,7 @@ This is the section copied from right file to left file
 The next section is the Definition Section
 
 In these particular files, there are definitions in one file. We copy from the right side to the left side sketch.
-Check that there are no definitions with the same names and or different values.
+Check that there are no definitions with the same names and/or different values.
 
 ![image](../../assets/images/CombiningSketches/sidebyside5.png)
 
@@ -240,7 +240,7 @@ Next is the Global Variables Section
 ![image](../../assets/images/CombiningSketches/sidebyside7.png)
 
 Copy the variables and library initializer values
-Again check that there are no variables with the same names and or different values.
+Again check that there are no variables with the same names and/or different values.
 
 This is the section copied from right file to left file
 
