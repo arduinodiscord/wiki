@@ -3,17 +3,13 @@
 ## What is Programming?
 
 *Programming* is a means to tell a computer (or, in the case of
-the Arduino, a *microcontroller*) what to do, when to do it and how
-to do it, and if to keep on doing it 'forever' or for an amount of
+the Arduino, a *microcontroller*) what to do, when to do it, how to do it, and whether to keep on doing it 'forever' or for an amount of
 time, or (yup, there's more options) ... until some resource
 it needs (to keep running) has been completely used up.
 
 > #### Scenario: potato-chip counting machine
 >
-> *You want to build a machine that counts potato chips in your potato
-chip factory.  It's a task well-suited to industrial microcontrollers,
-which are smallish devices that often fit in the palm of your hand,
-> for just the microcontroller 'chip' itself.*
+> *You want to build a machine that counts potato chips in your potato-chip factory.  It's a task well-suited to industrial microcontrollers, which are smallish devices, that often fit in the palm of your hand, for just the microcontroller 'chip' itself.*
 
 A microcontroller is just another type of computer chip, but its
 specialty is dealing with the real world, through 'mechatronics'
@@ -28,7 +24,7 @@ wireless links).
 target board (Arduino Uno, Leonardo, Mega2560... or
 > other board).*
 
-It'll be a chip with a part number, such as `32u4` or `328p` and
+It'll be a chip with a part number, such as `32u4` or `328p`, and
 usually has branding included (`ATMega 328p`, `ATMega 32u4`) depending
 on if it needs to be clarified, or if it's clear what chip is being
 discussed.
@@ -40,7 +36,7 @@ discussed.
 upload the program to the Uno, and it seems to run (prints messages
 > to the Serial Terminal, as expected).  But there's a problem..."*
 
-## What, then, is Programming? { .h2 }
+### What, then, is Programming? { .h2 }
 
 #### Introduction for Beginners: What is a Computer Language?
 
@@ -63,7 +59,7 @@ communication between a person and a computer.
 ---
 
 So, looking at it from Leo's point of view, *programming* is a way to
-talk to a computer.  Even the word, 'talk' is misused here - *they
+talk to a computer.  Even the word 'talk' is misused here - *they
 had to start somewhere*.  There are many *borrow-words* used in
 *programming*, taken from the learner's native (spoken and written;
 human; pre-computer) language.
@@ -72,13 +68,13 @@ human; pre-computer) language.
 
 The microcontroller (`MCU`) chip itself accepts a long series of
 `1's and 0's` (ones and zeros) as its only means of communication
-(excepting analog, but that's another talk show).
+(except for analog, but that's another talk show).
 
 The *machine code* is just those `1's and 0's` and doesn't need further
 support to function.
 
 *Assembly Language* is simply using those very same `1's and 0's`,
-but with a cheater lookup table, so that you could use made-up words
+but with a cheat sheet (lookup table), so that you could use made-up words
 to represent frequently used patterns of `1's and 0's` in your
 new 'program'.
 
@@ -95,8 +91,7 @@ borrowed from someone else - to 'talk' to the microcontroller,
 and give it *instructions on what to do*.
 
 And when to do it.  How to do it!  When not to do it.  And, maybe,
-special instructions on what should be done if your *assumptions
-were incorrect*.
+special instructions on what should be done if your *assumptions were incorrect*.
 
 ### Grateful program
 
@@ -190,7 +185,7 @@ it got made (see just below).
 void setup() { } void loop() {} // END.
 ```
 
-This program compiles and 'runs' just fine, on wowki.  Doesn't do
+This program compiles and 'runs' just fine, on wokwi.  Doesn't do
 much; isn't meant to.
 
 In a sense, it has several *placeholders* for *future ideas* that
@@ -198,14 +193,12 @@ were not (yet) typed into the computer (using some kind of
 *code editor* or just a *plaintext* editor).
 
 > *If you leave a placeholder in, 'permanently', you have just
-> created a* **hook**.  *Do not put in hooks.  Ever.  Create them
-> as required.*
+> created a* **hook**.  *Do not put in hooks.  Ever.  Create them as required.*
 >
 > *If you must, revision control has tools to help you remember
 > how to add the hook, when it is truly wanted.*
 
-**The above is opinion, and isn't to be followed; unless you agree
-to it by your own philosophy.** &nbsp;&nbsp;&nbsp;
+**The above is opinion and isn't to be followed unless you agree with it based on your own philosophy.** &nbsp;&nbsp;&nbsp;
 
 `/netreligion`
 
@@ -229,7 +222,7 @@ void loop() {
 
 *Slightly more formal - same exact program; just added some spacing to make it a bit easier to take in, while reading it over.*
 
-### Initialize the Serial stuph
+### Initialize the Serial stuff
 
 ```cpp
 #include <Arduino.h>
@@ -245,7 +238,7 @@ void loop() {
 ### Add a placeholder function called `haha()`
 
 ... that will (later on) contain something interesting to do,
-after starting the Serial going (which lets you print stuph out).
+after starting the Serial going (which lets you print stuff out).
 
 ```cpp
 #include <Arduino.h>
@@ -329,7 +322,7 @@ void haha() {
 
 #if 0
 void haha_old_delete_me() { // cruft
-    Serial.priantln(" TEST abciq "); // weird message
+    Serial.println(" TEST abciq "); // weird message
 }
 #endif
 
@@ -345,7 +338,7 @@ void loop() {
 *Shows a method for commenting-out code that does not spoil syntax highlighting inside the commented code.*
 
 Note that `Serial.priantln("message");` is deliberately misspelled,
-but still 'compiles clean'.
+but still 'compiles clean'. // Note: 'priantln' is intentionally misspelled here for demonstration purposes.
 
 *That was a test of the `#if 0` ... `#endif` construct.* &nbsp;&nbsp;
 
@@ -377,7 +370,7 @@ void loop() {
 ### What still remains to be done - snippet
 
 ```cpp
-// - - -  CODE SNIPPET - - - DOES NOT COMPILE - - -
+// - - -  CODE SNIPPET - - - does not compile - - -
 
 void setup() {
     Serial.begin(9600);
@@ -446,7 +439,7 @@ void loop() {
 }
 ```
 
-*A slight refinement: there's a decently long delay after the `haha()` message plays, marking distinctly where the `setup()` and and where the `loop()` begins, without crudding it up with a `Mr. Obvious` announcement such as `You are entering the loop!`*
+*A slight refinement: there's a decently long delay after the `haha()` message plays, marking distinctly where the setup() ends and where the loop() begins, without crudding it up with a `Mr. Obvious` announcement such as `You are entering the loop!`*
 
 ## Blink with Weight
 
@@ -670,7 +663,7 @@ void loop() {
 
 ### Third simplification - Blink with Weight
 
-**Compress the code - LED_BLINK() - i**
+**Compress the code - LED_BLINK() - I**
 
 ```cpp
 void xxxLED_ON() {
@@ -868,7 +861,7 @@ void loop() {
 
 ### Wait wait can't you just shove it in the loop?
 
-*You're right!  Missed that simplification. ;*
+*You're right! Missed that simplification. ;)*
 
 **Compress the code - everything inside the loop()**
 
@@ -909,9 +902,9 @@ Indeed.
 
 ## Discussion - Blink with Weight - LED blinker program
 
-*led blinker*
+### Discussion - Blink with Weight - LED blinker program
 
-*The discussion itself goes here.*
+This section delves into the nuances of the "Blink with Weight" program. We can explore the design choices, the impact of the `WEIGHT` constant on the LED's behavior, and how such a program might be extended or adapted for more complex blinking patterns or integrated into larger projects. For instance, one could consider replacing the `delay()` functions with non-blocking timing techniques if the microcontroller needs to perform other tasks concurrently.
 
 ## Pseudocode
 
@@ -1058,7 +1051,7 @@ int main(void)
 
     setup();
 
-    for (; {
+    for (;;) {
         loop();
         if (serialEventRun) serialEventRun();
     }
@@ -1146,7 +1139,7 @@ to a directory named `theme` in your `Sketchbook` folder, and
 modify to suit.
 
 [theme.txt](../../assets/images/basicsOfProgramming/sequoia/theme.txt)
-has been modified to show possible changes, as a quick example.
+has been modified to show possible changes as a quick example.
 
 If you have multiple themes, zip each one up without including
 creation of a directory (when it is unzipped, it will not create a
