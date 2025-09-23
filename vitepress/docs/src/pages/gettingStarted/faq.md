@@ -66,7 +66,7 @@ Common causes:
 - Need to install drivers for your clone (arduinos dont need drivers)
   - (if you have a CH340 chip)[https://sparks.gogo.co.nz/ch340.html]
   - (if you have the 210 chip on your board)[https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads]
-  - ![Image of arduinos](/assets/images/faq/faqimages.png)
+  - ![Image of arduinos](../../assets/images/faq/faqimages.png)
 
 Try another cable/port, update drivers, and check Device Manager (Windows) or dmesg/lsusb (Linux/macOS).
 
@@ -74,7 +74,7 @@ Try another cable/port, update drivers, and check Device Manager (Windows) or dm
 
 ### 5. What's the difference between 5V and 3.3V boards? {#5-whats-the-difference-between-5v-and-33v-boards}
 
-5V boards (Arduino Uno, Mega) use 5V logic. Many modern boards (ESP32, some SAMD) use 3.3V logic. Never connect a 5V output directly to a 3.3V input — use a [level shifter](../hardwareGuides/logiclevel) or voltage divider to avoid damaging components.
+5V boards (Arduino Uno, Mega) use 5V logic. Many modern boards (ESP32, some SAMD) use 3.3V logic. Never connect a 5V output directly to a 3.3V input — use a [level shifter](../../assets/images/hardwareGuides/logiclevel) or voltage divider to avoid damaging components.
 
 ---
 
