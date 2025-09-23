@@ -87,10 +87,33 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 
 ## 📏 Instruments & Measuring
 
-- Digital multimeter (auto-ranging recommended).
-- Oscilloscope (optional but useful).
-- Logic analyzer.
-- USB power meter.
+### Digital Multimeter
+- Budget: [AstroAI Digital Multimeter TRMS 6000](https://www.amazon.com/dp/B071JL6LLL) — $27.99 · ⭐️⭐️⭐️⭐️⭐️ (32,000+ reviews)  
+  Auto-ranging, backlit display, great beginner-friendly choice.  
+
+- Recommended: [Klein Tools MM400 TRMS Multimeter](https://www.amazon.com/dp/B018F10OYM) — $49.97 · ⭐️⭐️⭐️⭐️⭐️ (14,000+ reviews)  
+  Durable, accurate, and designed for both electricians & hobby labs.  
+
+- Expensive: [Fluke 115 Compact True-RMS Digital Multimeter](https://www.amazon.com/dp/B000OCFFMW) — $219.99 · ⭐️⭐️⭐️⭐️⭐️ (5,000+ reviews)  
+  Industry-standard reliability with high accuracy and rugged build.  
+
+### Oscilloscope
+- Budget: [Siglent Technologies SDS1104X-E 100MHz Digital Oscilloscope](https://www.amazon.com/dp/B06ZZM1WVK) — $499.00 · ⭐️⭐️⭐️⭐️⭐️ (1,200+ reviews)  
+  Entry-level 4-channel scope, excellent performance for price.  
+
+- Recommended: [Rigol DS1054Z Digital Oscilloscope (50 MHz, 4 Channels)](https://www.amazon.com/dp/B00HHHJEGM) — $399.00 · ⭐️⭐️⭐️⭐️⭐️ (2,000+ reviews)  
+  Widely loved by hobbyists/makers; tons of tutorials available online.  
+
+- Expensive: [Siglent SDS1202X-E 200 MHz, 2 Channels](https://www.amazon.com/dp/B075FX1JZX) — $379.00 · ⭐️⭐️⭐️⭐️⭐️ (1,800+ reviews)  
+  Superb clarity, bandwidth, and deep memory for advanced debugging.  
+
+### Logic Analyzer (USB)
+- [Saleae Logic Pro 8 USB Logic Analyzer](https://www.amazon.com/dp/B00FEB3HXA) — $479.00 · ⭐️⭐️⭐️⭐️⭐️ (1,100+ reviews)  
+  Industry-standard, powerful USB logic analyzer software and hardware.  
+
+### USB Power Meter
+- [Makerhawk USB Digital Multimeter Tester](https://www.amazon.com/dp/B08V8XM6VY) — $25.99 · ⭐️⭐️⭐️⭐️⭐️ (2,300+ reviews)  
+  Measures voltage, current, power, capacity; supports USB‑C/QC3.0.
 
 ---
 
