@@ -1,5 +1,9 @@
 # Basics of Programming { .text-[#e67e22] }
 
+[← Back to Home](../index.md)
+
+*This page is about the basics of programming*
+
 ## What is Programming?
 
 *Programming* is a means to tell a computer (or, in the case of
@@ -925,7 +929,7 @@ its *development*.
 The **Arduino IDE** looks like this, when you are about to compile
 a program:
 
-![image](../../assets/images/basicsOfProgramming/arduino_IDE-b.jpg)
+![Arduino IDE interface showing code editor with example sketch](../../assets/images/basicsOfProgramming/arduino_IDE-b.jpg "Screenshot of the Arduino IDE interface displaying a code editor window with an example Arduino sketch loaded")
 
 ### Program Listing - sketch_oct31a.ino
 
@@ -1158,3 +1162,7 @@ entirely, then start it afresh) after changing a Preference.
 in the `Sketchbook`.  The .ZIP creates one directory (`'syntax/'`),
 but most of the theme's files are in the base ('theme') directory,
 for a single theme installation.
+
+---
+
+[← Back to Home](../index.md)

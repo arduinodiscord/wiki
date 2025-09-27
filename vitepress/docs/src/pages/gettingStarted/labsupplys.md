@@ -1,6 +1,8 @@
 # Maker / Arduino Home Lab Essentials { .text-[#e67e22] }
 
-Setting up your own electronics or Arduino home lab can be overwhelming if you don’t know where to start. Below is a vetted list of tools, components, and supplies that almost every maker, hobbyist, or amateur electronic enthusiast should have.
+[← Back to Home](../index.md)
+
+*This page is about setting up a home lab for Arduino and electronics projects*
 
 Each of these items will have links for **budget, recommended, and high-end** versions where appropriate.
 
@@ -363,3 +365,7 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 ### ✅ Summary
 
 This list provides the starter kit for nearly any project in a home electronics lab — from blinking LEDs to robotics and IoT.
+
+---
+
+[← Back to Home](../index.md)
