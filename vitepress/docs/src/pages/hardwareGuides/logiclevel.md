@@ -1,5 +1,9 @@
 # What are Logic Levels { .text-[#e67e22] }
 
+[← Back to Home](../index.md)
+
+[← Back to Home](../index.md)
+
 ## Introduction
 
 In digital circuits, a logic level is one of a finite number of states that a digital signal can inhabit. Logic levels are usually represented by the voltage difference between the signal and ground, although other standards exist. The range of voltage levels that represent each state depends on the logic family being used. A logic level shifter can be used to allow compatibility between different circuits.
@@ -8,7 +12,8 @@ In digital circuits, a logic level is one of a finite number of states that a di
 
 ### 2-State Logic Levels
 
-![logic](../../assets/images/logiclevel/logic.png)
+![Logic level diagram showing high and low voltage states](../../assets/images/logiclevel/logic.png "Diagram illustrating digital logic high and low voltage levels")
+![Logic level diagram showing high and low voltage states](../../assets/images/logiclevel/logic.png "Diagram illustrating digital logic high and low voltage levels")
 
 The two levels are also used in digital communication to represent the two possible states of a bit. In binary logic, the two levels are logical high and logical low, which generally correspond to binary numbers 1 and 0, respectively, or truth values true and false. Signals with one of these two levels can be used in Boolean algebra for digital circuit design or analysis.
 
@@ -27,7 +32,8 @@ The use of either the higher or the lower voltage level to represent a logic sta
 
 If the voltage is between 1.2 V and 3.8 V, the Arduino will behave unpredictably and can randomly read as either high or low.
 
-![logic level](../../assets/images/logiclevel/circuitjslogic.jpg)
+![Circuit simulation showing logic level thresholds and uncertain voltage range](../../assets/images/logiclevel/circuitjslogic.jpg "CircuitJS simulation demonstrating Arduino logic level thresholds and the uncertain voltage range between 1.2V and 3.8V")
+![Circuit simulation showing logic level thresholds and uncertain voltage range](../../assets/images/logiclevel/circuitjslogic.jpg "CircuitJS simulation demonstrating Arduino logic level thresholds and the uncertain voltage range between 1.2V and 3.8V")
 
 ::: info NOTE
 
@@ -52,7 +58,8 @@ A logic level shifter is a circuit that safely steps signals up or down between 
 
 Here's a typical wiring diagram for a BSS138-based bi-directional level shifter (commonly used for I2C):
 
-![levelshifter](../../assets/images/logiclevel/levelshifter_wiring.png)
+![BSS138-based bidirectional level shifter wiring diagram](../../assets/images/logiclevel/levelshifter_wiring.png "Wiring diagram showing how to connect a BSS138-based bidirectional level shifter between 5V and 3.3V devices")
+![BSS138-based bidirectional level shifter wiring diagram](../../assets/images/logiclevel/levelshifter_wiring.png "Wiring diagram showing how to connect a BSS138-based bidirectional level shifter between 5V and 3.3V devices")
 
 **Wiring Steps:**
 1. Connect the HV (high voltage) pin to your 5V device’s logic voltage.
@@ -102,4 +109,4 @@ Logic level shifters are essential for safely connecting devices that use differ
 
 ---
 
-[← Back to Main Page](../../index.md)
+[← Back to Home](../index.md)

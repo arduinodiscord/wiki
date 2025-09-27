@@ -1,5 +1,7 @@
 # How to Use a Breadboard { .text-[#e67e22] }
 
+[← Back to Home](../index.md)
+
 ## Introduction
 
 Breadboards are one of the most fundamental pieces when learning how to build circuits.
@@ -22,7 +24,7 @@ As mentioned, you don't always want the circuit you build to be permanent.
 
 Here we have a breadboard where the adhesive backing has been removed. You can see lots of horizontal rows of metal strips on the bottom of the breadboard.
 
-![breadboard](../../assets/images/breadboard/breadboard6.jpg)
+![Breadboard bottom view showing horizontal metal connection strips](../../assets/images/breadboard/breadboard6.jpg "Bottom view of a breadboard with adhesive backing removed, revealing the horizontal metal strips that connect the holes")
 
 ---
 
@@ -30,7 +32,7 @@ Here we have a breadboard where the adhesive backing has been removed. You can s
 
 It is important to be aware that the power rails on either side are not connected, so if you want the same power source on both sides, you will need to connect the two sides with some jumper wires. Keep in mind that the markings are there just as a reference. There is no rule that says you have to plug power into the '+' rail and ground into the '-' rail, though it's good practice to keep everything in order.
 
-![breadboard](../../assets/images/breadboard/breadboard3.jpg)
+![Breadboard power rails diagram showing separate left and right side connections](../../assets/images/breadboard/breadboard3.jpg "Diagram illustrating that breadboard power rails on left and right sides are not connected to each other")
 
 ---
 
@@ -61,3 +63,7 @@ Some larger breadboards will often isolate one half of the breadboard's power ra
 
 ![A dual sided breadboard.](../../assets/images/breadboard/breadboard8.jpg "This shows a breadboard that is separated in the middle.")
 :::
+
+---
+
+[← Back to Home](../index.md)

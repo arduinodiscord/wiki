@@ -1,6 +1,8 @@
 # Resistors { .text-[#e67e22] }
 
----
+[← Back to Home](../index.md)
+
+*This page is about resistors and LEDs*
 
 ## An LED is short for Light Emitting Diode
 
@@ -71,9 +73,9 @@ This is required so the LED will not burn out faster than expected.
 
 And so we do not damage the Arduino/components in the circuit.
 
-![resistor_circuit](../../assets/images/forwardVoltage/ledResistorCircut.png)
+![LED resistor circuit diagram showing current flow and voltage drops](../../assets/images/forwardVoltage/ledResistorCircut.png "Circuit diagram illustrating how a resistor limits current flow through an LED")
 
-![resistance](../../assets/images/forwardVoltage/resistance.png)
+![Ohm's law calculation showing resistance value determination](../../assets/images/forwardVoltage/resistance.png "Mathematical calculation using Ohm's law to determine the correct resistor value for LED current limiting")
 
 As you can see, the perfect resistor value would be 150 Ohms. If you don't have a resistor of the calculated value, you can use the next size larger than it.
 Another option is to use two smaller resistors end to end \(in series\) and use them in place of the single resistor.
@@ -81,3 +83,5 @@ Another option is to use two smaller resistors end to end \(in series\) and use 
 > **Note**: *A 220 ohm resistor and a 220 ohm resistor can make a 440 ohm resistor.*
 >
 > **Note**: There is also a [resistor calculator](https://ohmslawcalculator.com/led-resistor-calculator "resistor online calculator") you can use, if you have the data for your LED
+---
+[← Back to Home](../index.md)

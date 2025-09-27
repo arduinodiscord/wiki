@@ -3,11 +3,11 @@ layout: home
 
 hero:
   name: Arduino Discord Wiki
-  text: open source wiki for the arduino discord server
+  text: Open source wiki for the Arduino Discord server
   image:
     src: logo/arduino_logo.gif
     alt: Arduino logo
-  tagline: here you can learn everything Arduino
+  tagline: Here you can learn everything Arduino
   actions:
     - theme: brand
       text: Get Started
@@ -18,11 +18,11 @@ hero:
 features:
   - icon: ⚡️
     title: Open Source
-    details: fully open source and free to use.
+    details: Fully open source and free to use.
   - icon: 🎉
     title: Community Driven
-    details: built by you for you.
+    details: Built by you for you.
   - icon: 🎮
     title: Example Code
-    details: example code to help you get started.
+    details: Example code to help you get started.
 ---
