@@ -1,5 +1,7 @@
 # How to Use a Breadboard { .text-[#e67e22] }
 
+[← Back to Home](../index.md)
+
 ## Introduction
 
 Breadboards are one of the most fundamental pieces when learning how to build circuits.
@@ -61,3 +63,7 @@ Some larger breadboards will often isolate one half of the breadboard's power ra
 
 ![A dual sided breadboard.](../../assets/images/breadboard/breadboard8.jpg "This shows a breadboard that is separated in the middle.")
 :::
+
+---
+
+[← Back to Home](../index.md)

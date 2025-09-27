@@ -3,6 +3,8 @@
 [← Back to Home](../index.md)
 
 *This page is about combining multiple Arduino sketches into one*
+
+*This page is about combining multiple Arduino sketches into one*
 The next part of this guide describes these sections.
 
 You can skip over this, then come back later and read it when your combined sketches don't work.
@@ -193,17 +195,21 @@ In this lesson on combining sketches, we will be using two sketches from the exa
 One from LiquidCrystal Library
 
 ![Arduino IDE Library Manager showing LiquidCrystal library installation](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png "Screenshot of Arduino IDE Library Manager with LiquidCrystal library selected for installation")
+![Arduino IDE Library Manager showing LiquidCrystal library installation](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png "Screenshot of Arduino IDE Library Manager with LiquidCrystal library selected for installation")
 
 The other from Adafruit DHT Sensor Library
 
+![Arduino IDE Library Manager showing Adafruit DHT sensor library installation](../../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png "Screenshot of Arduino IDE Library Manager with Adafruit DHT sensor library selected for installation")
 ![Arduino IDE Library Manager showing Adafruit DHT sensor library installation](../../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png "Screenshot of Arduino IDE Library Manager with Adafruit DHT sensor library selected for installation")
 
 This is the first file DHT_Unified_Sensor
 
 ![DHT sensor library example code showing temperature and humidity reading](../../assets/images/CombiningSketches/DHTSensorLibraryExample.png "Arduino IDE showing the DHT_Unified_Sensor example code for reading temperature and humidity data")
+![DHT sensor library example code showing temperature and humidity reading](../../assets/images/CombiningSketches/DHTSensorLibraryExample.png "Arduino IDE showing the DHT_Unified_Sensor example code for reading temperature and humidity data")
 
 This is the second file Hello World
 
+![LiquidCrystal library Hello World example code for LCD display](../../assets/images/CombiningSketches/LiquidCrytstalExample.png "Arduino IDE showing the LiquidCrystal Hello World example code for displaying text on an LCD")
 ![LiquidCrystal library Hello World example code for LCD display](../../assets/images/CombiningSketches/LiquidCrytstalExample.png "Arduino IDE showing the LiquidCrystal Hello World example code for displaying text on an LCD")
 
 These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
@@ -291,7 +297,9 @@ The two sketches are combined.
 If you now run verify, the sketch on the left should be able to verify
 
 ![Arduino IDE verify/compile button and successful compilation message](../../assets/images/CombiningSketches/verifycompile.png "Arduino IDE showing the verify/compile button and successful compilation status message")
+![Arduino IDE verify/compile button and successful compilation message](../../assets/images/CombiningSketches/verifycompile.png "Arduino IDE showing the verify/compile button and successful compilation status message")
 
+![Arduino IDE compilation output showing successful sketch verification](../../assets/images/CombiningSketches/verifycompile2.png "Arduino IDE compilation output window displaying successful sketch verification with memory usage statistics")
 ![Arduino IDE compilation output showing successful sketch verification](../../assets/images/CombiningSketches/verifycompile2.png "Arduino IDE compilation output window displaying successful sketch verification with memory usage statistics")
 
 This combined sketch is complete except for changing the code to use both sketches features
