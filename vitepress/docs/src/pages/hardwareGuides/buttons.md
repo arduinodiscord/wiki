@@ -1,14 +1,18 @@
 # Basic Guide To Buttons { .text-[#e67e22] }
 
+[← Back to Home](../index.md)
+
 ## Button Basics 🔲
 
 A standard button is "open" until you press the button. At that point, the two parts of the button make contact, and the button is said to be "closed".
 
 Using a button in this manner is called "normally open". This means that when the button is NOT pressed, there is no connection from one side to the other.
 
-## When we use a button with a microcontroller, there are a few challenges to deal with. First is the wiring
+## Button Wiring Challenges
 
-### *The wiring for a button is:*
+When we use a button with a microcontroller, there are a few challenges to deal with. First is the wiring.
+
+### The wiring for a button is:
 
 * Side-A of the button is connected to the Arduino pin.
   * **EXAMPLE A**
@@ -65,3 +69,7 @@ If you look at a diagram, a button is shown by a broken line. If you look at the
 ---
 
 ![example of button sides](../../assets/images/buttons/button-A.png "example of the sides of a button")
+
+---
+
+[← Back to Home](../index.md)
