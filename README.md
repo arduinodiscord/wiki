@@ -18,10 +18,14 @@ Welcome to the open source wiki for the Arduino Discord server. Here you can fin
 | [Nine Volt Battery Basics](./vitepress/docs/src/pages/hardwareGuides/nineVolts.md)        |
 | [Logic Levels & Level Shifters](./vitepress/docs/src/pages/hardwareGuides/logiclevel.md)  |
 | [Maker / Arduino Home Lab Essentials](./vitepress/docs/src/pages/gettingStarted/labsupplys.md)  |
+| [Arduino FAQ page](./vitepress/docs/src/pages/gettingStarted/faq.md)                      |
+| [Arduino buyers guide](./vitepress/docs/src/pages/gettingStarted/arduinobuyersguide.md)   |
+| [Arduino maker board line](./vitepress/docs/src/pages/hardwareGuides/makerboards.md)      |
+
 
 ...
 
-<sub>v5.21.0</sub>
+<sub>v5.45.0</sub>
 
 This is the source code for the [arduino wiki website](https://wiki.arduinodiscord.cc) documentation site. It is built using [VitePress](https://vitepress.vuejs.org/).
 
