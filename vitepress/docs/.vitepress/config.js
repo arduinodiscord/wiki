@@ -7,6 +7,17 @@ export default defineConfig({
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
     ignoreDeadLinks: true,
+
+    // Add this section for proper asset handling
+    vite: {
+        publicDir: '../src/assets',
+        server: {
+            fs: {
+                allow: ['..']
+            }
+        }
+    },
+
     /* head: [
         [
             'link',
