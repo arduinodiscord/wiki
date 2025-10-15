@@ -7,8 +7,8 @@ export default defineConfig({
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
     ignoreDeadLinks: true,
-
-    // Add this section for proper asset handling
+ 
+    /* // Add this section for proper asset handling
     vite: {
         publicDir: '../src/assets',
         server: {
@@ -18,7 +18,7 @@ export default defineConfig({
         }
     },
 
-    /* head: [
+     head: [
         [
             'link',
             { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
