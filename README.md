@@ -17,6 +17,7 @@ Welcome to the open source wiki for the Arduino Discord server. Here you can fin
 | [Multimeter Basics](./vitepress/docs/src/pages/hardwareGuides/multimeter.md)              |
 | [Nine Volt Battery Basics](./vitepress/docs/src/pages/hardwareGuides/nineVolts.md)        |
 | [Logic Levels & Level Shifters](./vitepress/docs/src/pages/hardwareGuides/logiclevel.md)  |
+| [Voltage Dividers](./vitepress/docs/src/pages/hardwareGuides/voltageDividers.md)          |
 | [Maker / Arduino Home Lab Essentials](./vitepress/docs/src/pages/gettingStarted/labsupplys.md)  |
 | [Arduino FAQ page](./vitepress/docs/src/pages/gettingStarted/faq.md)                      |
 | [Arduino buyers guide](./vitepress/docs/src/pages/gettingStarted/arduinobuyersguide.md)   |
@@ -25,7 +26,7 @@ Welcome to the open source wiki for the Arduino Discord server. Here you can fin
 
 ...
 
-<sub>v5.45.0</sub>
+<sub>v26.17.1</sub>
 
 This is the source code for the [arduino wiki website](https://wiki.arduinodiscord.cc) documentation site. It is built using [VitePress](https://vitepress.vuejs.org/).
 

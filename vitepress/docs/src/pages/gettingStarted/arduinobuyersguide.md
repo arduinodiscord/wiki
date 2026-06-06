@@ -1,4 +1,10 @@
+---
+layout: page
+---
+
 # Arduino Buyers Guide { .text-[#e67e22] }
+
+[← Back to Home](../index.md)
 
 ## Introduction
 
@@ -13,19 +19,19 @@ The Arduino Uno is the most common Arduino because it has a normal amount of I/O
 The Leonardo has the same form-factor as the Uno but can be used as an HID device, like a gamepad or "button box" and such.
 
 ### Arduino Mega 2560
-The Mega 2560 is extremely common. It has over three times I/O than the Uno. If you need a lot of LEDs, or pins to use, the Mega is a good choice for this.
+The Mega 2560 is extremely common. It has over three times the I/O of the Uno. If you need a lot of LEDs or pins to use, the Mega is a good choice for this.
 
 ### Arduino Due
-The Due also has a lot of I/O, has more memory than the Mega 2560 which also makes it a great starter board.
+The Due also has a lot of I/O and more memory than the Mega 2560, which also makes it a great starter board.
 
 ### Arduino Micro
 The Micro is good to use on a breadboard. It's also compact and has the same chip as the Leonardo.
 
 ### Arduino Nano
-The Nano has the same chip as the Uno so can be used in a final product. Many times it's easiest to prototype on an Uno, then when all the debugging is done, use the Nano for the final product.
+The Nano has the same chip as the Uno, so it can be used in a final product. Many times it's easiest to prototype on an Uno, then when all the debugging is done, use the Nano for the final product.
 
 ### Arduino Zero
-The Zero uses 3.3V instead of the normal 5V. Also it is a 32-bit board so it can process a lot faster.
+The Zero uses 3.3V instead of the normal 5V. It is also a 32-bit board, so it can process a lot faster.
 
 ## Arduino Board Comparison
 

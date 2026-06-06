@@ -56,6 +56,7 @@ const theme = {
         { text: "Nine Volts", link: "/hardwareGuides/nineVolts" },
         { text: "Maker Boards", link: "/hardwareGuides/makerboards" },
         { text: "Logic Level", link: "/hardwareGuides/logiclevel" },
+        { text: "Voltage Dividers", link: "/hardwareGuides/voltageDividers" },
       ],
     },
     {

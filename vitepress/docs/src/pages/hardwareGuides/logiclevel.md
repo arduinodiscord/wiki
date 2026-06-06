@@ -1,6 +1,6 @@
 # What are Logic Levels { .text-[#e67e22] }
 
-[← Back to Home](../index.md)
+Related pages: [Breadboard](./breadBoard.md), [Arduino Buyers Guide](../gettingStarted/arduinobuyersguide.md), [Basics of Programming](../gettingStarted/basicsOfProgramming.md).
 
 [← Back to Home](../index.md)
 
@@ -13,9 +13,8 @@ In digital circuits, a logic level is one of a finite number of states that a di
 ### 2-State Logic Levels
 
 ![Logic level diagram showing high and low voltage states](../../assets/images/logiclevel/logic.png "Diagram illustrating digital logic high and low voltage levels")
-![Logic level diagram showing high and low voltage states](../../assets/images/logiclevel/logic.png "Diagram illustrating digital logic high and low voltage levels")
 
-The two levels are also used in digital communication to represent the two possible states of a bit. In binary logic, the two levels are logical high and logical low, which generally correspond to binary numbers 1 and 0, respectively, or truth values true and false. Signals with one of these two levels can be used in Boolean algebra for digital circuit design or analysis.
+The two levels are also used in digital communication to represent the two possible states of a bit. In binary logic, the two levels are logical high and logical low, which generally correspond to binary numbers 1 and 0, respectively, or truth values: true and false. Signals with one of these two levels can be used in Boolean algebra for digital circuit design or analysis.
 
 ### Active States
 
@@ -30,13 +29,11 @@ The use of either the higher or the lower voltage level to represent a logic sta
 
 ### Arduino Logic Levels for a 5V MCU
 
-If the voltage is between 1.2 V and 3.8 V, the Arduino will behave unpredictably and can randomly read as either high or low.
+If the voltage is between 1.2V and 3.8V, the Arduino will behave unpredictably and can randomly read as either high or low.
 
-![Circuit simulation showing logic level thresholds and uncertain voltage range](../../assets/images/logiclevel/circuitjslogic.jpg "CircuitJS simulation demonstrating Arduino logic level thresholds and the uncertain voltage range between 1.2V and 3.8V")
 ![Circuit simulation showing logic level thresholds and uncertain voltage range](../../assets/images/logiclevel/circuitjslogic.jpg "CircuitJS simulation demonstrating Arduino logic level thresholds and the uncertain voltage range between 1.2V and 3.8V")
 
 ::: info NOTE
-
 If the voltage is between 1.2V and 3.8V, the Arduino may fluctuate between HIGH and LOW.
 :::
 
@@ -59,11 +56,10 @@ A logic level shifter is a circuit that safely steps signals up or down between 
 Here's a typical wiring diagram for a BSS138-based bi-directional level shifter (commonly used for I2C):
 
 ![BSS138-based bidirectional level shifter wiring diagram](../../assets/images/logiclevel/levelshifter_wiring.png "Wiring diagram showing how to connect a BSS138-based bidirectional level shifter between 5V and 3.3V devices")
-![BSS138-based bidirectional level shifter wiring diagram](../../assets/images/logiclevel/levelshifter_wiring.png "Wiring diagram showing how to connect a BSS138-based bidirectional level shifter between 5V and 3.3V devices")
 
 **Wiring Steps:**
-1. Connect the HV (high voltage) pin to your 5V device’s logic voltage.
-2. Connect the LV (low voltage) pin to your 3.3V device’s logic voltage.
+1. Connect the HV (high voltage) pin to your 5V device's logic voltage.
+2. Connect the LV (low voltage) pin to your 3.3V device's logic voltage.
 3. Connect GND to both device grounds.
 4. Connect the signal lines (e.g., SDA/SCL for I2C) to the appropriate channels.
 
@@ -87,7 +83,7 @@ Here are some popular modules you can buy:
 ### Most Common Misunderstanding
 
 A frequent mistake is thinking that a simple resistor voltage divider or a unidirectional shifter is always safe for I2C or bidirectional data lines.
-**I2C and some other protocols require bi-directional level shifting**—using a unidirectional shifter can break communication or even damage devices.
+**I2C and some other protocols require bi-directional level shifting** — using a unidirectional shifter can break communication or even damage devices.
 
 ### Common Uses for Logic Level Shifters with Arduino
 
@@ -96,7 +92,7 @@ A frequent mistake is thinking that a simple resistor voltage divider or a unidi
 - Communicating with ESP8266/ESP32 modules from a 5V Arduino
 - Connecting 5V logic outputs to 3.3V microcontrollers or Raspberry Pi
 - Shifting SPI, UART, or other digital signals between voltage domains
-- **__Seeing someone do it on YouTube or other sites without a level shifter does not mean it is safe__**. Often, this is a misunderstanding, and there is no proof the project only worked poorly, was unstable, or never even worked at all—sometimes videos are edited.
+- **Seeing someone do it on YouTube or other sites without a level shifter does not mean it is safe.** Often, this is a misunderstanding — there is no proof the project actually worked. It may have worked poorly, been unstable, or never worked at all. Sometimes videos are edited.
 
 ## See Also
 

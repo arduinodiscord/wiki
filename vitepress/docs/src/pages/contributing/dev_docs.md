@@ -1,6 +1,6 @@
 # Development Documentation for the Arduino Discord wiki Site {.text-[#e67e22] }
 
-This is the documentation for the Arduino Discord wiki site. It is built using [VitePress](https://vitepress.vuejs.org/).
+This is the documentation for the Arduino Discord wiki site. It is built using [VitePress](https://vitepress.dev/).
 
 ## Getting Started
 
@@ -46,16 +46,16 @@ This is the documentation for the Arduino Discord wiki site. It is built using [
 If you wish to just add or edit a page, you can skip to [this](/contributing/pages) section.
 :::
 
-1. Familiarize yourself with the [VitePress documentation](https://vitepress.vuejs.org/).
-2. Then, move on to our project specific documentation below.
+1. Familiarize yourself with the [VitePress documentation](https://vitepress.dev/).
+2. Then, move on to our project-specific documentation below.
 
 #### Standards
 
 - All documentation should be written in Markdown or Vue components.
-- All file names are snake case *and* lowercase letters.
+- All file names use snake_case with only lowercase letters.
 - Do not make naming changes to the `vitepress` folder.
 - Do not make major changes to the `vitepress` folder structure without prior consultation of team members.
-- For Vue componentes, follow the [Vue3 docs](https://vuejs.org/guide/introduction.html).
+- For Vue components, follow the [Vue3 docs](https://vuejs.org/guide/introduction.html).
 
 ### Project Specific Documentation
 

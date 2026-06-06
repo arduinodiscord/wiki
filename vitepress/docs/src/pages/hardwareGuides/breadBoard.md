@@ -1,16 +1,23 @@
+---
+title: How to Use a Breadboard
+description: A beginner's guide to using solderless breadboards for prototyping electronic circuits, covering terminal strips, power rails, and building your first circuit
+---
+
 # How to Use a Breadboard { .text-[#e67e22] }
+
+Related pages: [Maker Boards](./makerboards.md), [Nine Volts](./nineVolts.md), [LED Resistors](./ledResistors.md).
 
 [← Back to Home](../index.md)
 
 ## Introduction
 
-Breadboards are one of the most fundamental pieces when learning how to build circuits.
+Breadboards are one of the most fundamental tools when learning how to build circuits.
 
 ## Why Use Breadboards?
 
 An electronics breadboard (as opposed to the type on which sandwiches are made) refers to a solderless breadboard. These are great units for making temporary circuits and prototyping, and they require absolutely no soldering.
 
-Prototyping is the process of testing out an idea by creating a preliminary model from which other forms are developed or copied, and it is one of the most common uses for breadboards. If you aren't sure how a circuit will react under a given set of parameters, it's best to build a prototype and test it out.
+Prototyping is the process of testing an idea by creating a preliminary model of a circuit before building the final version, and it is one of the most common uses for breadboards. If you aren't sure how a circuit will react under a given set of parameters, it's best to build a prototype and test it out.
 
 For those new to electronics and circuits, breadboards are often the best place to start. That is the real beauty of breadboards: they can house both the simplest circuit as well as very complex circuits.
 
@@ -40,28 +47,28 @@ It is important to be aware that the power rails on either side are not connecte
 
 If you are working with a development board such as an Arduino, then you can simply pull power from the Arduino's female headers. The Arduino has multiple power and ground pins that you can connect to the power rails or other rows on a breadboard.
 
+See the [9V Battery Basics](./nineVolts.md) page for more information about powering your projects.
+
 ---
 
 ## Build the Circuit
 
 Here is a small circuit on a breadboard. The red board you see is the Breadboard Power Supply Stick with headers soldered to the PCB. The breadboard power supply stick regulates voltage from a 9V wall wart to either 5V or 3.3V to the power rails.
 
-![breadboard](../../assets/images/breadboard/breadboard5.jpg "Breadboard photo")
+![Breadboard with power supply stick and circuit components](../../assets/images/breadboard/breadboard5.jpg "Breadboard photo showing a complete circuit with power supply stick, LED, resistor, and button")
 
-## The circuit is as follows
+### The Circuit is as Follows
 
-* There is a wire connecting the VCC power rail to the positive, anode leg of an LED.
-
-* The negative, cathode leg of the LED is connected to a 330Ω resistor.
-
-* The resistor is then connected to a button.
+- There is a wire connecting the VCC power rail to the positive, anode leg of an LED.
+- The negative, cathode leg of the LED is connected to a 330Ω resistor.
+- The resistor is then connected to a button.
 
 When the button is pushed, it connects the circuit to ground, completing the circuit and turning on the LED.
 
 ::: info NOTE
-Some larger breadboards will often isolate one half of the breadboard's power rails from the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you're unaware whether the power rails are or aren't isolated, it can often lead to issues while building your circuit. It's always a good idea to use a multimeter to check for the absence or presence of continuity in your breadboard's power rails.
+Some larger breadboards will often isolate one half of the breadboard's power rails from the other half (think top and bottom half, not the sides). This is convenient if you have two different voltages with which you need to power your circuit, such as 3.3V and 5V. However, if you're unaware whether the power rails are or aren't isolated, it can often lead to issues while building your circuit. It's always a good idea to use a [multimeter](./multimeter.md) to check for the absence or presence of continuity in your breadboard's power rails.
 
-![A dual sided breadboard.](../../assets/images/breadboard/breadboard8.jpg "This shows a breadboard that is separated in the middle.")
+![Full-size breadboard with separated power rails](../../assets/images/breadboard/breadboard8.jpg "This shows a breadboard that is separated in the middle")
 :::
 
 ---

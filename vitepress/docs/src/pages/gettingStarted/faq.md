@@ -4,7 +4,7 @@ title: FAQ
 
 [← Back to Home](../index.md)
 
-## Frequently Asked Questions (Arduino) {.text-[#e67e22] }
+## Frequently Asked Questions (Arduino) {.text-[#e67e22]}
 
 Below are 20 frequently asked questions about Arduino — 10 of the most commonly searched questions plus 10 other commonly asked/practical topics. Each question has a short, practical answer and links where relevant.
 
@@ -12,26 +12,26 @@ Below are 20 frequently asked questions about Arduino — 10 of the most commonl
 
 - [Frequently Asked Questions (Arduino)](#frequently-asked-questions-arduino)
   - [Table of contents](#table-of-contents)
-  - [1. What is an Arduino and which board should I buy first? {#1-what-is-an-arduino-and-which-board-should-i-buy-first}](#1-what-is-an-arduino-and-which-board-should-i-buy-first-1-what-is-an-arduino-and-which-board-should-i-buy-first)
-  - [2. How do I install the Arduino IDE? {#2-how-do-i-install-the-arduino-ide}](#2-how-do-i-install-the-arduino-ide-2-how-do-i-install-the-arduino-ide)
-  - [3. How do I upload a sketch to my Arduino? {#3-how-do-i-upload-a-sketch-to-my-arduino}](#3-how-do-i-upload-a-sketch-to-my-arduino-3-how-do-i-upload-a-sketch-to-my-arduino)
-  - [4. Why is my Arduino not detected by my computer? {#4-why-is-my-arduino-not-detected-by-my-computer}](#4-why-is-my-arduino-not-detected-by-my-computer-4-why-is-my-arduino-not-detected-by-my-computer)
-  - [5. What's the difference between 5V and 3.3V boards? {#5-whats-the-difference-between-5v-and-33v-boards}](#5-whats-the-difference-between-5v-and-33v-boards-5-whats-the-difference-between-5v-and-33v-boards)
-  - [6. How do I power an Arduino safely from a battery? {#6-how-do-i-power-an-arduino-safely-from-a-battery}](#6-how-do-i-power-an-arduino-safely-from-a-battery-6-how-do-i-power-an-arduino-safely-from-a-battery)
-  - [7. What is a sketch? {#7-what-is-a-sketch}](#7-what-is-a-sketch-7-what-is-a-sketch)
-  - [8. What are digital, analog, and PWM pins? {#8-what-are-digital-analog-and-pwm-pins}](#8-what-are-digital-analog-and-pwm-pins-8-what-are-digital-analog-and-pwm-pins)
-  - [9. Why does my circuit reset when I connect a component? {#9-why-does-my-circuit-reset-when-i-connect-a-component}](#9-why-does-my-circuit-reset-when-i-connect-a-component-9-why-does-my-circuit-reset-when-i-connect-a-component)
-  - [10. How do I use libraries in Arduino sketches? {#10-how-do-i-use-libraries-in-arduino-sketches}](#10-how-do-i-use-libraries-in-arduino-sketches-10-how-do-i-use-libraries-in-arduino-sketches)
-  - [11. What's the easiest way to learn electronics for Arduino? {#11-whats-the-easiest-way-to-learn-electronics-for-arduino}](#11-whats-the-easiest-way-to-learn-electronics-for-arduino-11-whats-the-easiest-way-to-learn-electronics-for-arduino)
-  - [12. How do I read a sensor value and display it? {#12-how-do-i-read-a-sensor-value-and-display-it}](#12-how-do-i-read-a-sensor-value-and-display-it-12-how-do-i-read-a-sensor-value-and-display-it)
-  - [13. What is debounce and why do I need it for buttons? {#13-what-is-debounce-and-why-do-i-need-it-for-buttons}](#13-what-is-debounce-and-why-do-i-need-it-for-buttons-13-what-is-debounce-and-why-do-i-need-it-for-buttons)
-  - [14. How can I power motors without damaging my Arduino? {#14-how-can-i-power-motors-without-damaging-my-arduino}](#14-how-can-i-power-motors-without-damaging-my-arduino-14-how-can-i-power-motors-without-damaging-my-arduino)
-  - [15. Can I connect multiple Arduinos together? {#15-can-i-connect-multiple-arduinos-together}](#15-can-i-connect-multiple-arduinos-together-15-can-i-connect-multiple-arduinos-together)
-  - [16. Why does my analogRead return noisy values? {#16-why-does-my-analogRead-return-noisy-values}](#16-why-does-my-analogread-return-noisy-values-16-why-does-my-analogread-return-noisy-values)
-  - [17. How do I update firmware on newer boards (e.g., ESP32, SAMD)? {#17-how-do-i-update-firmware-on-newer-boards-eg-esp32-samd}](#17-how-do-i-update-firmware-on-newer-boards-eg-esp32-samd-17-how-do-i-update-firmware-on-newer-boards-eg-esp32-samd)
-  - [18. What are good practices for prototyping vs production? {#18-what-are-good-practices-for-prototyping-vs-production}](#18-what-are-good-practices-for-prototyping-vs-production-18-what-are-good-practices-for-prototyping-vs-production)
-  - [19. How do I troubleshoot a non-working sketch? {#19-how-do-i-troubleshoot-a-non-working-sketch}](#19-how-do-i-troubleshoot-a-non-working-sketch-19-how-do-i-troubleshoot-a-non-working-sketch)
-  - [20. Can I use Arduino with Python or other languages? {#20-can-i-use-arduino-with-python-or-other-languages}](#20-can-i-use-arduino-with-python-or-other-languages-20-can-i-use-arduino-with-python-or-other-languages)
+  - [1. What is an Arduino and which board should I buy first?](#1-what-is-an-arduino-and-which-board-should-i-buy-first)
+  - [2. How do I install the Arduino IDE?](#2-how-do-i-install-the-arduino-ide)
+  - [3. How do I upload a sketch to my Arduino?](#3-how-do-i-upload-a-sketch-to-my-arduino)
+  - [4. Why is my Arduino not detected by my computer?](#4-why-is-my-arduino-not-detected-by-my-computer)
+  - [5. What's the difference between 5V and 3.3V boards?](#5-whats-the-difference-between-5v-and-33v-boards)
+  - [6. How do I power an Arduino safely from a battery?](#6-how-do-i-power-an-arduino-safely-from-a-battery)
+  - [7. What is a sketch?](#7-what-is-a-sketch)
+  - [8. What are digital, analog, and PWM pins?](#8-what-are-digital-analog-and-pwm-pins)
+  - [9. Why does my circuit reset when I connect a component?](#9-why-does-my-circuit-reset-when-i-connect-a-component)
+  - [10. How do I use libraries in Arduino sketches?](#10-how-do-i-use-libraries-in-arduino-sketches)
+  - [11. What's the easiest way to learn electronics for Arduino?](#11-whats-the-easiest-way-to-learn-electronics-for-arduino)
+  - [12. How do I read a sensor value and display it?](#12-how-do-i-read-a-sensor-value-and-display-it)
+  - [13. What is debounce and why do I need it for buttons?](#13-what-is-debounce-and-why-do-i-need-it-for-buttons)
+  - [14. How can I power motors without damaging my Arduino?](#14-how-can-i-power-motors-without-damaging-my-arduino)
+  - [15. Can I connect multiple Arduinos together?](#15-can-i-connect-multiple-arduinos-together)
+  - [16. Why does my analogRead return noisy values?](#16-why-does-my-analogRead-return-noisy-values)
+  - [17. How do I update firmware on newer boards (e.g., ESP32, SAMD)?](#17-how-do-i-update-firmware-on-newer-boards-eg-esp32-samd)
+  - [18. What are good practices for prototyping vs production?](#18-what-are-good-practices-for-prototyping-vs-production)
+  - [19. How do I troubleshoot a non-working sketch?](#19-how-do-i-troubleshoot-a-non-working-sketch)
+  - [20. Can I use Arduino with Python or other languages?](#20-can-i-use-arduino-with-python-or-other-languages)
 
 ---
 
@@ -54,7 +54,7 @@ https://www.arduino.cc/en/software
 ### 3. How do I upload a sketch to my Arduino? {#3-how-do-i-upload-a-sketch-to-my-arduino}
 
 Connect your board with a data-capable USB cable (some cables are power only), open the Arduino IDE, select the correct board model and serial port (Tools → Board / Port), open a sketch, then press Upload. The message 'Done uploading' indicates success.
-If you can not see the port, then go to the next FAQ number 4.
+If you cannot see the port, then go to the next FAQ number 4.
 
 ---
 
@@ -65,9 +65,9 @@ Common causes:
 - Missing USB driver (install from vendor)
 - Wrong port selected in the IDE
 - Defective USB-to-serial chip on some clones
-- Need to install drivers for your clone (arduinos dont need drivers)
-  - [if you have a CH340 chip](https://sparks.gogo.co.nz/ch340.html)
-  - [if you have the 210 chip on your board](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+- Need to install drivers for your clone (official Arduinos usually don't need extra drivers, but clones may)
+  - [If you have a CH340 chip](https://sparks.gogo.co.nz/ch340.html)
+  - [If you have a CP210x chip](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
   - ![Various Arduino boards showing different USB-to-serial chips](../../assets/images/faq/faqimages.png "Collection of Arduino boards highlighting the different USB-to-serial converter chips (CH340, CP210x) that may require specific drivers")
 
 Try another cable/port, update drivers, and check Device Manager (Windows) or dmesg/lsusb (Linux/macOS).
@@ -106,7 +106,7 @@ Arduino I/O reference: https://www.arduino.cc/reference/en/language/functions/an
 
 ### 9. Why does my circuit reset when I connect a component? {#9-why-does-my-circuit-reset-when-i-connect-a-component}
 
-This usually indicates a power issue — the component draws excessive current or there's a short. Check wiring carefully, ensure your power supply can provide required current, add decoupling capacitors, and test components individually. Your last step is, unhook all wires, let it cool for a minute powered down, then see if it's still functioning with the blink example.
+This usually indicates a power issue — the component draws excessive current or there's a short. Check wiring carefully, ensure your power supply can provide required current, add decoupling capacitors, and test components individually. Your last step is: unhook all wires, let it cool for a minute powered down, then see if it's still functioning with the blink example.
 
 ---
 
@@ -155,7 +155,8 @@ Yes. You can use serial (UART), I2C, or SPI to communicate between microcontroll
 
 ### 16. Why does my analogRead return noisy values? {#16-why-does-my-analogRead-return-noisy-values}
 
-Analog values can fluctuate due to electrical noise, poor grounding, or high source impedance. Use averaging (multiple samples), smoothing filters, proper grounding, and keep analog wiring away from high-current traces. ![Diagram showing floating pin behavior with unstable voltage readings](../../assets/images/faq/floatingpin.png "Illustration of a floating pin showing how an unconnected analog input can produce random, unstable voltage readings")
+Analog values can fluctuate due to electrical noise, poor grounding, or high source impedance. Use averaging (multiple samples), smoothing filters, proper grounding, and keep analog wiring away from high-current traces.
+![Diagram showing floating pin behavior with unstable voltage readings](../../assets/images/faq/floatingpin.png "Illustration of a floating pin showing how an unconnected analog input can produce random, unstable voltage readings")
 
 ---
 
@@ -172,7 +173,11 @@ Prototype on a breadboard or solderless perfboard. When moving to production:
 - Move to soldered connections or a PCB
 - Use reliable power supplies and connectors
 - Add protection components (fuses, TVS diodes) where appropriate
-- Consider enclosures and thermal management ![ElectroCookie prototyping boards for professional project assembly](../../assets/images/faq/eCookie.jpg "ElectroCookie prototyping boards showing professional PCB alternatives to breadboards for production projects") [find them here](https://www.amazon.com/stores/ElectroCookieInc/page/B11DB0B2-E282-43CA-AC4D-2D1349C983E7?)
+- Consider enclosures and thermal management
+
+![ElectroCookie prototyping boards for professional project assembly](../../assets/images/faq/eCookie.jpg "ElectroCookie prototyping boards showing professional PCB alternatives to breadboards for production projects")
+
+[Find them here.](https://www.amazon.com/stores/ElectroCookieInc/page/B11DB0B2-E282-43CA-AC4D-2D1349C983E7?)
 
 ---
 
@@ -184,6 +189,6 @@ Use `Serial.print()` to trace program flow and variable values, isolate hardware
 
 ### 20. Can I use Arduino with Python or other languages? {#20-can-i-use-arduino-with-python-or-other-languages}
 
-Yes. Standard Arduinos can communicate over serial with Python (using `pyserial`). Some boards (ESP32, some microcontrollers) can run MicroPython or CircuitPython directly. Use the toolchain that best fits your workflow. **NOTE that all of thease option are NOT industry standard, they are limiting, they only work on some MCU's, and genarly not supported.**
+Yes. Standard Arduinos can communicate over serial with Python (using `pyserial`). Some boards (ESP32, some microcontrollers) can run MicroPython or CircuitPython directly. Use the toolchain that best fits your workflow. **Note that all of these options are NOT industry standard — they are limiting, only work on some MCUs, and are generally not supported.**
 
 [← Back to Home](../index.md)

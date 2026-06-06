@@ -2,7 +2,7 @@
 
 This section will cover how to add or edit pages on the wiki.
 
-Please use the `Github Markdown` flavour for your Markdown files.
+Please use the `GitHub Markdown` flavor for your Markdown files.
 
 Please look at other pages to see how they are formatted, and for examples of how to use Markdown.
 
@@ -18,7 +18,7 @@ This is useful for organizing pages into categories.
 
 ### Adding a Page to the Sidebar
 
-To add a page to the sidebar, you will need to add the page to the `vitepress/docs/src/custom/theme/index.js` file.
+To add a page to the sidebar, you will need to add the page to the `vitepress/docs/src/custom/theme/index.ts` file.
 
 To do this, you will need to add the page to the `sidebar` object.
 
@@ -31,7 +31,7 @@ For example, if you want to add a page called `my_page.md` to the sidebar, you w
     items: [ // The pages in the category
         { text: "Introduction", link: "/gettingStarted/basicsOfProgramming" },
         { text: "Buyers Guide", link: "/gettingStarted/arduinobuyersguide" },
-        { text: "My Page", link: "/my_page/my_page" }, // Add this line - subdir then file
+        { text: "My Page", link: "/my_folder/my_page" }, // Add this line — subdirectory then filename
     ],
 },
 ```
@@ -52,10 +52,10 @@ We like to keep this cohesive, so please use the following style:
 
 This will give the title a nice orange colour.
 
-The `{}` are required, and the `.text-[#e67e22]` is the colour using `TailWindCSS` classes. You can change this to any colour you like, but please keep it consistent with the rest of the site.
+The `{}` are required, and the `.text-[#e67e22]` is the color using `Tailwind CSS` classes. You can change this to any color you like, but please keep it consistent with the rest of the site.
 
 ::: tip Tip
-This entire site supports `TailWindCSS` classes. You can find the documentation [here](https://tailwindcss.com/docs).
+This entire site supports `Tailwind CSS` classes. You can find the documentation [here](https://tailwindcss.com/docs).
 
 All classes you wish to add, must be prefaced with a `.` when inside of the `{}`.
 

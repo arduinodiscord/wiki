@@ -1,16 +1,19 @@
+---
+layout: page
+title: Combining Sketches
+description: Learn how to identify and combine the different parts of multiple Arduino sketches into one working project.
+---
+
 # Combining Sketches { .text-[#e67e22] }
 
 [← Back to Home](../index.md)
 
-*This page is about combining multiple Arduino sketches into one*
+*This page is about combining multiple Arduino sketches into one.*
 
-*This page is about combining multiple Arduino sketches into one*
-The next part of this guide describes these sections.
-
-You can skip over this, then come back later and read it when your combined sketches don't work.
+This section describes how to identify and combine the different parts of Arduino sketches.
 
 ::: tip Sketch Sections
-Arduino basic sketches have sections
+Arduino basic sketches have sections:
 
 * Block comments
 * Single line comments
@@ -40,7 +43,7 @@ They can be used to temporarily disable code. This is useful when you are testin
  */
 ```
 
-The block comments start with `/*` and end with `*/`
+The block comments start with `/*` and end with `*/`.
 
 ## Single line comments
 
@@ -60,7 +63,7 @@ This section appears at the very top of the sketch.
 
 ::: info Special Cases
 
-There are some VERY special cases where a library may have a directive required before the library is loaded. This is very unusual but can happen. It will appear as a line of code that looks like this:
+There are some **very special cases** where a library requires a directive before it can be loaded. This is unusual but can happen — it appears as a `#define` statement before the include:
 
 ```cpp
 #define SOME_PIN 20
@@ -72,28 +75,19 @@ or
 #define SOME_VALUE
 ```
 
-before the include library statement
-
-:::
-
-The library load/include command is in the form of:
+The `#include` command loads libraries in the standard path:
 
 ```cpp
 #include <library file name>
 ```
 
-This will load and include the library if it is in the standard library path. If you load a library using the library manager, then the library will be in the correct place to be loaded with this statement.
-
-In some cases, the library file name may be in quotes, but this is a special case.
+If the library file is in your sketch's directory (not the standard library path), you can use quotes:
 
 ```cpp
 #include "library file name"
 ```
 
-In the case the library file is not in the normal location, then if it is in the same directory as the sketch it will use the quote format.
-
-::: info Special Case
-It may also have the full path to the file as well, but this is a special case.
+This is the only exception — normally, libraries should be in the standard library path and use angle brackets.
 :::
 
 ## Definition Section
@@ -107,13 +101,11 @@ Usually, a sketch will have constants here. These are variables that do not chan
 #define num_leds 20
 ```
 
-::: warning Pay Attention
-There are no semi colons after a define.
-:::
+> **Note**: `#define` statements are preprocessor directives and **do not** use semicolons.
 
 ## Global Variables
 
-A variable that is declared above the `setup()`, may or may not change value over time, and is used throughout the sketch - has a global scope. This means the variable can be accessed anywhere in the sketch.
+A variable that is declared above `setup()` may or may not change value over time, and is used throughout the sketch — it has a global scope. This means the variable can be accessed anywhere in the sketch.
 
 **Example**
 
@@ -140,7 +132,7 @@ void blinkLED() {
 }
 ```
 
-In the program, you would call this function with
+In the program, you would call this function with:
 
 ```cpp
 blinkLED();
@@ -156,16 +148,14 @@ void setup() {
 
 This is a special function that runs once when the Arduino starts.
 
-Here, we place commands to start devices and/or libraries.
-
-Set up serial ports, basically anything that needs to be done ONCE when the Arduino starts
+Here, we place commands to start devices and/or libraries. Set up serial ports — basically anything that needs to be done **once** when the Arduino starts.
 
 **Example**
 
 ```cpp
 void setup() {
     Serial.begin(9600);       // start serial port
-    pinMode(led_pin, OUTPUT); // set led pin to output
+    pinMode(led_pin, OUTPUT); // set LED pin to output
     pinMode(2, INPUT);        // set switch pin to input
     servo.attach(servo_pin);  // attach servo to servo pin
 }
@@ -192,99 +182,93 @@ void loop() {
 
 In this lesson on combining sketches, we will be using two sketches from the examples for two libraries.
 
-One from LiquidCrystal Library
+One from LiquidCrystal Library:
 
-![Arduino IDE Library Manager showing LiquidCrystal library installation](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png "Screenshot of Arduino IDE Library Manager with LiquidCrystal library selected for installation")
-![Arduino IDE Library Manager showing LiquidCrystal library installation](../../assets/images/CombiningSketches/LiquidCrytstalLibrary.png "Screenshot of Arduino IDE Library Manager with LiquidCrystal library selected for installation")
+![Arduino IDE Library Manager showing LiquidCrystal library installation](../../assets/images/CombiningSketches/LiquidCrystalLibrary.png "Screenshot of Arduino IDE Library Manager with LiquidCrystal library selected for installation")
 
-The other from Adafruit DHT Sensor Library
+The other from Adafruit DHT Sensor Library:
 
 ![Arduino IDE Library Manager showing Adafruit DHT sensor library installation](../../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png "Screenshot of Arduino IDE Library Manager with Adafruit DHT sensor library selected for installation")
-![Arduino IDE Library Manager showing Adafruit DHT sensor library installation](../../assets/images/CombiningSketches/AdafruitDHTSensorLibrary.png "Screenshot of Arduino IDE Library Manager with Adafruit DHT sensor library selected for installation")
 
-This is the first file DHT_Unified_Sensor
+This is the first file, called `DHT_Unified_Sensor`:
 
 ![DHT sensor library example code showing temperature and humidity reading](../../assets/images/CombiningSketches/DHTSensorLibraryExample.png "Arduino IDE showing the DHT_Unified_Sensor example code for reading temperature and humidity data")
-![DHT sensor library example code showing temperature and humidity reading](../../assets/images/CombiningSketches/DHTSensorLibraryExample.png "Arduino IDE showing the DHT_Unified_Sensor example code for reading temperature and humidity data")
 
-This is the second file Hello World
+This is the second file, called `Hello World`:
 
-![LiquidCrystal library Hello World example code for LCD display](../../assets/images/CombiningSketches/LiquidCrytstalExample.png "Arduino IDE showing the LiquidCrystal Hello World example code for displaying text on an LCD")
-![LiquidCrystal library Hello World example code for LCD display](../../assets/images/CombiningSketches/LiquidCrytstalExample.png "Arduino IDE showing the LiquidCrystal Hello World example code for displaying text on an LCD")
+![LiquidCrystal library Hello World example code for LCD display](../../assets/images/CombiningSketches/LiquidCrystalExample.png "Arduino IDE showing the LiquidCrystal Hello World example code for displaying text on an LCD")
 
-These files are accessible via the file, examples menu as shown – **AFTER you load the libraries using the library manager**
+These files are accessible via the **File > Examples** menu as shown — **after** you load the libraries using the Library Manager.
 
-Here are the two files side by side. With the IDE you can open two files and set them up, side by side. Basically open the IDE twice.
+Here are the two files side by side. With the IDE you can open two files and set them up side by side. Basically open the IDE twice.
 
 ![Two Arduino IDE windows open side by side showing different example sketches](../../assets/images/CombiningSketches/sidebyside.png "Screenshot showing two Arduino IDE windows arranged side by side for comparing and combining different example sketches")
 
-in each file there is a large comments block. To tidy up, we will remove them. This is optional.
+In each file there is a large comments block. To tidy up, we will remove them. This is optional.
 
-This gives us the two files – in a form that is a little easier to work on
+This gives us the two files in a form that is a little easier to work on:
 
 ![image](../../assets/images/CombiningSketches/sidebyside2.png)
 
-First up, we copy the library load section
+First up, we copy the library load section:
 
 ![image](../../assets/images/CombiningSketches/sidebyside3.png)
 
-This is the section copied from right file to left file
+This is the section copied from the right file to the left file:
 
 ![image](../../assets/images/CombiningSketches/sidebyside4.png)
 
-The next section is the Definition Section
+The next section is the Definition Section.
 
-In these particular files, there are definitions in one file. We copy from the right side to the left side sketch.
+In these particular files, there are definitions in only one file. We copy from the right side to the left side sketch.
 Check that there are no definitions with the same names and/or different values.
 
 ![image](../../assets/images/CombiningSketches/sidebyside5.png)
 
-This is the section copied from right file to left file
+This is the section copied from the right file to the left file:
 
 ![image](../../assets/images/CombiningSketches/sidebyside6.png)
 
-Next is the Global Variables Section
+Next is the Global Variables Section:
 
 ![image](../../assets/images/CombiningSketches/sidebyside7.png)
 
-Copy the variables and library initializer values
+Copy the variables and library initializer values.
 Again check that there are no variables with the same names and/or different values.
 
-This is the section copied from right file to left file
+This is the section copied from the right file to the left file:
 
 ![image](../../assets/images/CombiningSketches/sidebyside8.png)
 
-Next section is the  Setup
+Next section is the Setup:
 
 ![image](../../assets/images/CombiningSketches/sidebyside9.png)
 
-NOTE:  The contents of the Setup as copied but NOT the
+**Note:** The contents of the Setup are copied, but **not** the:
 
 ![image](../../assets/images/CombiningSketches/nosetup.png)
 
-Or the
+Or the:
 
 ![image](../../assets/images/CombiningSketches/nobracket.png)
 
 at the end.
 
-This is the section copied from right file to left file
+This is the section copied from the right file to the left file:
 
 ![image](../../assets/images/CombiningSketches/sidebyside10.png)
 
-Next is the loop
+Next is the loop:
 
 ![image](../../assets/images/CombiningSketches/sidebyside11.png)
 
-::: warning Pay Attention
-The contents of the loop are copied but **NOT** the `void loop()`
-:::
+> **Note**: Copy the contents of the `loop()` function but **not** the `void loop()` declaration or the final closing brace.
 
 ```cpp
 void loop() {
 ```
 
-Or the ending bracket
+Or the closing brace:
 
 ```cpp
 }
@@ -294,19 +278,17 @@ Or the ending bracket
 
 The two sketches are combined.
 
-If you now run verify, the sketch on the left should be able to verify
+If you now run Verify, the sketch on the left should be able to compile.
 
-![Arduino IDE verify/compile button and successful compilation message](../../assets/images/CombiningSketches/verifycompile.png "Arduino IDE showing the verify/compile button and successful compilation status message")
 ![Arduino IDE verify/compile button and successful compilation message](../../assets/images/CombiningSketches/verifycompile.png "Arduino IDE showing the verify/compile button and successful compilation status message")
 
 ![Arduino IDE compilation output showing successful sketch verification](../../assets/images/CombiningSketches/verifycompile2.png "Arduino IDE compilation output window displaying successful sketch verification with memory usage statistics")
-![Arduino IDE compilation output showing successful sketch verification](../../assets/images/CombiningSketches/verifycompile2.png "Arduino IDE compilation output window displaying successful sketch verification with memory usage statistics")
 
-This combined sketch is complete except for changing the code to use both sketches features
+This combined sketch is complete except for changing the code to use both sketches' features.
 
 ![Animated demonstration of combined sketch functionality showing LCD displaying sensor data](../../assets/images/CombiningSketches/filecombodemo.gif "Animated GIF showing the final combined sketch in action - LCD display showing temperature and humidity readings from DHT sensor")
 
-In this case, using the LCD to display the temperature and humidity readings
+In this case, using the LCD to display the temperature and humidity readings.
 
 ---
 

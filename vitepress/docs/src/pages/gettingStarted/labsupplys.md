@@ -1,4 +1,8 @@
-# Maker / Arduino Home Lab Essentials { .text-[#e67e22] }
+---
+title: Lab Supplies and Maker Essentials
+---
+
+# Maker / Arduino Home Lab Essentials {.text-[#e67e22]}
 
 [← Back to Home](../index.md)
 
@@ -17,11 +21,11 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 ---
 
 ### Capacitors
-- [Uxcell 24 Value 500pcs Electrolytic Capacitor Assortment Kit](https://www.amazon.com/OCR-Electrolytic-Capacitor-Assortment-0-1uF%EF%BC%8D1000uF/dp/B01MSQOX0Q?) — $14.99 · ⭐️⭐️⭐️⭐️⭐️ (3,000+ reviews)  
-  Good selection of electrolytic capacitors for breadboarding and repairs.  
-
 - [BOJACK 600pcs Ceramic Capacitor Assortment Kit (10pF–0.1µF)](https://www.amazon.com/MTDELE-600Pcs-Values-Ceramic-Capacitor/dp/B0F32QD5WC?) — $9.99 · ⭐️⭐️⭐️⭐️⭐️ (1,700+ reviews)  
   Stable ceramic capacitors for timing and filtering applications.  
+
+- [Uxcell 24 Value 500pcs Electrolytic Capacitor Assortment Kit](https://www.amazon.com/OCR-Electrolytic-Capacitor-Assortment-0-1uF%EF%BC%8D1000uF/dp/B01MSQOX0Q?) — $14.99 · ⭐️⭐️⭐️⭐️⭐️ (3,000+ reviews)  
+  Good selection of electrolytic capacitors for breadboarding and repairs.  
 
 ---
 
@@ -47,20 +51,20 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 ---
 
 ### Switches & Buttons
-- [MCIGICM 120pcs Switch Assortment Kit (Tactile, Toggle, Rocker)](https://www.amazon.com/DaFuRui-120pcs-Tactile-Momentary-Assortment/dp/B07QLK8J72?) — $13.99 · ⭐️⭐️⭐️⭐️⭐️ (1,800+ reviews)  
-  Includes tactile push buttons, toggle switches, and miniature rockers.  
-
 - [BOJACK 5pcs EC11 Rotary Encoders with Knobs](https://www.amazon.com/AIMPGSTL-Rotary-Encoder-Arduino-Raspberry/dp/B0FHDG9BKF?) — $7.99 · ⭐️⭐️⭐️⭐️⭐️ (2,200+ reviews)  
   Rotary encoders with knobs, great for digital control inputs.  
+
+- [MCIGICM 120pcs Switch Assortment Kit (Tactile, Toggle, Rocker)](https://www.amazon.com/DaFuRui-120pcs-Tactile-Momentary-Assortment/dp/B07QLK8J72?) — $13.99 · ⭐️⭐️⭐️⭐️⭐️ (1,800+ reviews)  
+  Includes tactile push buttons, toggle switches, and miniature rockers.  
 
 ---
 
 ### Potentiometers & Trimmers
-- [EDGELEC 200pcs Potentiometer Assortment Kit (500Ω–1MΩ + Knobs)](https://www.amazon.com/200pcs-Potentiometer-Values-Single-Joint-Rotary/dp/B0D73GWJPV?) — $16.98 · ⭐️⭐️⭐️⭐️⭐️ (1,400+ reviews)  
-  Variety of values with included knobs.  
-
 - [BOJACK 100pcs 3296W Multiturn Trimmer Potentiometers (10Ω–1MΩ)](https://www.amazon.com/Multiturn-Trimmer-Potentiometer-Values-120PCS/dp/B0DTQ6R57B?) — $12.99 · ⭐️⭐️⭐️⭐️⭐️ (1,100+ reviews)  
   Precision multiturn trim pots for calibration and fine adjustments.  
+
+- [EDGELEC 200pcs Potentiometer Assortment Kit (500Ω–1MΩ + Knobs)](https://www.amazon.com/200pcs-Potentiometer-Values-Single-Joint-Rotary/dp/B0D73GWJPV?) — $16.98 · ⭐️⭐️⭐️⭐️⭐️ (1,400+ reviews)  
+  Variety of values with included knobs.  
 
 ---
 
@@ -68,11 +72,11 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 - [Chanzon 10pcs NE555P Timer IC](https://www.amazon.com/Texas-Instruments-NE555P-Single-Precision/dp/B00K243MIQ?) — $6.99 · ⭐️⭐️⭐️⭐️⭐️ (1,600+ reviews)  
   Classic 555 timer for oscillators, PWM, and timing circuits.  
 
-- [BOJACK 20pcs Voltage Regulators (7805, 7809, 7812 with Heat Sinks)](https://www.amazon.com/Minidodoca-Electrolytic-Capacitors-Adjustable-Assortment/dp/B0BRHTMSDJ?) — $10.99 · ⭐️⭐️⭐️⭐️⭐️ (1,200+ reviews)  
-  Standard linear voltage regulators, perfect for powering Arduino projects.  
-
 - [BOJACK 20pcs LM358/LM324 Operational Amplifier IC Assortment](https://www.amazon.com/Horinktor-Operational-Amplifier-Commercial-Industrial/dp/B0C48JC73K?) — $6.99 · ⭐️⭐️⭐️⭐️⭐️ (1,400+ reviews)  
   Common dual and quad op-amps for general-purpose analog circuits.
+
+- [BOJACK 20pcs Voltage Regulators (7805, 7809, 7812 with Heat Sinks)](https://www.amazon.com/Minidodoca-Electrolytic-Capacitors-Adjustable-Assortment/dp/B0BRHTMSDJ?) — $10.99 · ⭐️⭐️⭐️⭐️⭐️ (1,200+ reviews)  
+  Standard linear voltage regulators, perfect for powering Arduino projects.  
 
 ---
 
@@ -133,10 +137,10 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 ---
 
 ### LiPo/Li-ion Charger Modules
-- [Aideepen 10pcs Micro USB 5V 1A TP4056 Lithium Battery Charger Board](https://www.amazon.com/Battery-Charger-Discharge-Integrated-Lithium/dp/B098989NRZ?) — $7.99 · ⭐️⭐️⭐️⭐️⭐️ (2,000+ reviews)  
+- [Aideepen 10pcs Micro USB 5V 1A TP4056 Lithium Battery Charger Board](https://www.amazon.com/Battery-Charger-Discharge-Integrated-Lithium/dp/B098989NRZ?) — $7.99 · ⭐️⭐️⭐️⭐️⭐️ (2,000+ reviews)
   Safe, reliable charging modules for single-cell Li-ion/LiPo batteries.
 
-  ### Logic Level Shifters
+### Logic Level Shifters
 - [HiLetgo 10pcs 4-Channel I2C/SPI/UART Logic Level Converter (3.3V ⇌ 5V)](https://www.amazon.com/HiLetgo-Channels-Converter-Bi-Directional-3-3V-5V/dp/B07F7W91LC?) — $7.99 · ⭐️⭐️⭐️⭐️⭐️ (1,800+ reviews)  
   Essential for safe communication between 3.3V boards (ESP, sensors) and 5V Arduinos.  
 
@@ -190,7 +194,6 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 - **Budget:** [Engineer SS-02 Solder Sucker](https://www.amazon.com/ENGINEER-Engineer-Solder-Suction-SS-03/dp/B0D7Q293KV?) — $24.95 · ⭐️⭐️⭐️⭐️⭐️ (5,000+ reviews)  
   High‑quality Japanese build, compact, works far better than cheap kits.
 
-
 ### Solder Wick
 - [MG Chemicals 423-5 Desoldering Braid, 5ft, No-Clean](https://www.amazon.com/MG-Chemicals-Desoldering-Braid-Length/dp/B008O9VLA2?) — $5.99 · ⭐️⭐️⭐️⭐️⭐️ (4,000+ reviews)  
   Reliable, copper braid, removes solder cleanly.
@@ -220,15 +223,14 @@ Each of these items will have links for **budget, recommended, and high-end** ve
   4 channel scope Superb clarity, bandwidth, and deep memory for advanced debugging.  
 
 ### Logic Analyzer (USB)
-- [Saleae Logic Pro 8 USB Logic Analyzer](https://www.amazon.com/Saleae-Logic-8/dp/B0749G85W2?) — $479.00 · ⭐️⭐️⭐️⭐️⭐️ (1,100+ reviews)  
-- 
-  Industry-standard, powerful USB logic analyzer software and hardware.  
-- [ LA1010 USB Logic Analyzer 16 Input Channels 100MHz  ](https://www.amazon.com/LA1010-Analyzer-channels-software-instrument/dp/B07D21GG6J?) — $50.00 · ⭐️⭐️⭐️⭐️ (500+ reviews)  
+- [USB Logic Analyzer with Breadboard and Alligator Clips](https://www.amazon.com/Analyzer-Channels-Breadboard-Alligator-Compatible/dp/B0FKGN3JMZ?) — $35.00 · ⭐️⭐️⭐️⭐️ (300+ reviews)  
+  Compact and versatile tool for quick signal analysis and prototyping.
+
+- [LA1010 USB Logic Analyzer 16 Input Channels 100MHz](https://www.amazon.com/LA1010-Analyzer-channels-software-instrument/dp/B07D21GG6J?) — $50.00 · ⭐️⭐️⭐️⭐️ (500+ reviews)  
   Affordable and reliable option for basic debugging and signal analysis.
 
-- [ USB Logic Analyzer with Breadboard and Alligator Clips ](https://www.amazon.com/Analyzer-Channels-Breadboard-Alligator-Compatible/dp/B0FKGN3JMZ?) — $35.00 · ⭐️⭐️⭐️⭐️ (300+ reviews)  
-  Compact and versatile tool for quick signal analysis and prototyping.  
-
+- [Saleae Logic Pro 8 USB Logic Analyzer](https://www.amazon.com/Saleae-Logic-8/dp/B0749G85W2?) — $479.00 · ⭐️⭐️⭐️⭐️⭐️ (1,100+ reviews)
+  Industry-standard, powerful USB logic analyzer software and hardware.
 
 ### USB Power Meter
 - [Makerhawk USB Digital Multimeter Tester](https://www.amazon.com/MakerHawk-Multimeter-Voltmeter-Temperature-Resistance/dp/B07DK6FT4Q?) — $25.99 · ⭐️⭐️⭐️⭐️⭐️ (2,300+ reviews)  
@@ -246,11 +248,11 @@ Each of these items will have links for **budget, recommended, and high-end** ve
   Professional-grade, precise stripping for 10-18 AWG solid and 12-20 AWG stranded.
 
 ### Needle Nose Pliers
-- [Klein Tools D203-8N-SEN Needle Nose Side-Cutting Pliers](https://www.amazon.com/Cutting-Stripping-Klein-Tools-D203-8N/dp/B000CEORW6?) — $24.97 · ⭐️⭐️⭐️⭐️⭐️ (6,000+ reviews)  
-  Long nose design perfect for electronics work, built-in side cutters.
-
 - [CHANNELLOCK 317 Long Nose Plier](https://www.amazon.com/Channellock-317-Plier-Cutter-8-Inch/dp/B000RY7PXY?) — $16.97 · ⭐️⭐️⭐️⭐️⭐️ (4,000+ reviews)  
   Angled nose version, excellent for tight spaces and component placement.
+
+- [Klein Tools D203-8N-SEN Needle Nose Side-Cutting Pliers](https://www.amazon.com/Cutting-Stripping-Klein-Tools-D203-8N/dp/B000CEORW6?) — $24.97 · ⭐️⭐️⭐️⭐️⭐️ (6,000+ reviews)  
+  Long nose design perfect for electronics work, built-in side cutters.
 
 ### Precision Screwdrivers
 - Budget: [CRAFTSMAN Screwdriver Set, Bi-material, 12 Piece](https://www.amazon.com/CRAFTSMAN-Screwdriver-Bi-material-Piece-CMHT65071N/dp/B0BKRVYCRK?) — $29.98 · ⭐️⭐️⭐️⭐️⭐️ (12,000+ reviews)  
@@ -292,8 +294,6 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 
 ---
 
-### Project Boxes
-
 ### Perfboards & Protoboards
 - [Solderable Breadboard PCB Board Gold-Plated Solder Breadboard for DIY](https://www.amazon.com/EPLZON-Solderable-Breadboard-Gold-Plated-Electronics/dp/B0BP28GYTV?) — $12.95 · ⭐️⭐️⭐️⭐️⭐️ (1,400+ reviews)  
   High quality solderable protoboards designed like breadboards.
@@ -307,22 +307,22 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 ---
 
 ### Cable Management
-- [VELCRO Brand Reusable Cable Ties, 100 Pack](https://www.amazon.com/VELCRO-Brand-Reusable-Management-Electrical/dp/B0DYJWL6QS?) — $10.97 · ⭐️⭐️⭐️⭐️⭐️ (20,000+ reviews)  
-  Strong, reusable Velcro straps for wire and cable organization.
-
 - [Monoprice Nylon Zip Ties, 100 Pack, 8-inch](https://www.amazon.com/Tensile-Strength-Multi-Purpose-Self-Locking-Resistant/dp/B07SKTQJX1?) — $6.99 · ⭐️⭐️⭐️⭐️⭐️ (13,000+ reviews)  
   Simple, sturdy zip ties for long-term cable bundling.
+
+- [VELCRO Brand Reusable Cable Ties, 100 Pack](https://www.amazon.com/VELCRO-Brand-Reusable-Management-Electrical/dp/B0DYJWL6QS?) — $10.97 · ⭐️⭐️⭐️⭐️⭐️ (20,000+ reviews)  
+  Strong, reusable Velcro straps for wire and cable organization.
 
 ---
 
 ## 🤖 Arduino & Maker Boards
 
 ### Arduino Boards
-- [Arduino Uno Rev3 (Official, Original)](https://store.arduino.cc/products/arduino-uno-rev3) — $28.50  
-  The classic beginner-friendly Arduino; widely used with tons of tutorials.  
-
 - [Arduino Nano (Official, Original)](https://store.arduino.cc/products/arduino-nano) — $22.10  
   Compact version of the Uno, breadboard-friendly, great for small projects.  
+
+- [Arduino Uno Rev3 (Official, Original)](https://store.arduino.cc/products/arduino-uno-rev3) — $28.50  
+  The classic beginner-friendly Arduino; widely used with tons of tutorials.  
 
 - [Arduino Mega 2560 Rev3 (Official, Original)](https://store.arduino.cc/products/arduino-mega-2560-rev3) — $47.40  
   Extra I/O pins and memory, perfect for large projects (robotics, IoT).  
@@ -336,11 +336,11 @@ Each of these items will have links for **budget, recommended, and high-end** ve
 ---
 
 ### Sensors & Modules
-- [HiLetgo 37-in-1 Sensor Module Kit](https://www.amazon.com/HiLetgo-Sensors-Assortment-Raspberry-Projects/dp/B01N5910XS?) — $39.99 · ⭐️⭐️⭐️⭐️ (2,600+ reviews)  
-  Large assortment of sensors (DHT11, BMP, IR, MQ gas modules, etc.), great starter kit.  
-
 - [Elegoo 5 Pack DHT11 Digital Temperature & Humidity Sensor](https://www.amazon.com/HiLetgo-Temperature-Humidity-Digital-3-3V-5V/dp/B01DKC2GQ0?) — $9.99 · ⭐️⭐️⭐️⭐️⭐️ (3,000+ reviews)  
   Simple starter sensors for environmental data logging.  
+
+- [HiLetgo 37-in-1 Sensor Module Kit](https://www.amazon.com/HiLetgo-Sensors-Assortment-Raspberry-Projects/dp/B01N5910XS?) — $39.99 · ⭐️⭐️⭐️⭐️ (2,600+ reviews)  
+  Large assortment of sensors (DHT11, BMP, IR, MQ gas modules, etc.), great starter kit.  
 
 ---
 

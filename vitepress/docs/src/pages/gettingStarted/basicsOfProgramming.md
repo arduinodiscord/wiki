@@ -1,4 +1,8 @@
-# Basics of Programming { .text-[#e67e22] }
+---
+title: Basics of Programming
+---
+
+# Basics of Programming {.text-[#e67e22] }
 
 [← Back to Home](../index.md)
 
@@ -25,7 +29,7 @@ wireless links).
 > machine... and start 'programming it'.*
 >
 > *Programming... the microcontroller chip found soldered to the
-target board (Arduino Uno, Leonardo, Mega2560... or
+> target board (Arduino Uno, Leonardo, Mega2560... or
 > other board).*
 
 It'll be a chip with a part number, such as `32u4` or `328p`, and
@@ -37,7 +41,7 @@ discussed.
 >
 >
 > *"I have an Uno R3 (328p) and I can compile a simple program for it,
-upload the program to the Uno, and it seems to run (prints messages
+> upload the program to the Uno, and it seems to run (prints messages
 > to the Serial Terminal, as expected).  But there's a problem..."*
 
 ### What, then, is Programming?
@@ -48,17 +52,17 @@ From Leo Brodie:
 
 [Starting Forth: Introductions](https://www.forth.com/starting-forth/0-starting-forth/)
 
-> At first when beginners hear the term “computer language,” they
-wonder, “What kind of language could a computer possibly speak? It
-must be awfully hard for people to understand. It probably looks like:
+> At first when beginners hear the term "computer language," they
+> wonder, "What kind of language could a computer possibly speak? It
+> must be awfully hard for people to understand. It probably looks like:
 >
 > > `976#!@NX714&+`
 >
 > if it looks like anything at all.
 >
 > Actually a computer language should not be difficult to understand.
-Its purpose is simply to serve as a convenient compromise for
-communication between a person and a computer.
+> Its purpose is simply to serve as a convenient compromise for
+> communication between a person and a computer.
 
 ---
 
@@ -85,8 +89,7 @@ new 'program'.
 *Machine code* can be programmed using just front panel switches.
 Nothing else!
 
-![Altair 8800 from the Computer History Museum - Wikipedia](
-<https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg/1024px-Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg> "8800 from the Computer History Museum - Wikipedia")
+![Altair 8800 from the Computer History Museum - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg/1024px-Altair_8800_at_the_Computer_History_Museum%2C_cropped.jpg "Altair 8800 from the Computer History Museum - Wikipedia")
 
 *Assembler (assembly language)* would require you to use some
 kind of a typewriter - or other keyboard-like device - so
@@ -144,13 +147,13 @@ Here's a Wokwi 'answer' to some of that:
 That lets you cheat, quite a bit. 😉
 
 > *Disclaimer: the above cheat comes directly from experience in
-'Forth' programming (it's another programming language).  Forth
-programmers often resort to the C Preprocessor to coerce C++ program
-syntax... really, quite a bit. 😉*
+> 'Forth' programming (it's another programming language).  Forth
+> programmers often resort to the C Preprocessor to coerce C++ program
+> syntax... really, quite a bit. 😉*
 >
 > *You're not 'supposed to' do this - there's a strong feeling
-about this, about.  Just be aware of it; it's a large detour from
-C++ itself, which is the 'Language of Arduino' so to speak.*
+> about this.  Just be aware of it; it's a large detour from
+> C++ itself, which is the 'Language of Arduino' so to speak.*
 
 ### Hide those details in a library
 
@@ -686,7 +689,7 @@ void report() {
   Serial.print(200);    // 4 * 50 = 200
   Serial.print("    Your OFF_TIME: ");
   Serial.println(1000); // 4 * 50 * 5 = 1000
-  Serial.println("");`1111111111111111111111111111111111111111111111111111111111111111111111111111111
+  Serial.println("");
 }
 
 void LED_BLINK () {
@@ -905,8 +908,6 @@ void loop() {
 Indeed.
 
 ## Discussion - Blink with Weight - LED blinker program
-
-### Discussion - Blink with Weight - LED blinker program
 
 This section delves into the nuances of the "Blink with Weight" program. We can explore the design choices, the impact of the `WEIGHT` constant on the LED's behavior, and how such a program might be extended or adapted for more complex blinking patterns or integrated into larger projects. For instance, one could consider replacing the `delay()` functions with non-blocking timing techniques if the microcontroller needs to perform other tasks concurrently.
 

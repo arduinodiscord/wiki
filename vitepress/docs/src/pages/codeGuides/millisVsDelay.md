@@ -1,4 +1,11 @@
+---
+layout: page
+title: Millis vs Delay
+---
+
 # Millis vs Delay { .text-[#e67e22] }
+
+[← Back to Code Guides](./combiningSketches.md)
 
 ## `millis()` vs. `delay()`
 
@@ -18,7 +25,37 @@ much more in the same amount of time.
 
 ## Blink Without Delay demonstrates `millis()`
 
-[BlinkWithoutDelay.ino](https://github.com/arduino/arduino-examples/blob/main/examples/02.Digital/BlinkWithoutDelay/BlinkWithoutDelay.ino) *on the Arduino GitHub*
+The [BlinkWithoutDelay.ino](https://github.com/arduino/arduino-examples/blob/main/examples/02.Digital/BlinkWithoutDelay/BlinkWithoutDelay.ino)
+example on the Arduino GitHub shows how to use `millis()` for non-blocking timing.
+
+Here's a simplified version of that example:
+
+```cpp
+const int ledPin = LED_BUILTIN;
+int ledState = LOW;
+unsigned long previousMillis = 0;
+const long interval = 1000;  // 1 second
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  unsigned long currentMillis = millis();
+  
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+    
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+    
+    digitalWrite(ledPin, ledState);
+  }
+}
+```
 
 *What's stopping you?*
 
@@ -31,11 +68,14 @@ have passed since the Arduino board was powered on.
 
 That count begins when power is applied to an Arduino board.
 
+### Basic Usage Example
+
 ```cpp
-unsigned long what_time_is_it_now = millis();
+unsigned long currentTime = millis();
+Serial.println(currentTime);
 ```
 
-The value stored in 'what_time_is_it_now' reflects how many
+The value stored reflects how many
 milliseconds of time have passed since the Arduino board's
 `setup()` function first started to run (which happens
 almost immediately after power is applied to the board).
@@ -52,6 +92,28 @@ for each time it is called.*
 These 'serial numbers' are simply a count. They're a count
 of the exact number of *milliseconds* of (real clock) time
 (approximately) since the Arduino was 'started' (powered on).
+
+### Why delay() Blocks Interrupts
+
+`delay()` blocks program execution because it uses a **busy-wait loop**
+that prevents the microcontroller from processing other tasks, including
+interrupts. While `delay()` is running, the Arduino cannot:
+
+- Process timers
+- Handle serial communication
+- Respond to pin changes (interrupts)
+- Run background tasks
+
+`millis()`, in contrast, does not block. It simply returns the current
+counter value, allowing your code to continue executing and respond to
+events as they occur.
+
+This makes `millis()` essential for real-time applications where you need
+to:
+- Monitor multiple inputs simultaneously
+- Handle time-critical events
+- Keep communication channels open
+- Respond to user input without latency
 
 ## `delay()`
 
@@ -77,9 +139,8 @@ milliseconds that have passed since the Arduino board was powered on.
 `millis()` is a counter but is not a timer; `delay()` is a
 timer but is not a counter.
 
-Yes, `millis()` is a counter, but we are also aware of what it's
-counting and when it counts it. `millis()` is a counter that
-'evolves by a clock'.
+`millis()` is a counter that increments with time. It is driven by
+the system clock, incrementing the count once per millisecond (approximately).
 
 This situation is a bit like the odometer in your car.
 You could pry it out, put it on a drill, and spin it to
@@ -88,7 +149,34 @@ artificially change that count in a very short while.
 That'd be cheating. It would no longer give an accurate reading
 about the miles put on the car.
 
-`millis()` is the Arduino 'odometer of time'. 😉
+`millis()` is the Arduino 'odometer of time'.
+
+## Overflow Behavior: 50-Day Cycle
+
+`millis()` uses an unsigned 32-bit integer to store its value.
+After approximately **50 days** (4,294,967,295 milliseconds), the counter
+reaches **overflow** and resets to zero.
+
+This is normal behavior and happens to all Arduino boards. To handle this
+correctly in your code:
+
+```cpp
+unsigned long previousTime = millis();
+unsigned long interval = 1000; // 1 second
+
+void loop() {
+  unsigned long currentTime = millis();
+  
+  // This works correctly even across overflow!
+  if (currentTime - previousTime >= interval) {
+    // Do something every second
+    previousTime = currentTime;
+  }
+}
+```
+
+The key is to use subtraction (`currentTime - previousTime`) rather than
+direct comparison. This approach works correctly even when overflow occurs. 😉
 
 It is a bit like an (imaginary) secure odometer that's tamper-proof;
 you have to wait the required time before `millis()` will rack up
@@ -98,7 +186,7 @@ There's no cheating.
 
 So `millis()` isn't a timer—it's a counter; but it counts
 …milliseconds, which happens to involve 'time'. Worse,
-only upgrades the count when some time has passed (otherwise it'd
+it only upgrades the count when some time has passed (otherwise it'd
 be like putting that drill on the odometer, to race it forward 30
 thousand miles in just a few minutes of 'bench' time).
 
@@ -123,8 +211,7 @@ keep track of how long the glue has been drying. 😉
 You walk back into the kitchen, to read the current time on
 the clock.
 
-You write it down, and head back to the…the makerspace you
-got there. 😉 *Your bench.*
+You write it down, and head back to the makerspace... your bench. 😉
 
 Now you have two times written down; one is from the first time
 you went into the kitchen; the second is the time you wrote down
@@ -188,3 +275,4 @@ could have this new feature:
 The MCU chip does have a peripheral inside it called the
 `counter-timer` which may be behind a lot of this. That's not
 the only way to do things, but is one available mechanism.
+

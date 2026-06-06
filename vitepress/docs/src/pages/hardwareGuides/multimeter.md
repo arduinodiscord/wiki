@@ -1,8 +1,17 @@
+---
+title: Multimeter Guide
+description: A guide to using multimeters for diagnosing circuits and electronics projects.
+---
+
 # Multimeter Guide { .text-[#e67e22] }
+
+Related pages: [Breadboard](./breadBoard.md), [Nine Volts](./nineVolts.md), [LED Resistors](./ledResistors.md).
+
+[← Back to Home](../index.md)
 
 ## What is a Multimeter?
 
-A **multimeter** is an essential tool for anyone working with electronics. It allows you to measure:
+A **multimeter** is an essential tool for diagnosing circuits, testing connections, and troubleshooting electrical problems in Arduino and electronics projects. It allows you to measure:
 
 - **Voltage** (V) - electrical potential difference
 - **Current** (A) - flow of electrical charge
@@ -35,7 +44,7 @@ Always start with the highest range setting and work your way down. This prevent
 
 ## Continuity Test
 
-Use the continuity mode (usually indicated by a sound wave symbol) to test if a connection is complete. The multimeter will beep if there's continuity.
+Use the continuity mode (usually indicated by a sound wave symbol) to test if a connection is complete. **If the multimeter beeps, the connection is complete (low resistance). If it doesn't beep, there's a break in the circuit.**
 
 ## Common Symbols
 
@@ -45,5 +54,6 @@ Use the continuity mode (usually indicated by a sound wave symbol) to test if a 
 - ~ = AC (alternating current)
 - — = DC (direct current)
 
-## More indepth info into Multimeters:
--  [Multi meter user guide](https://www.electronicshub.org/how-to-use-a-multimeter/)
+## More In-Depth Multimeter Information
+
+- [Multimeter User Guide](https://www.electronicshub.org/how-to-use-a-multimeter/)
